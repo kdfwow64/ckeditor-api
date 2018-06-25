@@ -1,0 +1,2929 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClientEngage Visitor Chat\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: ClientEngage <contact@clientengage.com>\n"
+"Language-Team:  <contact@clientengage.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3;plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: Controller/AppController.php:149;192
+msgid "You cannot perform any changes in the demonstration system"
+msgstr "Sie können keine Änderungen im Demonstrationssystem vornehmen"
+
+#: Controller/AppController.php:170
+msgid "Access not allowed."
+msgstr "Zugang nicht erlaubt."
+
+#: Controller/ContentsController.php:39
+msgid "About ClientEngage Visitor Chat"
+msgstr "Über ClientEngage Visitor Chat"
+
+#: Controller/DashboardController.php:44
+msgid "Admin Dashboard"
+msgstr "Admin-Übersicht"
+
+#: Controller/DiscussionsController.php:87
+msgid "You cannot sign-out since no discussion is in progress."
+msgstr "Sie können den Chat nicht beenden, da keine Diskussion im Gange ist."
+
+#: Controller/DiscussionsController.php:125
+msgid "It appears that a discussion is already in progress."
+msgstr "Es scheint als sei eine Diskussion bereits am laufen."
+
+#: Controller/DiscussionsController.php:164
+#: Controller/EnquiriesController.php:83 Controller/MessagesController.php:120
+msgid "A server error occured."
+msgstr "Ein Serverfehler ist aufgetreten."
+
+#: Controller/DiscussionsController.php:486;505
+msgid "Invalid discussion"
+msgstr "Ungültige Diskussion"
+
+#: Controller/DiscussionsController.php:510
+msgid "Discussion deleted"
+msgstr "Die Diskussion wurde gelöscht"
+
+#: Controller/DiscussionsController.php:513
+msgid "Discussion was not deleted"
+msgstr "Die Diskussion konnte nicht gelöscht werden"
+
+#: Controller/DiscussionsController.php:535
+#: Controller/EnquiriesController.php:185
+msgid "The delete operation could not be completed"
+msgstr "Der Löschvorgang konnte nicht beendet werden"
+
+#: Controller/DiscussionsController.php:531
+msgid "You have successfully deleted :count discussion"
+msgid_plural "You have successfully deleted :count discussions"
+msgstr[0] "Sie haben erfolgreich :count Diskussion gelöscht"
+msgstr[1] "Sie haben erfolgreich :count Diskussionen gelöscht"
+msgstr[2] "Sie haben erfolgreich :count Diskussionen gelöscht"
+
+#: Controller/EnquiriesController.php:113;128;153
+msgid "Invalid enquiry"
+msgstr "Ungültige Anfrage"
+
+#: Controller/EnquiriesController.php:136
+msgid "The Read-Status of the enquiry was successfully changed."
+msgstr "Der Lesestatus der Anfrage wurde erfolgreich geändert."
+
+#: Controller/EnquiriesController.php:159
+msgid "Enquiry deleted"
+msgstr "Die Anfrage wurde gelöscht"
+
+#: Controller/EnquiriesController.php:163
+msgid "Enquiry was not deleted"
+msgstr "Die Anfrage konnte nicht gelöscht werden"
+
+#: Controller/EnquiriesController.php:181
+msgid "You have successfully deleted :count enquiry"
+msgid_plural "You have successfully deleted :count enquiries"
+msgstr[0] "Sie haben erfolgreich :count Anfrage gelöscht"
+msgstr[1] "Sie haben erfolgreich :count Anfragen gelöscht"
+msgstr[2] "Sie haben erfolgreich :count Anfragen gelöscht"
+
+#: Controller/MessagesController.php:290
+msgid "Invalid message"
+msgstr "Ungültige Nachricht"
+
+#: Controller/MessagesController.php:295
+msgid "Message deleted"
+msgstr "Die Nachricht wurde gelöscht"
+
+#: Controller/MessagesController.php:298
+msgid "Message was not deleted"
+msgstr "Die Nachricht konnte nicht gelöscht werden"
+
+#: Controller/SettingsController.php:37
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: Controller/SettingsController.php:48
+msgid "Please provide an email address to send the test-email to."
+msgstr ""
+"Bitte geben Sie eine Email Adresse für das Versenden der Test Email an."
+
+#: Controller/SettingsController.php:58
+msgid "Invalid configuration"
+msgstr "Ungültige Konfiguration"
+
+#: Controller/SettingsController.php:68
+msgid "The configuration has been saved"
+msgstr "Die Konfiguration wurde gespeichert"
+
+#: Controller/SettingsController.php:73
+msgid "The configuration could not be saved. Please, try again."
+msgstr ""
+"Die Konfiguration konnte nicht gespeichert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: Controller/SettingsController.php:90
+msgid "Please enter a translation"
+msgstr "Bitte geben Sie eine Übersetzung ein"
+
+#: Controller/SettingsController.php:113;116
+msgid "ClientEngage Email Delivery Test"
+msgstr "ClientEngage Email-Test"
+
+#: Controller/SettingsController.php:122
+msgid ""
+"The SMTP connection could not be established. Please check your details or "
+"select the mail() function and click \"Save Configuration\"."
+msgstr ""
+"Eine SMTP Verbindung konnte nicht hergestellt werden. Bitte überprüfen Sie "
+"Ihre Eingaben oder wählen Sie die mail() Funktion und klicken Sie "
+"\"Konfiguration Speichern\"."
+
+#: Controller/SettingsController.php:126
+msgid ""
+"The test message was sent via SMTP. Please check if you received the "
+"message. <strong> If you do not receive the test email, it is important that "
+"you review the SMTP details or use the mail() function instead and then "
+"click \"Save Configuration\".</strong>"
+msgstr ""
+"Die Testnachricht wurde über SMTP versandt. Bitte überprüfen Sie ob Sie die "
+"Nachricht erhalten haben. <strong> Falls Sie die Testnachricht nicht "
+"erhalten haben ist es wichtig, dass Sie Ihre SMTP Angaben überprüfen oder "
+"alternativ die mail() Funktion verwenden. Im Anschluss müssen Sie "
+"\"Konfiguration Speichern\" klicken, um Ihre Eingaben zu übernehmen..</"
+"strong>"
+
+#: Controller/StylesController.php:58;85
+msgid "The style has been saved"
+msgstr "Das Template wurde gespeichert"
+
+#: Controller/StylesController.php:63;90
+msgid "The style could not be saved. Please, try again."
+msgstr ""
+"Das Template konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/StylesController.php:79;113
+msgid "Invalid style"
+msgstr "Ungültiges Template"
+
+#: Controller/StylesController.php:119
+msgid "Style deleted"
+msgstr "Das Template wurde gelöscht"
+
+#: Controller/StylesController.php:122
+msgid "Style was not deleted"
+msgstr "Das Template konnte nicht gelöscht werden"
+
+#: Controller/UsersController.php:42 View/Users/admin_index.ctp:30
+msgid "Users"
+msgstr "Benutzer"
+
+#: Controller/UsersController.php:57
+msgid "View User"
+msgstr "Benutzer ansehen"
+
+#: Controller/UsersController.php:62;105;142;265
+msgid "Invalid user"
+msgstr "Ungültiger Benutzer"
+
+#: Controller/UsersController.php:74 View/Users/admin_add.ctp:33
+msgid "Add User"
+msgstr "Benutzer hinzufügen"
+
+#: Controller/UsersController.php:81;111
+msgid "The user has been saved"
+msgstr "Der Benutzer wurde gespeichert"
+
+#: Controller/UsersController.php:86;116
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+"Der Benutzer konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/UsersController.php:100 View/Users/admin_edit.ctp:37
+#: View/Users/admin_view.ctp:32
+msgid "Edit User"
+msgstr "Benutzer bearbeiten"
+
+#: Controller/UsersController.php:147
+msgid "You cannot delete the only administrator"
+msgstr "Sie können den einzigen Administrator nicht löschen"
+
+#: Controller/UsersController.php:153
+msgid "User deleted"
+msgstr "Der Benutzer wurde gelöscht"
+
+#: Controller/UsersController.php:156
+msgid "User was not deleted"
+msgstr "Der Benutzer konnte nicht gelöscht werden"
+
+#: Controller/UsersController.php:162;209 View/Users/login.ctp:53;59
+msgid "Login"
+msgstr "Anmelden"
+
+#: Controller/UsersController.php:193
+msgid "You successfully logged in."
+msgstr "Sie haben sich erfolgreich angemeldet."
+
+#: Controller/UsersController.php:206
+msgid "The username/password you provided were incorrect."
+msgstr "Ihr Benutzername/Passwort sind inkorrekt."
+
+#: Controller/UsersController.php:220
+msgid ""
+"You cannot change the operator-status to \"offline\" in the demonstration "
+"system."
+msgstr ""
+"Sie können den Status im Demonstrationssystem nicht auf \"Offline\" setzen."
+
+#: Controller/UsersController.php:233
+msgid ""
+"You are now online. You will not be notified of any messages until you "
+"navigate to the dashboard. Click here to navigate to the dashboard: :"
+"dashboard_link"
+msgstr ""
+"Sie sind jetzt online. Sie werden nicht über neue Nachrichten informiert, "
+"bis Sie zur Admin-Übersicht navigieren. Klicken Sie hier um zur Admin-"
+"Übersicht zu gelangen: :dashboard_link"
+
+#: Controller/UsersController.php:233
+msgid "Dashboard"
+msgstr "Admin-Übersicht"
+
+#: Controller/UsersController.php:239
+msgid "You are now offline."
+msgstr "Sie sind jetzt offline"
+
+#: Controller/UsersController.php:248
+msgid "You have successfully logged out."
+msgstr "Sie haben sich erfolgreich angemeldet."
+
+#: Controller/UsersController.php:260;285
+msgid "Your Profile"
+msgstr "Ihr Profil"
+
+#: Controller/UsersController.php:272
+msgid "The changes to your profile were saved"
+msgstr "Die Änderungen Ihres Benutzerprofiles wurden gespeichert"
+
+#: Controller/UsersController.php:278
+msgid "Your profile could not be saved. Please, try again."
+msgstr ""
+"Ihr Benutzerprofil konnte nicht gespeichert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: Lib/GlobalClasses.php:69
+msgid "English (British)"
+msgstr "Englisch (Britisch)"
+
+#: Lib/GlobalClasses.php:70
+msgid "English (United States)"
+msgstr "Englisch (USA)"
+
+#: Lib/GlobalClasses.php:71
+msgid "German (Germany)"
+msgstr "Deutsch (Deutschland)"
+
+#: Model/Enquiry.php:112
+msgid ""
+"You just received a new enquiry through Visitor Chat. \n"
+"View the enquiry: :enquiry_url \n"
+"\n"
+"\n"
+"Sender: :sender_name \n"
+"Email: :sender_email \n"
+"\n"
+"Message: \n"
+":enquiry"
+msgstr ""
+"Sie haben soeben eine neue Anfrage über Visitor Chat erhalten. \n"
+"Die Anfrage ansehen: :enquiry_url \n"
+"\n"
+"\n"
+"Absendername: :sender_name \n"
+"Email: :sender_email \n"
+"\n"
+"Nachricht: \n"
+":enquiry"
+
+#: Model/Enquiry.php:121
+msgid "Visitor Chat: You Received a New Enquiry"
+msgstr "Visitor Chat: Sie haben eine neue Anfrage erhalten"
+
+#: Model/Setting.php:89
+msgid "Please enter the sender name."
+msgstr "Bitte geben Sie den Absendernamen an."
+
+#: Model/Setting.php:99
+msgid "Please enter an email address."
+msgstr "Bitte geben Sie eine Emailadresse ein."
+
+#: Plugin/DebugKit/View/Elements/environment_panel.ctp:51
+msgid "Hidef Environment"
+msgstr "Hidef Environment"
+
+#: Plugin/Installer/Controller/InstallationController.php:112;321
+msgid ""
+"You have successfully installed ClientEngage. You may now log-in with your "
+"administrator profile."
+msgstr ""
+"Sie haben ClientEngage erfolgreich installiert. Sie können Sich nun mit "
+"Ihrem Administratorprofil anmelden."
+
+#: Plugin/Installer/Controller/InstallationController.php:118
+msgid "Installation cannot continue, please accept the EULA"
+msgstr "Die Installation kann nicht fortfahren, bitte akzeptieren Sie die EULA"
+
+#: Plugin/Installer/Controller/InstallationController.php:142
+msgid ""
+"You have already configured the database connection. Please proceed with the "
+"installation."
+msgstr ""
+"Sie haben die Datenbank bereits konfiguriert, Bitte fahren Sie mit der "
+"Installation fort."
+
+#: Plugin/Installer/Controller/InstallationController.php:165
+msgid "Could not connect to the database. Please review the configuration."
+msgstr ""
+"Die Datenbankverbindung konnte nicht erstellt werden. Bitte überprüfen Sie "
+"Ihre Eingaben."
+
+#: Plugin/Installer/Controller/InstallationController.php:172
+msgid "Could not write the database configuration."
+msgstr "Die Datenbankkonfiguration konnte nicht geschrieben werden."
+
+#: Plugin/Installer/Controller/InstallationController.php:176
+msgid "Your database configuration was successfull."
+msgstr "Die Datenbankkonfiguration war erfolgreich."
+
+#: Plugin/Installer/Controller/InstallationController.php:186;214
+msgid "Could not connect to the database. Please review your configuration."
+msgstr ""
+"Die Datenbankverbindung konnte nicht hergestellt werden. Bitte überprüfen "
+"Sie Ihre Eingaben."
+
+#: Plugin/Installer/Controller/InstallationController.php:203;246
+msgid ""
+"The database was not properly initialised. Please re-start the installation."
+msgstr ""
+"Die Datenbank wurde nicht vernünftig initialisiert. Bitte starten Sie den "
+"Installationsprozess erneut."
+
+#: Plugin/Installer/Controller/InstallationController.php:209
+msgid "Configuration already exists. Please continue."
+msgstr "Die Konfiguration existiert bereits. Bitte fahren Sie fort."
+
+#: Plugin/Installer/Controller/InstallationController.php:219
+msgid ""
+"Not all tables were initialised successfully. Please drop all initialised "
+"tables and re-start the installation."
+msgstr ""
+"Nicht alle Tabellen wurden erfolgreich initialisiert. Bitte löschen Sie alle "
+"initialisierten Tabellen und starten Sie die Installation erneut."
+
+#: Plugin/Installer/Controller/InstallationController.php:231
+msgid "The system configuration was saved successfully."
+msgstr "Die Systemkonfiguration wurde erfolgreich gespeichert."
+
+#: Plugin/Installer/Controller/InstallationController.php:236
+msgid "Could not save the system configuration. Please review your inputs."
+msgstr ""
+"Die Systemkonfiguration konnte nicht gespeichert werden. Bitte versuchen Sie "
+"es erneut."
+
+#: Plugin/Installer/Controller/InstallationController.php:252
+msgid "Administrator already exists. Please continue."
+msgstr "Der Administrator existiert bereits. Bitte fahren Sie fort."
+
+#: Plugin/Installer/Controller/InstallationController.php:262
+msgid "The administrator has been created."
+msgstr "Der Administrator wurde erstellt."
+
+#: Plugin/Installer/Controller/InstallationController.php:267
+msgid "The administrator could not be saved. Please, try again."
+msgstr ""
+"Der Administrator konnte nicht gespeichert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: Plugin/Installer/Controller/InstallationController.php:283
+msgid ""
+"You have successfully installed ClientEngage Visitor Chat. You may now log-"
+"in with your administrator profile."
+msgstr ""
+"Sie haben ClientEngage Visitor Chat erfolgreich installiert. Sie können Sich "
+"nun mit Ihrem Administratorprofil anmelden."
+
+#: Plugin/Installer/Controller/InstallationController.php:311
+msgid ""
+"<h4>Could not write to the security configuration. Please make sure the file "
+"is writable.</h4><code>:security_core</code>"
+msgstr ""
+"<h4>Die Sicherheitskonfiguration konnte nicht geschrieben werden. Bitte "
+"stellen Sie sicher, dass die Datei Schreibrechte hat.</h4><code>:"
+"security_core</code>"
+
+#: Plugin/Installer/Controller/InstallationController.php:326
+msgid "Could not create the administrative user. Please try again."
+msgstr ""
+"Der Administrator konnte nicht erstellt werden. Bitte versuchen Sie es "
+"erneut."
+
+#: Plugin/Installer/Controller/InstallationController.php:424
+msgid "You must enter the database host."
+msgstr "Sie müssen einen Datenbankserver angeben."
+
+#: Plugin/Installer/Controller/InstallationController.php:425
+msgid "You must enter the database name."
+msgstr "Sie müssen den Datenbanknamen angeben."
+
+#: Plugin/Installer/Controller/InstallationController.php:426
+msgid "You must enter the database username."
+msgstr "Sie müssen den Datenbankbenutzernamen angeben."
+
+#: Plugin/Installer/Controller/InstallationController.php:442
+msgid "Please enter valid database settings."
+msgstr "Bitte geben Sie gültige Datenbankdaten ein."
+
+#: Plugin/Installer/Controller/InstallationController.php:524
+msgid ""
+"<h4>The table \":table_name\" could not be created. Please clear any "
+"existing ClientEngage tables before continuing the installation.</h4>:"
+"error_message"
+msgstr ""
+"<h4>Die Tabelle \":table_name\" konnte nicht erstellt werden. Bitte löschen "
+"Sie die bereits erstellten ClientEngage Tabellen, bevor Sie mit der "
+"Installation fortfahren.</h4>:error_message"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:49
+msgid "Administrator Settings"
+msgstr "Administratoreneinstellungen"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:50
+#: View/Contents/admin_chat_javascript.ctp:307
+#: View/Discussions/admin_index.ctp:54 View/Discussions/admin_view.ctp:43
+#: View/Enquiries/admin_index.ctp:55 View/Enquiries/admin_view.ctp:43
+#: View/Settings/admin_index.ctp:104 View/Users/admin_add.ctp:35
+#: View/Users/admin_edit.ctp:40 View/Users/admin_index.ctp:34
+#: View/Users/admin_profile.ctp:29 View/Users/admin_view.ctp:39
+msgid "Username"
+msgstr "Benutzername"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:51
+#: View/Discussions/admin_index.ctp:55 View/Discussions/admin_view.ctp:48
+#: View/Enquiries/admin_index.ctp:56 View/Enquiries/admin_view.ctp:48
+#: View/Users/admin_add.ctp:36 View/Users/admin_edit.ctp:41
+#: View/Users/admin_index.ctp:35 View/Users/admin_profile.ctp:30
+#: View/Users/admin_view.ctp:44 View/Users/login.ctp:57
+msgid "Email"
+msgstr "Email"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:52
+#: Plugin/Installer/View/Installation/database_setup.ctp:52
+#: View/Settings/admin_index.ctp:105 View/Users/admin_add.ctp:37
+#: View/Users/login.ctp:58
+msgid "Password"
+msgstr "Passwort"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:52
+#: View/Users/admin_edit.ctp:42 View/Users/admin_profile.ctp:31
+msgid "Enter new password"
+msgstr "Neues Passwort eingeben"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:53
+#: View/Users/admin_add.ctp:38 View/Users/admin_edit.ctp:43
+#: View/Users/admin_profile.ctp:32
+msgid "Confirm Password"
+msgstr "Neues Passwort bestätigen"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:53
+#: View/Users/admin_add.ctp:38 View/Users/admin_edit.ctp:43
+#: View/Users/admin_profile.ctp:32
+msgid "Repeat new password"
+msgstr "Neues Passwort bestätigen"
+
+#: Plugin/Installer/View/Installation/administrator.ctp:57
+msgid "Finalise Installation"
+msgstr "Installation finalisieren"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:49
+msgid "Database Host"
+msgstr "Datenbank Host"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:50
+msgid "TCP Port / UNIX Socket"
+msgstr "TCP Port / UNIX Socket"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:50
+msgid "Optional"
+msgstr "optional"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:51
+msgid "Database Username"
+msgstr "Datenbank Benutzername"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:53
+msgid "Database Name"
+msgstr "Datenbankname"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:54
+msgid "Table Prefix"
+msgstr "Tabellenpräfix"
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:55
+#: Plugin/Installer/View/Installation/settings.ctp:54
+msgid "Continue"
+msgstr "Fortfahren"
+
+#: Plugin/Installer/View/Installation/finalisation.ctp:51
+msgid "Perform Final Configurations"
+msgstr "Abschließende Konfiguration durchführen"
+
+#: Plugin/Installer/View/Installation/index.ctp:51
+#: Plugin/Updater/View/Update/index.ctp:47
+msgid "Your temporary directory is writable."
+msgstr "Ihr temporäres Verzeichnis ist beschreibbar."
+
+#: Plugin/Installer/View/Installation/index.ctp:56
+#: Plugin/Updater/View/Update/index.ctp:52
+msgid "Your temporary directory is not writable."
+msgstr "Ihr temporäres Verzeichnis ist nicht beschreibbar."
+
+#: Plugin/Installer/View/Installation/index.ctp:57;68;79
+#: Plugin/Updater/View/Update/index.ctp:53;64;75
+msgid "Please make the following path writable: "
+msgstr "Bitte geben Sie dem folgenden Pfad Schreibrechte"
+
+#: Plugin/Installer/View/Installation/index.ctp:62
+#: Plugin/Updater/View/Update/index.ctp:58
+msgid "Your configuration directory is writable."
+msgstr "Ihr Konfigurationsverzeichnis ist beschreibbar."
+
+#: Plugin/Installer/View/Installation/index.ctp:67
+#: Plugin/Updater/View/Update/index.ctp:63
+msgid "Your configuration directory is not writable."
+msgstr "Ihr Konfigurationsverzeichnis ist nicht beschreibbar."
+
+#: Plugin/Installer/View/Installation/index.ctp:73
+#: Plugin/Updater/View/Update/index.ctp:69
+msgid "Your security configuration is writable."
+msgstr "Ihre Sicherheits-Konfiguration ist beschreibbar."
+
+#: Plugin/Installer/View/Installation/index.ctp:78
+#: Plugin/Updater/View/Update/index.ctp:74
+msgid "Your security configuration is not writable."
+msgstr "Ihre Sicherheits-Konfiguration ist nicht beschreibbar."
+
+#: Plugin/Installer/View/Installation/index.ctp:84
+#: Plugin/Updater/View/Update/index.ctp:80
+msgid ""
+"The PHP version running on your server (%s) fulfills the minimum requirement "
+"(5.2.8)."
+msgstr ""
+"Die  PHP Version Ihres Servers (%s) erfüllt die minimalen "
+"Systemvoraussetzungen (5.2.8)."
+
+#: Plugin/Installer/View/Installation/index.ctp:89
+#: Plugin/Updater/View/Update/index.ctp:85
+msgid ""
+"The PHP version running on your server (%s) does not fulfill the minimum "
+"requirement (5.2.8)."
+msgstr ""
+"Die  PHP Version Ihres Servers (%s) erfüllt nicht die minimalen "
+"Systemvoraussetzungen (5.2.8)."
+
+#: Plugin/Installer/View/Installation/index.ctp:95
+#: Plugin/Updater/View/Update/index.ctp:91
+msgid "The PDO extensions are loaded."
+msgstr "Die PDO Extensions sind geladen."
+
+#: Plugin/Installer/View/Installation/index.ctp:100
+#: Plugin/Updater/View/Update/index.ctp:96
+msgid "The necessary PDO extensions are not loaded."
+msgstr "Die notwendigen PDO Extensions sind nicht geladen."
+
+#: Plugin/Installer/View/Installation/index.ctp:101
+#: Plugin/Updater/View/Update/index.ctp:97
+msgid ""
+"Please enable the PHP PDO extension as well as the MySQL PDO extension. You "
+"may have to ask your hosting-provider to enable these."
+msgstr ""
+"Bitte aktivieren Sie die PHP PDO Extensions sowie die MySQL PDO Extension. "
+"Es ist möglich, dass Ihr Hosting Provider dies für Sie vornehmen muss."
+
+#: Plugin/Installer/View/Installation/index.ctp:240
+#: Plugin/Updater/View/Update/index.ctp:237
+msgid "I agree to the above terms."
+msgstr "Ich stimme den obigen Bestimmungen zu."
+
+#: Plugin/Installer/View/Installation/index.ctp:241
+msgid "Begin Installation"
+msgstr "Mit der Installation beginnen"
+
+#: Plugin/Installer/View/Installation/index.ctp:246
+#: Plugin/Updater/View/Update/index.ctp:243
+msgid ""
+"Unfortunately, the installation cannot proceed due to the minimum "
+"requirements not being met."
+msgstr ""
+"Leider kann die Installation nicht fortfahren, da Ihr System nicht die "
+"minimalen Systemanforderungen erfüllt."
+
+#: Plugin/Installer/View/Installation/initialisation.ctp:45
+msgid ""
+"You have successfully configured the database connection. Please click \":"
+"btn_name\" to create all necessary database tables."
+msgstr ""
+"Sie haben die Datenbankverbindung erfolgreich konfiguriert. Bitte klicken "
+"Sie \":btn_name\" um die notwendigen Tabellen zu erstellen."
+
+#: Plugin/Installer/View/Installation/initialisation.ctp:45;48
+msgid "Initialise Database"
+msgstr "Datenbankinitialisierung"
+
+#: Plugin/Installer/View/Installation/settings.ctp:49
+#: View/Elements/layout/topbar.ctp:45
+msgid "System Settings"
+msgstr "Systemeinstellungen"
+
+#: Plugin/Installer/View/Installation/settings.ctp:50
+#: View/Settings/admin_index.ctp:62
+msgid "System Language"
+msgstr "Systemsprache"
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:111
+msgid "Plugin name to be used"
+msgstr "Plugin name to be used"
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:115
+msgid "Force 'generate' to compare all tables."
+msgstr "Force 'generate' to compare all tables."
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:119
+msgid "Set db config <config>. Uses 'default' if none is specified."
+msgstr "Set db config <config>. Uses 'default' if none is specified."
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:124
+msgid ""
+"Disables automatic creation of migrations table and running any internal "
+"plugin migrations"
+msgstr ""
+"Disables automatic creation of migrations table and running any internal "
+"plugin migrations"
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:126
+msgid "Displays a status of all plugin and app migrations."
+msgstr "Displays a status of all plugin and app migrations."
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:128
+msgid "Bake a complete MVC. optional <name> of a Model"
+msgstr "Bake a complete MVC. optional <name> of a Model"
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:130
+msgid "Run a migration to given direction or version."
+msgstr "Run a migration to given direction or version."
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:132;134
+msgid "Generates a migration file."
+msgstr "Generates a migration file."
+
+#: Plugin/Updater/Controller/UpdateController.php:66
+msgid "No update necessary."
+msgstr "Kein Update notwendig"
+
+#: Plugin/Updater/Controller/UpdateController.php:72
+msgid "Update cannot continue, please accept the EULA"
+msgstr "Das Update kann nicht fortfahren, bitte akzeptieren Sie die EULA"
+
+#: Plugin/Updater/Controller/UpdateController.php:106
+msgid "An error has occured whilst running the update: "
+msgstr "Beim Durchführen des Updates trat ein Fehler auf: "
+
+#: Plugin/Updater/Controller/UpdateController.php:124
+msgid ""
+"Part of the update could not be performed. The new version information could "
+"not be applied. Please open the following file and replace the version "
+"number with \":version\": "
+msgstr ""
+"Teil des Updates konnte nicht durchgeführt werden. Die Versionsinformationen "
+"konnten nicht angewendet werden. Bitte öffnen Sie die folgende Datei und "
+"ändern Sie die Versionsnummer nach \":version\":"
+
+#: Plugin/Updater/Controller/UpdateController.php:131
+msgid ""
+"Part of the update could not be performed. Please delete the following file: "
+msgstr ""
+"Teil des Updates konnte nicht durchgeführt werden. Bitte löschen Sie die "
+"folgende Datei: "
+
+#: Plugin/Updater/Controller/UpdateController.php:135
+msgid ""
+"You have successfully updated ClientEngage Visitor Chat to version :version"
+msgstr ""
+"Sie haben ClientEngage Visitor Chat erfolgreich auf die Version :version "
+"aktualisiert"
+
+#: Plugin/Updater/View/Update/index.ctp:238
+msgid "Perform Update"
+msgstr "Update durchführen"
+
+#: Plugin/Updater/View/Update/update.ctp:42
+msgid ""
+"Important: after running the update, please navigate to \"Administration -> "
+"Settings\", check any new settings and then click SAVE. Even if you do not "
+"change any settings, it is important to re-save the configuration."
+msgstr ""
+
+#: View/Contents/admin_about.ctp:26
+msgid ""
+"The ClientEngage Visitor Chat is a fully-featured real-time chat for your "
+"websites. And best of all: Visitor Chat comes with a Windows-based client "
+"out-of-the-box. Without having to visit the Visitor Chat’s admin-interface "
+"you will be notified from your Windows tray and can start chatting straight "
+"away!<br /><br />\n"
+"By including one single snippet of JavaScript, this interactive and engaging "
+"Chat can be used on any website – whether you are using Wordpress, Joomla! "
+"or plain HTML."
+msgstr ""
+"Der ClientEngage Visitor Chat ist ein voll-ausgestattetes Chat-System für "
+"Ihre Internetseiten. And das beste ist, dass Visitor Chat zusätzlich über "
+"einen Windows-basiertes Desktopprogramm verfügt. Ohne die Web-Administration "
+"Ihrer Visitor Chat Installation besuchen zu müssen werden Sie direkt aus "
+"Ihrer Taskbar über neue Nachrichten informiert und Sie können den Chat "
+"direkt in Ihrer Windows-Oberfläche halten.<br /><br />\n"
+"Durch das Einbinden eines simplen JavaScript-Codes können Sie diesen "
+"interaktiven Chat in jede Internetseite einbinden – ob Sie Wordpress, "
+"Joomla! oder reines HTML verwenden."
+
+#: View/Contents/admin_chat_javascript.ctp:25 View/Helper/LayoutHelper.php:51
+msgid "Yes"
+msgstr "Ja"
+
+#: View/Contents/admin_chat_javascript.ctp:26 View/Helper/LayoutHelper.php:53
+msgid "No"
+msgstr "Nein"
+
+#: View/Contents/admin_chat_javascript.ctp:27
+msgid "It appears that your operator has gone offline."
+msgstr "Es scheint als habe Ihr Moderator die SItzung beendet."
+
+#: View/Contents/admin_chat_javascript.ctp:306
+msgid "Visitor Data"
+msgstr "Besucherdaten"
+
+#: View/Contents/admin_chat_javascript.ctp:308
+msgid "E-Mail"
+msgstr "Email"
+
+#: View/Contents/admin_chat_javascript.ctp:309
+msgid "Started"
+msgstr "Angefangen"
+
+#: View/Contents/admin_chat_javascript.ctp:310
+msgid "Last Activity"
+msgstr "Zuletzt aktiv"
+
+#: View/Contents/admin_chat_javascript.ctp:311
+#: View/Discussions/admin_view.ctp:78
+msgid "Visitor Exited"
+msgstr "Besucher hat beendet"
+
+#: View/Contents/admin_chat_javascript.ctp:312
+#: View/Discussions/admin_view.ctp:53 View/Enquiries/admin_view.ctp:63
+msgid "Referer"
+msgstr "Referer"
+
+#: View/Contents/admin_chat_javascript.ctp:313
+msgid "Languages"
+msgstr "Sprachen"
+
+#: View/Contents/admin_chat_javascript.ctp:314
+#: View/Discussions/admin_view.ctp:58
+msgid "Visitor Time"
+msgstr "Besucher-Uhrzeit"
+
+#: View/Contents/admin_chat_javascript.ctp:315
+#: View/Helper/LayoutHelper.php:132
+msgid "Browser"
+msgstr "Browser"
+
+#: View/Contents/admin_chat_javascript.ctp:316
+msgid "OS"
+msgstr "OS"
+
+#: View/Contents/admin_chat_javascript.ctp:317
+#: View/Discussions/admin_view.ctp:107 View/Enquiries/admin_view.ctp:58
+msgid "Current Page"
+msgstr "Aktuelle Seite"
+
+#: View/Contents/admin_chat_javascript.ctp:363
+msgid "{visitorname} is typing..."
+msgstr "{visitorname} ist am tippen..."
+
+#: View/Dashboard/admin_index.ctp:26
+msgid "Operator Status: Offline"
+msgstr "Moderatorenstatus: Offline"
+
+#: View/Dashboard/admin_index.ctp:27
+msgid "You need to go online if you wish to use the chat interface."
+msgstr ""
+"Sie müssen Ihren Status \"online\" setzen, wenn Sie das Chat-Interface "
+"verwenden möchten."
+
+#: View/Dashboard/admin_index.ctp:169
+msgid "Default"
+msgstr "Standard"
+
+#: View/Dashboard/admin_index.ctp:173
+msgid "You can select any active discussions from the tabs above."
+msgstr ""
+"Sie können aktive Diskussionen von den obigen Registerkarten auswählen."
+
+#: View/Discussions/admin_index.ctp:42 View/Elements/layout/topbar.ctp:38
+msgid "Past Discussions"
+msgstr "Vergangene Diskussionen"
+
+#: View/Discussions/admin_index.ctp:50 View/Enquiries/admin_index.ctp:50
+#: View/Styles/admin_index.ctp:45 View/Users/admin_edit.ctp:31
+#: View/Users/admin_index.ctp:55
+msgid "Delete"
+msgstr "Löschen"
+
+#: View/Discussions/admin_index.ctp:50
+msgid "Are you sure you wish to delete all selected discussions?"
+msgstr ""
+"Sind Sie sich sicher, dass Sie alle ausgewählten Diskussionen löschen "
+"möchten?"
+
+#: View/Discussions/admin_index.ctp:56 View/Discussions/admin_view.ctp:83
+#: View/Styles/admin_index.ctp:37 View/Users/admin_index.ctp:38
+#: View/Users/admin_view.ctp:59
+msgid "Modified"
+msgstr "Geändert"
+
+#: View/Discussions/admin_index.ctp:57 View/Discussions/admin_view.ctp:88;108
+#: View/Enquiries/admin_index.ctp:58 View/Enquiries/admin_view.ctp:83
+#: View/Styles/admin_index.ctp:36 View/Users/admin_index.ctp:37
+#: View/Users/admin_view.ctp:54
+msgid "Created"
+msgstr "Erstellt"
+
+#: View/Discussions/admin_index.ctp:65 View/Enquiries/admin_index.ctp:66
+#: View/Users/admin_index.ctp:53
+msgid "View"
+msgstr "Ansehen"
+
+#: View/Discussions/admin_view.ctp:26 View/Enquiries/admin_view.ctp:26
+#: View/Styles/admin_add.ctp:26 View/Styles/admin_edit.ctp:26
+#: View/Styles/admin_index.ctp:33 View/Users/admin_add.ctp:26
+#: View/Users/admin_edit.ctp:26 View/Users/admin_index.ctp:39
+#: View/Users/admin_view.ctp:26
+msgid "Actions"
+msgstr "Aktionen"
+
+#: View/Discussions/admin_view.ctp:27
+msgid "List Discussions"
+msgstr "Diskussionen auflisten"
+
+#: View/Discussions/admin_view.ctp:31
+msgid "Delete Discussion"
+msgstr "Diskussion löschen"
+
+#: View/Discussions/admin_view.ctp:31
+msgid "Are you sure you want to delete this discussion with \"%s\"?"
+msgstr ""
+"Sind Sie sich sicher, dass Sie die Diskussion mit \"%s\" löschen möchten?"
+
+#: View/Discussions/admin_view.ctp:36
+msgid "Discussion"
+msgstr "Diskussion"
+
+#: View/Discussions/admin_view.ctp:38 View/Enquiries/admin_view.ctp:38
+msgid "Avatar"
+msgstr "Benutzerbild"
+
+#: View/Discussions/admin_view.ctp:63 View/Enquiries/admin_view.ctp:68
+msgid "Visitor Languages"
+msgstr "Besuchersprachen"
+
+#: View/Discussions/admin_view.ctp:68 View/Enquiries/admin_view.ctp:73
+msgid "User Agent"
+msgstr "User Agent"
+
+#: View/Discussions/admin_view.ctp:73 View/Enquiries/admin_view.ctp:78
+msgid "Remote Address"
+msgstr "IP"
+
+#: View/Discussions/admin_view.ctp:100
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: View/Discussions/admin_view.ctp:105 View/Users/admin_view.ctp:37
+msgid "User"
+msgstr "Benutzer"
+
+#: View/Discussions/admin_view.ctp:106 View/Enquiries/admin_index.ctp:57
+msgid "Message"
+msgstr "Nachricht"
+
+#: View/Elements/common/defaultpagination.ctp:32
+msgid "previous"
+msgstr "zurück"
+
+#: View/Elements/common/defaultpagination.ctp:34
+msgid "next"
+msgstr "weiter"
+
+#: View/Elements/common/defaultpagination.ctp:38
+msgid ""
+"<small class=\"smalltext\">Page {:page} of {:pages} (showing {:current} "
+"records out of a total of {:count})</small>"
+msgstr ""
+"<small class=\"smalltext\">Seite {:page} von {:pages} (es werden {:current} "
+"von insgesamt {:count} Objekten angezeigt)</small>"
+
+#: View/Elements/layout/footer.ctp:28 View/Elements/layout/topbar.ctp:48;49
+msgid "About"
+msgstr "Über"
+
+#: View/Elements/layout/topbar.ctp:32
+msgid "ClientEngage Visitor Chat v:app_version"
+msgstr "ClientEngage Visitor Chat v:app_version"
+
+#: View/Elements/layout/topbar.ctp:37
+msgid "Discussions"
+msgstr "Diskussionen"
+
+#: View/Elements/layout/topbar.ctp:39 View/Enquiries/admin_index.ctp:42
+msgid "Enquiries"
+msgstr "Anfragen"
+
+#: View/Elements/layout/topbar.ctp:42
+msgid "Administration"
+msgstr "Administration"
+
+#: View/Elements/layout/topbar.ctp:44
+msgid "Chat Styles"
+msgstr "Chat-Templates"
+
+#: View/Elements/layout/topbar.ctp:46
+msgid "Administrators"
+msgstr "Administratoren"
+
+#: View/Elements/layout/topbar.ctp:47
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: View/Elements/layout/topbar.ctp:61
+msgid "Online"
+msgstr "Online"
+
+#: View/Elements/layout/topbar.ctp:65
+msgid "Offline"
+msgstr "Offline"
+
+#: View/Elements/layout/topbar.ctp:71
+msgid "Your profile"
+msgstr "Ihr Profil"
+
+#: View/Elements/layout/topbar.ctp:73
+msgid "Log-out"
+msgstr "Abmelden"
+
+#: View/Enquiries/admin_index.ctp:50
+msgid "Are you sure you wish to delete all selected enquiries?"
+msgstr ""
+"Sind Sie sich sicher, dass Sie alle ausgewählten Anfragen löschen möchten?"
+
+#: View/Enquiries/admin_index.ctp:54 View/Enquiries/admin_view.ctp:53
+msgid "Read"
+msgstr "Gelesen"
+
+#: View/Enquiries/admin_view.ctp:27
+msgid "List Enquiries"
+msgstr "Anfragen auflisten"
+
+#: View/Enquiries/admin_view.ctp:31
+msgid "Delete Enquiry"
+msgstr "Anfrage löschen"
+
+#: View/Enquiries/admin_view.ctp:31
+msgid "Are you sure you want to delete this enquiry from \"%s\"?"
+msgstr "Sind Sie sich sicher, dass Sie die Anfrage von \"%s\" löschen möchten?"
+
+#: View/Enquiries/admin_view.ctp:36
+msgid "Enquiry"
+msgstr "Anfrage"
+
+#: View/Enquiries/admin_view.ctp:91
+msgid "Message Text"
+msgstr "Nachrichtentext"
+
+#: View/Helper/AppTimeHelper.php:35
+msgid "never"
+msgstr "niemals"
+
+#: View/Helper/LayoutHelper.php:49
+msgid "N/A"
+msgstr "N/A"
+
+#: View/Helper/LayoutHelper.php:84
+msgid "and"
+msgstr "und"
+
+#: View/Helper/LayoutHelper.php:133
+msgid "Operating System"
+msgstr "Betriebssystem"
+
+#: View/Layouts/system.ctp:38;54
+msgid "Please wait"
+msgstr "Bitte warten"
+
+#: View/Layouts/system.ctp:38;54
+msgid "Processing your request"
+msgstr "Ihre Anfrage wird bearbeitet"
+
+#: View/Settings/admin_index.ctp:26
+msgid "Edit Settings"
+msgstr "Eintellungen bearbeiten"
+
+#: View/Settings/admin_index.ctp:48
+msgid "JavaScript Code"
+msgstr "JavaScript Code"
+
+#: View/Settings/admin_index.ctp:54
+msgid "Chat API Url"
+msgstr "Chat API URL"
+
+#: View/Settings/admin_index.ctp:61
+msgid "Chat API URL"
+msgstr "Chat API URL"
+
+#: View/Settings/admin_index.ctp:63
+msgid "System Timezone"
+msgstr "Systemzeitzone"
+
+#: View/Settings/admin_index.ctp:64
+msgid "Chat Style"
+msgstr "Chat-Template"
+
+#: View/Settings/admin_index.ctp:65
+msgid "Hover Animation"
+msgstr "Hover-Animation"
+
+#: View/Settings/admin_index.ctp:65
+msgid ""
+"If you activate this option, the chat will be shown with half/transparency. "
+"The transparency is removed when you hover the chat, or when it is open."
+msgstr ""
+"Wenn Sie diese Option aktivieren wird der Chat halbtransparent dargestellt. "
+"Die Halbtransparenz wird entfernt, sobald Sie mit der Maus über den Chat "
+"fahren, oder wenn der Chat geöffnet ist."
+
+#: View/Settings/admin_index.ctp:66
+msgid "Hide Chat for Mobile Devices"
+msgstr "Chat für mobile Geräte verbergen"
+
+#: View/Settings/admin_index.ctp:66
+msgid ""
+"If you activate this option, the chat will not be shown for mobile devices."
+msgstr ""
+"Wenn Sie diese Option aktivieren, wird der Chat für mobile Geräte verborgen."
+
+#: View/Settings/admin_index.ctp:68
+msgid "Send Email Notifications"
+msgstr "Email -Notifikationen senden"
+
+#: View/Settings/admin_index.ctp:68
+msgid ""
+"Check this box and configure the email transport if you wish to be notified "
+"when a visitor submits an enquiry. Please note that the settings below are "
+"the sender AND receiver of the email notifications."
+msgstr ""
+"Aktivieren Sie diese Option wenn Sie eine Email-Benachrichtigung wünschen "
+"wenn ein Besucher das Anfrageformular absended. Bitte beachten Sie, dass die "
+"Einstellungen unterhalb der Absender- SOWIE Empfänger der Email-"
+"Benachrichtigungen ist."
+
+#: View/Settings/admin_index.ctp:95
+msgid "Email Settings"
+msgstr "Email-Eintellungen"
+
+#: View/Settings/admin_index.ctp:96
+msgid "Sender Email"
+msgstr "Absender Email"
+
+#: View/Settings/admin_index.ctp:97
+msgid "Sender Name"
+msgstr "Absendername"
+
+#: View/Settings/admin_index.ctp:98
+msgid "Transport Method"
+msgstr "Transportmethode"
+
+#: View/Settings/admin_index.ctp:98
+msgid "PHP mail() function"
+msgstr "PHP mail() Funktion"
+
+#: View/Settings/admin_index.ctp:98
+msgid "SMTP account"
+msgstr "SMTP Konto"
+
+#: View/Settings/admin_index.ctp:100
+msgid "SMTP Settings"
+msgstr "SMTP Eintellungen"
+
+#: View/Settings/admin_index.ctp:101
+msgid ""
+"Please enter your SMTP details below. For example, for GMail you need to use "
+"the following data: ssl://smtp.gmail.com (host), 465 (port), your.name@gmail."
+"com (username) and your password. After sending the test-email it is "
+"<strong>important</strong> that you save your changes by clicking \"Save "
+"Configuration\" below."
+msgstr ""
+"Bitte geben Sie Ihre SMTP Daten unterhalb an. Zum Beispiel, im Falle von "
+"GMail verwenden Sie bitte die Folgenden Daten: : ssl://smtp.gmail.com "
+"(Host), 465 (Port), ihr.name@gmail.com (Benutzername) und Ihr Passwort. Nach "
+"dem versenden der Test Email <strong>ist es wichtig</strong> dass Sie Ihre "
+"Eingaben speichern indem Sie \"Konfiguration Speichern\" klicken."
+
+#: View/Settings/admin_index.ctp:102
+msgid "Host"
+msgstr "Host"
+
+#: View/Settings/admin_index.ctp:103
+msgid "Port"
+msgstr "Port"
+
+#: View/Settings/admin_index.ctp:106
+msgid "Test-Email"
+msgstr "Test-Email"
+
+#: View/Settings/admin_index.ctp:106
+msgid "Send Test-Email"
+msgstr "Test-Email versenden"
+
+#: View/Settings/admin_index.ctp:111
+msgid "Text Translations"
+msgstr "Textübersetzungen"
+
+#: View/Settings/admin_index.ctp:114
+msgid "Header (currently chatting)"
+msgstr "Header (am chatten)"
+
+#: View/Settings/admin_index.ctp:115
+msgid "Header (online)"
+msgstr "Header (online)"
+
+#: View/Settings/admin_index.ctp:116
+msgid "Header (offline)"
+msgstr "Header (offline)"
+
+#: View/Settings/admin_index.ctp:117
+msgid "Notification: operator offline"
+msgstr "Nachricht: Moderator offline"
+
+#: View/Settings/admin_index.ctp:118
+msgid "Text: offline"
+msgstr "Text: Offline"
+
+#: View/Settings/admin_index.ctp:119
+msgid "Text: online"
+msgstr "Text: Online"
+
+#: View/Settings/admin_index.ctp:121
+msgid "Placeholder: username"
+msgstr "Platzhalter: Benutzername"
+
+#: View/Settings/admin_index.ctp:122
+msgid "Placeholder: email"
+msgstr "Platzhalter: Email"
+
+#: View/Settings/admin_index.ctp:123
+msgid "Placeholder: enquiry message"
+msgstr "Platzhalter: Anfragennachricht"
+
+#: View/Settings/admin_index.ctp:124
+msgid "Button: enquiry button"
+msgstr "Button: Anfragen-Button"
+
+#: View/Settings/admin_index.ctp:125
+msgid "Message: enquiry submitted"
+msgstr "Nachricht: Anfrage versandt"
+
+#: View/Settings/admin_index.ctp:126
+msgid "Button: start chat"
+msgstr "Button: Chat starten"
+
+#: View/Settings/admin_index.ctp:127
+msgid "Text: operator composing"
+msgstr "Text: Administrator ist am tippen"
+
+#: View/Settings/admin_index.ctp:127
+msgid ""
+"Use {username} as placeholder for the admin's name: {username} is typing..."
+msgstr ""
+"Verwenden Sie {username} als Platzhalter für den Namen des Admins {username} "
+"ist am tippen..."
+
+#: View/Settings/admin_index.ctp:130
+msgid "Text: first message"
+msgstr "Text: Erste Nachricht"
+
+#: View/Settings/admin_index.ctp:131
+msgid "Button: exit chat"
+msgstr "Button: Chat beenden"
+
+#: View/Settings/admin_index.ctp:132
+msgid "Text: exit chat question"
+msgstr "Text: Chat beenden Bestätigung"
+
+#: View/Settings/admin_index.ctp:133
+msgid "Button: exit chat confirm"
+msgstr "Button: Chat beenden Bestätigung"
+
+#: View/Settings/admin_index.ctp:134
+msgid "Button: exit chat cancel"
+msgstr "Button: Chat beenden abbrechen"
+
+#: View/Settings/admin_index.ctp:135
+msgid "Placeholder: message"
+msgstr "Platzhater: Nachricht"
+
+#: View/Settings/admin_index.ctp:136
+msgid "Button: send message"
+msgstr "Button: Nachricht senden"
+
+#: View/Settings/admin_index.ctp:140
+msgid "Validation Translations"
+msgstr "Validierungs-Übersetzungen"
+
+#: View/Settings/admin_index.ctp:143
+msgid "Validation: email required"
+msgstr "Validierung: Email erforderlich"
+
+#: View/Settings/admin_index.ctp:144
+msgid "Validation: email invalid"
+msgstr "Validierung: Email ungültig"
+
+#: View/Settings/admin_index.ctp:145
+msgid "Validation: email maxlength"
+msgstr "Validierung: Email Maximallänge"
+
+#: View/Settings/admin_index.ctp:147
+msgid "Validation: username required"
+msgstr "Validierung: Benutzername erforderlich"
+
+#: View/Settings/admin_index.ctp:148
+msgid "Validation: username maxlength"
+msgstr "Validierung: Benutzername Maximallänge"
+
+#: View/Settings/admin_index.ctp:149
+msgid "Validation: enquiry required"
+msgstr "Validierung: Anfrage erforderlich"
+
+#: View/Settings/admin_index.ctp:150
+msgid "Validation: enquiry maxlength"
+msgstr "Validierung: Anfrage Maximallänge"
+
+#: View/Settings/admin_index.ctp:152
+msgid "Validation: message required"
+msgstr "Validierung: Nachricht erforderlich"
+
+#: View/Settings/admin_index.ctp:153
+msgid "Validation: message maxlength"
+msgstr "Validierung: Nachricht-Maximallänge"
+
+#: View/Settings/admin_index.ctp:157 View/Styles/admin_add.ctp:39
+#: View/Styles/admin_edit.ctp:44 View/Users/admin_add.ctp:44
+#: View/Users/admin_edit.ctp:49
+msgid "Submit"
+msgstr "Absenden"
+
+#: View/Styles/admin_add.ctp:27 View/Styles/admin_edit.ctp:27
+msgid "List Styles"
+msgstr "Templates auflisten"
+
+#: View/Styles/admin_add.ctp:33
+msgid "Add Style"
+msgstr "Template erstellen"
+
+#: View/Styles/admin_add.ctp:35 View/Styles/admin_edit.ctp:40
+#: View/Styles/admin_index.ctp:34
+msgid "Title"
+msgstr "Titel"
+
+#: View/Styles/admin_add.ctp:36 View/Styles/admin_edit.ctp:41
+#: View/Styles/admin_index.ctp:35
+msgid "Style CSS"
+msgstr "Style CSS"
+
+#: View/Styles/admin_add.ctp:40 View/Styles/admin_edit.ctp:45
+#: View/Users/admin_add.ctp:45 View/Users/admin_edit.ctp:50
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: View/Styles/admin_edit.ctp:31
+msgid "Delete Style"
+msgstr "Template löschen"
+
+#: View/Styles/admin_edit.ctp:31 View/Styles/admin_index.ctp:45
+#: View/Users/admin_edit.ctp:31 View/Users/admin_view.ctp:33
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr "Sind Sie sich sicher, dass Sie \"%s\" löschen möchten?"
+
+#: View/Styles/admin_edit.ctp:37
+msgid "Edit Style"
+msgstr "Template bearbeiten"
+
+#: View/Styles/admin_index.ctp:27
+msgid "New Style"
+msgstr "Neues Template"
+
+#: View/Styles/admin_index.ctp:30
+msgid "Styles"
+msgstr "Styles"
+
+#: View/Styles/admin_index.ctp:44 View/Users/admin_index.ctp:54
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: View/Users/admin_add.ctp:27 View/Users/admin_edit.ctp:27
+#: View/Users/admin_view.ctp:27
+msgid "List Users"
+msgstr "Benutzer auflisten"
+
+#: View/Users/admin_add.ctp:39 View/Users/admin_edit.ctp:44
+#: View/Users/admin_index.ctp:36 View/Users/admin_view.ctp:49
+msgid "Active"
+msgstr "Aktiv"
+
+#: View/Users/admin_add.ctp:41
+msgid "Receive notifications from following forms"
+msgstr "Notifikationen der folgenden Formulare erhalten"
+
+#: View/Users/admin_edit.ctp:42 View/Users/admin_profile.ctp:31
+msgid "Password "
+msgstr "Passwort"
+
+#: View/Users/admin_edit.ctp:42 View/Users/admin_profile.ctp:31
+msgid "Please leave empty if you do not wish you change your password."
+msgstr ""
+"Bitte lassen Sie das Feld leer, falls Sie Ihr Passwort nicht ändern möchten."
+
+#: View/Users/admin_edit.ctp:46
+msgid "Submission Notifications"
+msgstr "Versand-Notifikationen"
+
+#: View/Users/admin_edit.ctp:46
+msgid "Receive submission notifications from the following forms."
+msgstr "Erhalten Sie Notifikationen von den folgenden Formularen."
+
+#: View/Users/admin_index.ctp:27
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+#: View/Users/admin_index.ctp:55
+msgid "Are you sure you want to delete # %s?"
+msgstr "Sind Sie sich sicher, dass Sie # %s löschen möchten?"
+
+#: View/Users/admin_profile.ctp:26
+msgid "Edit Your Profile"
+msgstr "Bearbeiten Sie Ihr Profil"
+
+#: View/Users/admin_profile.ctp:36
+msgid "Save Profile"
+msgstr "Profil speichern"
+
+#: View/Users/admin_view.ctp:33
+msgid "Delete User"
+msgstr "Benutzer löschen"
+
+#: View/Users/admin_view.ctp:66
+msgid "Receives Notifications for the Following Visitorforms:"
+msgstr "Erhält Notifikationen von den folgenden Formularen:"
+
+#: Model/Discussion.php:validation for field uid
+msgid "uuid"
+msgstr ""
+
+#: Model/Discussion.php:validation for field username;validation email
+#: Model/Enquiry.php:validation email;validation message
+#: Model/Message.php:validation
+msgid "notempty"
+msgstr ""
+
+#: Model/Discussion.php:validation for field username;validation email
+#: Model/Enquiry.php:validation email;validation message
+#: Model/Message.php:validation
+msgid "maxlength"
+msgstr ""
+
+#: Model/Discussion.php:validation for field email
+#: Model/Enquiry.php:validation
+msgid "email"
+msgstr ""
+
+#: Model/Discussion.php:validation for field remote_address
+msgid "The IP address is invalid"
+msgstr "Die IP Adresse is ungültig"
+
+#: Model/Setting.php:validation for field System-language
+msgid "Please select the system language."
+msgstr "Bitte wählen Sie die Systemsprache."
+
+#: Model/Setting.php:validation for field System-timezone
+msgid "Please select the system timezone."
+msgstr "Bitte wählen Sie die Systemzeitzone."
+
+#: Model/Setting.php:validation for field Chat-session_duration
+msgid "Please indicate the session duration."
+msgstr "Bitte geben Sie die SItzungsdauer an"
+
+#: Model/Setting.php:validation for field Email-email;validation Email-sender
+msgid "notEmptyIfRequired"
+msgstr ""
+
+#: Model/Style.php:validation for field title
+msgid "Please enter a title"
+msgstr "Bitte geben Sie einen Titel ein"
+
+#: Model/Style.php:validation for field title
+msgid "The title may not exceed 255 characters"
+msgstr "Der Titel darf 255 Buchstaben nicht überschreiten"
+
+#: Model/Style.php:validation for field css
+msgid "Please enter your custom CSS styles"
+msgstr "Bitte geben Sie Ihr CSS Template ein"
+
+#: Model/User.php:validation for field username
+msgid "Please enter a username."
+msgstr "Bitte geben Sie einen Benutzernamen an."
+
+#: Model/User.php:validation for field email
+msgid "Please enter a valid email address."
+msgstr "Bitte geben Sie eine gültige Emailadresse ein."
+
+#: Model/User.php:validation for field email
+msgid "This email address has already been taken."
+msgstr "Diese Emailadresse ist bereits vergeben."
+
+#: Model/User.php:validation for field password
+msgid "Please enter your password."
+msgstr "Bitte geben Sie Ihr Passwort an."
+
+#: Model/User.php:validation for field password;validation password_confirm
+msgid "Passwords do not match."
+msgstr "Die Passwörter stimmen nicht überein."
+
+#: Model/User.php:validation for field password;validation password_confirm
+msgid "Must be at least 4 characters long."
+msgstr "Bitte verwenden Sie mehr als 4 Buchstaben."
+
+#: Model/User.php:validation for field active
+msgid "Please enter a valid boolean value."
+msgstr "Bitte geben Sie einen bool-Wert an."
+
+#~ msgid "You are now online."
+#~ msgstr "Sie sind jetzt online"
+
+#~ msgid ""
+#~ "\n"
+#~ "ClientEngage Visitor Voice is a simple, yet fully-featured questionnaire "
+#~ "engine which enables you to create, manage \n"
+#~ "and analyse quick feedback-surveys for your websites. <br /><br />\n"
+#~ "You can easily integrate Visitor Voice into any website and start "
+#~ "collecting your visitors' opinions today.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "ClientEngage Visitor Voice ist eine einfaches, jedoch voll-ausgestattetes "
+#~ "Umfragesystem, welches es Ihnen erlaubt Umfragen zu erstellen, diese auf "
+#~ "Ihren Internetseiten freizugeben und Antworten nachfolgend zu "
+#~ "analysieren. <br /><br />\n"
+#~ "Sie können Umfragebögen kinderleicht in Ihre Internetseiten einbinden und "
+#~ "noch heute damit anfangen, die Meinungen Ihrer Besucher/Kunden "
+#~ "einzuholen.\n"
+
+#~ msgid "It appears that all operators are currently offline."
+#~ msgstr "Es scheint als seien alle Moderatoren momentan offline."
+
+#~ msgid "Please enter a message."
+#~ msgstr "Bitte geben Sie eine Nachricht ein"
+
+#~ msgid "The message may not exceed 750 characters."
+#~ msgstr "Die Nachricht darf 750 Buchstaben nicht überschreiten"
+
+#~ msgid "Add Button Theme"
+#~ msgstr "Linktemplate hinzufügen"
+
+#~ msgid "The Button Theme has been saved"
+#~ msgstr "Das Linktemplate wurde gespeichert"
+
+#~ msgid "The Button Theme could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Das Linktemplate konnte nicht gespeichert werden. Bitte versuchen Sie es "
+#~ "erneut."
+
+#~ msgid "Edit Button Theme"
+#~ msgstr "Linktemplate bearbeiten"
+
+#~ msgid "Invalid Button Theme"
+#~ msgstr "Ungültiges Linktemplate"
+
+#~ msgid "This Button Theme is still associated to one or more Visitor Forms."
+#~ msgstr ""
+#~ "Dieses Linktemplate ist noch mit einem oder mehr Besucherformularen "
+#~ "verknüpft."
+
+#~ msgid "Button Theme deleted"
+#~ msgstr "Das Linktemplate wurde gelöscht"
+
+#~ msgid "Button Theme was not deleted"
+#~ msgstr "Das Linktemplate konnte nicht gelöscht werden"
+
+#~ msgid "Invalid field option"
+#~ msgstr "Ungültige Feldoption"
+
+#~ msgid "Add Field"
+#~ msgstr "Feld hinzufügen"
+
+#~ msgid "The field has been saved"
+#~ msgstr "Das Feld wurde gespeichert"
+
+#~ msgid "The field could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Das Feld konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#~ msgid "Edit Field"
+#~ msgstr "Feld bearbeiten"
+
+#~ msgid "Invalid field"
+#~ msgstr "Ungültiges Feld"
+
+#~ msgid "Field deleted"
+#~ msgstr "Das Feld wurde gelöscht"
+
+#~ msgid "Field was not deleted"
+#~ msgstr "Das Feld konnte nicht gelöscht werden"
+
+#~ msgid "Form Themes"
+#~ msgstr "Formulartemplates"
+
+#~ msgid "Add Form Theme"
+#~ msgstr "Formulartemplate hinzufügen"
+
+#~ msgid "The Form Theme has been saved"
+#~ msgstr "Das Formulartemplate wurde gespeichert"
+
+#~ msgid "The Form Theme could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Das Formulartemplate konnte nicht gespeichert werden. Bitte versuchen Sie "
+#~ "es erneut."
+
+#~ msgid "Edit Form Theme"
+#~ msgstr "Formulartemplate bearbeiten"
+
+#~ msgid "Invalid formtheme"
+#~ msgstr "Ungültiges Formulartemplate"
+
+#~ msgid "Invalid Form Theme"
+#~ msgstr "Ungültiges Formulartemplate"
+
+#~ msgid "This Form Theme is still associated to one or more Visitor Forms."
+#~ msgstr ""
+#~ "Dieses Formulartemplate ist noch mit einem oder mehr Besucherformularen "
+#~ "verknüpft."
+
+#~ msgid "Form Theme deleted"
+#~ msgstr "Das Formulartemplate wurde gelöscht"
+
+#~ msgid "Form Theme was not deleted"
+#~ msgstr "Das Formulartemplate konnte nicht gelöscht werden"
+
+#~ msgid "Add Validation Rule"
+#~ msgstr "Validierungsregel hinzufügen"
+
+#~ msgid "The validation rule has been saved"
+#~ msgstr "Die Validierungsregel wurde gespeichert"
+
+#~ msgid "The validation rule could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Die Validierungsregel konnte nicht gespeichert werden. Bitte versuchen "
+#~ "Sie es erneut."
+
+#~ msgid "Edit Validation Rule"
+#~ msgstr "Validierungsregel bearbeiten"
+
+#~ msgid "Invalid validation rule"
+#~ msgstr "Ungültige Validierungsregel"
+
+#~ msgid "Validation rule was not deleted"
+#~ msgstr "Die Validierungsregel konnte nicht gelöscht werden"
+
+#~ msgid "Invalid Visitor Form"
+#~ msgstr "Ungültiges Formular"
+
+#~ msgid "Please enter a valid integer"
+#~ msgstr "Bitte geben Sie eine gültige, natürliche Zahl an."
+
+#~ msgid "Please enter a value that is equal to or greater than :val"
+#~ msgstr ""
+#~ "Bitte geben Sie einen Wert an, der gleich zu oder größer ist als :val"
+
+#~ msgid "Please enter a value that is equal to or smaller than :val"
+#~ msgstr ""
+#~ "Bitte geben Sie einen Wert an, der gleich zu oder kleiner ist als :val"
+
+#~ msgid "Visitorforms"
+#~ msgstr "Besucherformulare"
+
+#~ msgid "Active Visitorforms"
+#~ msgstr "Aktive Besucherformulare"
+
+#~ msgid "View Visitorform"
+#~ msgstr "Besucherformular ansehen"
+
+#~ msgid "Create Visitorform"
+#~ msgstr "Besucherformular erstellen"
+
+#~ msgid "The Visitor Form has been saved"
+#~ msgstr "Das Formular wurde gespeichert"
+
+#~ msgid "The Visitor Form could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Das Formular konnte nicht gespeichert werden. Bitte versuchen Sie es "
+#~ "erneut."
+
+#~ msgid "Edit Visitorform"
+#~ msgstr "Besucherformular bearbeiten"
+
+#~ msgid "Visitor Form deleted"
+#~ msgstr "Das Formular wurde gelöscht"
+
+#~ msgid "Visitor Form was not deleted"
+#~ msgstr "Das Formular konnte nicht gelöscht werden"
+
+#~ msgid "The Visitor Form was successfully deactivated"
+#~ msgstr "Das Besucherformular wurde erfolgreich deaktiviert"
+
+#~ msgid "The Visitor Form could not be activated"
+#~ msgstr "Das Besucherformular konnte nicht aktiviert werden"
+
+#~ msgid "The Visitor Form could not be deactivated"
+#~ msgstr "Das Besucherformular konnte nicht deaktiviert werden"
+
+#~ msgid "Visitor Form duplicated"
+#~ msgstr "Das Besucherformular wurde dupliziert"
+
+#~ msgid "Visitor Form was not duplicated"
+#~ msgstr "Das Besucherformular konnte nicht dupliziert werden"
+
+#~ msgid "Re-Generate Response Cache"
+#~ msgstr "Antworten-Zwischenspeicher neu generieren"
+
+#~ msgid "Response List"
+#~ msgstr "Antworten-Auflistung"
+
+#~ msgid "Response Statistics"
+#~ msgstr "Antworten-Statistiken"
+
+#~ msgid "Referers"
+#~ msgstr "Referers"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "Unique ID"
+#~ msgstr "Einmalige ID"
+
+#~ msgid "Started Date"
+#~ msgstr "Startdatum"
+
+#~ msgid "Submitted Date"
+#~ msgstr "Versanddatum"
+
+#~ msgid "Duration"
+#~ msgstr "Dauer"
+
+#~ msgid "Referer Url"
+#~ msgstr "Referer Url"
+
+#~ msgid "Individual Response"
+#~ msgstr "Antwort-Einzelansicht"
+
+#~ msgid "Invalid visitorvoice"
+#~ msgstr "Ungültige Antwort"
+
+#~ msgid "Invalid Visitor Voice"
+#~ msgstr "Ungültige Antwort"
+
+#~ msgid "Visitor Voice deleted"
+#~ msgstr "Die Antwort wurde gelöscht"
+
+#~ msgid "Visitor Voice was not deleted"
+#~ msgstr "Die Antwort konnte nicht gelöscht werden"
+
+#~ msgid ""
+#~ "You have successfully deleted all responses belonging to the respective "
+#~ "visitor form"
+#~ msgstr ""
+#~ "Sie haben erfolgreich alle Antworten gelöscht die zum entsprechenden "
+#~ "Besucherformular gehörten"
+
+#~ msgid "Short Text"
+#~ msgstr "Kurzer Text"
+
+#~ msgid "Long Text"
+#~ msgstr "Langer Text"
+
+#~ msgid "Select"
+#~ msgstr "Einfach-Auswahl"
+
+#~ msgid "Multiple Select"
+#~ msgstr "Mehrfachauswahl"
+
+#~ msgid "Radio"
+#~ msgstr "Radio-Gruppe"
+
+#~ msgid "Checkbox"
+#~ msgstr "Checkbox"
+
+#~ msgid "Multiple Checkbox"
+#~ msgstr "Mehrfach-Checkbox"
+
+#~ msgid "Star-Rating"
+#~ msgstr "Sternchen-Bewertung"
+
+#~ msgid "Slider"
+#~ msgstr "Numerischer Schieber"
+
+#~ msgid "Numeric Spinner"
+#~ msgstr "Numerischer \"Spinner\""
+
+#~ msgid "Date Picker"
+#~ msgstr "Datumsauswahl"
+
+#~ msgid "HTML Spacer"
+#~ msgstr "HTML Code"
+
+#~ msgid "Submit Button"
+#~ msgstr "Absenden-Button"
+
+#~ msgid "Captcha"
+#~ msgstr "Captcha"
+
+#~ msgid "Please enter a minimum value."
+#~ msgstr "Bitte geben Sie einen Minimalwert an."
+
+#~ msgid "Please enter a maximum value."
+#~ msgstr "Bitte geben Sie einen Maximalwert an."
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopie"
+
+#~ msgid "List Button Themes"
+#~ msgstr "Linktemplates auflisten"
+
+#~ msgid "Button Theme CSS"
+#~ msgstr "Linktemplate CSS"
+
+#~ msgid "{ImageUrl} is a placeholder for: "
+#~ msgstr "{ImageUrl} ist ein Platzhalter für: "
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Create Button Theme"
+#~ msgstr "Linktemplate erstellen"
+
+#~ msgid "Buttonthemes"
+#~ msgstr "Linktemplates"
+
+#~ msgid "CSS"
+#~ msgstr "CSS"
+
+#~ msgid "Description"
+#~ msgstr "Beschreibung"
+
+#~ msgid "Input CSS-Class Suffix"
+#~ msgstr "Feld CSS-Klassen Suffix"
+
+#~ msgid "Container CSS-Class Suffix"
+#~ msgstr "Container CSS-Klassen Suffix"
+
+#~ msgid "Minimum Value"
+#~ msgstr "Minimaler Wert"
+
+#~ msgid "Maximum Value"
+#~ msgstr "Maximaler Wert"
+
+#~ msgid "Validation"
+#~ msgstr "Validierung"
+
+#~ msgid "RegEx Template Selection"
+#~ msgstr "RegEx-Templateauswahl"
+
+#~ msgid "Select Validation Rule"
+#~ msgstr "Validierungsregel auswählen"
+
+#~ msgid "Validation RegEx"
+#~ msgstr "Validierungs-RegEx"
+
+#~ msgid "Validation Error Message"
+#~ msgstr "Validierungs-Fehlernachricht"
+
+#~ msgid "Available Options"
+#~ msgstr "Verfügbare Optionen"
+
+#~ msgid "Enter a new option"
+#~ msgstr "Neue Option eingeben"
+
+#~ msgid "Responses"
+#~ msgstr "Antworten"
+
+#~ msgid "Manage Forms"
+#~ msgstr "Formulare verwalten"
+
+#~ msgid "Manage"
+#~ msgstr "Administrieren"
+
+#~ msgid "Create Form"
+#~ msgstr "Formular erstellen"
+
+#~ msgid "Manage Themes"
+#~ msgstr "Templates verwalten"
+
+#~ msgid "Manage Form Themes"
+#~ msgstr "Formulartemplates verwalten"
+
+#~ msgid "Manage Button Themes"
+#~ msgstr "Linktemplates verwalten"
+
+#~ msgid "Manage Validation Rules"
+#~ msgstr "Validierungsregeln verwalten"
+
+#~ msgid "Regular Expression Templates"
+#~ msgstr "Regular Expression Templates"
+
+#~ msgid "Not answered"
+#~ msgstr "Keine Antwort"
+
+#~ msgid "Selected"
+#~ msgstr "Ausgewählt"
+
+#~ msgid "Unselected"
+#~ msgstr "Unausgewählt"
+
+#~ msgid "Option"
+#~ msgstr "Option"
+
+#~ msgid "Responses (%)"
+#~ msgstr "Antworten (%)"
+
+#~ msgid "Min"
+#~ msgstr "Minimum"
+
+#~ msgid "Max"
+#~ msgstr "Maximum"
+
+#~ msgid "Range"
+#~ msgstr "Bereichsgröße"
+
+#~ msgid "Count"
+#~ msgstr "Anzahl"
+
+#~ msgid "Sum"
+#~ msgstr "Summe"
+
+#~ msgid "Mean"
+#~ msgstr "Durchschnitt"
+
+#~ msgid "Median"
+#~ msgstr "Median"
+
+#~ msgid "Mode"
+#~ msgstr "Häufigster Wert"
+
+#~ msgid "Variance of the Sample"
+#~ msgstr "Stichprobenvarianz"
+
+#~ msgid "Standard Deviation of the Sample"
+#~ msgstr "Standardabweichung der Stichprobe"
+
+#~ msgid "No data available"
+#~ msgstr "Keine Daten verfügbar"
+
+#~ msgid "Search..."
+#~ msgstr "Suche..."
+
+#~ msgid "Count (%)"
+#~ msgstr "Anzahl (%)"
+
+#~ msgid "String"
+#~ msgstr "String"
+
+#~ msgid "Create Field"
+#~ msgstr "Feld erstellen"
+
+#~ msgid "Save Changes"
+#~ msgstr "Änderungen speichern"
+
+#~ msgid "Processing..."
+#~ msgstr "Wird bearbeitet..."
+
+#~ msgid "List Form Themes"
+#~ msgstr "Formulartemplates auflisten"
+
+#~ msgid "Form Theme CSS"
+#~ msgstr "Formulartemplate CSS"
+
+#~ msgid "Form Theme JavaScript"
+#~ msgstr "Formulartemplate JavaScript"
+
+#~ msgid "Create Form Theme"
+#~ msgstr "Formulartemplate erstellen"
+
+#~ msgid "Formthemes"
+#~ msgstr "Formulartemplates"
+
+#~ msgid "JS"
+#~ msgstr "JS"
+
+#~ msgid "Pleasse select"
+#~ msgstr "Bitte wählen"
+
+#~ msgid "Reload"
+#~ msgstr "Neu-laden"
+
+#~ msgid "Convert to Image"
+#~ msgstr "In ein Bild konvertieren"
+
+#~ msgid "List Validation Rules"
+#~ msgstr "Validierungsregeln auflisten"
+
+#~ msgid "Create Validation Rule"
+#~ msgstr "Validierungsregel erstellen"
+
+#~ msgid "Regular Expression"
+#~ msgstr "Regular Expression"
+
+#~ msgid "Add Visitorform"
+#~ msgstr "Besucherformular erstellen"
+
+#~ msgid "Title Tag of Form Button"
+#~ msgstr "Title-Tag Ihres Formular-Links"
+
+#~ msgid "Form Theme"
+#~ msgstr "Formulartemplate"
+
+#~ msgid "Button Theme"
+#~ msgstr "Linktemplate"
+
+#~ msgid "Modal Width"
+#~ msgstr "Popup-Breite"
+
+#~ msgid "Modal Height"
+#~ msgstr "Popup-Höhe"
+
+#~ msgid "Container Class Suffix"
+#~ msgstr "Container CSS-Klassen Suffix"
+
+#~ msgid "Redirect URL"
+#~ msgstr "Weiterleitungs-URL"
+
+#~ msgid "The redirect will be processed after the success page has loaded."
+#~ msgstr "Die Weiterleitung wird nach dem Laden der Erfolgsseite gestartet."
+
+#~ msgid "Active - Deactivate Now"
+#~ msgstr "Aktiv - jetzt deaktivieren"
+
+#~ msgid "Inactive - Activate Now"
+#~ msgstr "Inaktiv - jetzt aktivieren"
+
+#~ msgid ""
+#~ "Activating this form will make it available on websites where the "
+#~ "inclusion code is used."
+#~ msgstr ""
+#~ "Das Aktivieren dieses Besucherformulares wird es auf denjenigen Seiten "
+#~ "verfügbar machen, in auf denen Sie den JavaScript-Code eingebunden haben."
+
+#~ msgid "Archived"
+#~ msgstr "Archiviert"
+
+#~ msgid "Url"
+#~ msgstr "Adresse"
+
+#~ msgid "The unique ID of your form."
+#~ msgstr "Die eindeutige ID Ihres Formulares."
+
+#~ msgid "Forms with Responses Only"
+#~ msgstr "Nur Formulare mit Antworten"
+
+#~ msgid "Archived Only"
+#~ msgstr "Nur Archivierte"
+
+#~ msgid "No. of Responses"
+#~ msgstr "Antwortenanzahl"
+
+#~ msgid "View / Edit"
+#~ msgstr "Ansehen / Bearbeiten"
+
+#~ msgid "Show Archived"
+#~ msgstr "Archivierte anzeigen"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistiken"
+
+#~ msgid "View Statistics"
+#~ msgstr "Statistiken ansehen"
+
+#~ msgid "Export to Excel"
+#~ msgstr "Nach Excel exportieren"
+
+#~ msgid "Export to CSV"
+#~ msgstr "Nach CSV exportieren"
+
+#~ msgid "Duplicate Visitorform"
+#~ msgstr "Besucherformular duplizieren"
+
+#~ msgid "Visitorform"
+#~ msgstr "Besucherformular"
+
+#~ msgid "Form already active"
+#~ msgstr "Besucherformular bereits aktiv"
+
+#~ msgid ""
+#~ "This form has already been activated and contains responses. It is not "
+#~ "advised to add new questions or remove or edit existing ones if you are "
+#~ "unsure as to how this may affect your analysis results."
+#~ msgstr ""
+#~ "Dieses Besucherformular wurde bereits aktiviert und enthält Antworten. Es "
+#~ "ist nicht empfohlen, dass Sie neue Fragen hinzufügen oder existierende "
+#~ "löschen oder bearbeiten wenn Sie sich nicht sicher sind, inwiefern dies "
+#~ "Ihre Analyseresultate beeinflussen könnte."
+
+#~ msgid "Slug"
+#~ msgstr "Url-Segment"
+
+#~ msgid "Visitorvoice Count"
+#~ msgstr "Antwortenanzahl"
+
+#~ msgid "Form Url:"
+#~ msgstr "Besucherformular URL:"
+
+#~ msgid "Outstanding Response Cache Objects"
+#~ msgstr "Ausstehende Zwischenspeicherungsobjekte"
+
+#~ msgid "Start Processing"
+#~ msgstr "Prozess starten"
+
+#~ msgid "Export Responses"
+#~ msgstr "Antworten exportieren"
+
+#~ msgid "Are you sure you want to delete all responses of this visitor form?"
+#~ msgstr ""
+#~ "Sind Sie sich sicher, dass Sie alle zu diesem Formular gehörenden "
+#~ "Antworten löschen möchten?"
+
+#~ msgid "Visitorvoices"
+#~ msgstr "Antworten"
+
+#~ msgid "No responses available"
+#~ msgstr "Keine Antworten verfügbar"
+
+#~ msgid ":count Response"
+#~ msgid_plural ":count Responses"
+#~ msgstr[0] ":count Antwort"
+#~ msgstr[1] ":count Antworten"
+#~ msgstr[2] ":count Antworten"
+
+#~ msgid "Back to Responses"
+#~ msgstr "Zurück zu der Antworten-Auflistung"
+
+#~ msgid "Delete Visitorvoice"
+#~ msgstr "Antwort löschen"
+
+#~ msgid "newer"
+#~ msgstr "neuer"
+
+#~ msgid "older"
+#~ msgstr "älter"
+
+#~ msgid "Useragent"
+#~ msgstr "Useragent"
+
+#~ msgid "Please select a field type."
+#~ msgstr "Bitte wählen Sie einen Feldtypen aus."
+
+#~ msgid "Please enter a validation error message."
+#~ msgstr "Bitte geben Sie eine Validierungsnachricht ein."
+
+#~ msgid "checkvalid"
+#~ msgstr "checkvalid"
+
+#~ msgid "Please enter your Regular Expression."
+#~ msgstr "Bitte geben Sie eine Regular Expression ein."
+
+#~ msgid "Please select a Button Theme"
+#~ msgstr "Bitte wählen Sie ein Linktemplate."
+
+#~ msgid "Please select a Form Theme"
+#~ msgstr "Bitte wählen Sie ein Formulartemplate."
+
+#~ msgid "Please enter a valid Url segment."
+#~ msgstr "Bitte geben Sie ein gültiges Url-Segment an."
+
+#~ msgid "This URL has already been taken"
+#~ msgstr "Diese Adresse ist bereits vergeben."
+
+#~ msgid "Please enter your error message."
+#~ msgstr "Bitte geben Sie Ihren Fehlertext an."
+
+#~ msgid "Pelase enter a valid integer."
+#~ msgstr "Bitte geben Sie eine gültige, natürliche Zahl an."
+
+#~ msgid "Please enter a valid CSS width/height (e.g. in px/em/%)."
+#~ msgstr ""
+#~ "Bitte geben Sie eine gültige CSS Breiten-/Höhenangabe ein (z.B. in px/em/"
+#~ "%)."
+
+#~ msgid "Your upload directory is writable."
+#~ msgstr "Ihr Anhangsverzeichnis ist beschreibbar."
+
+#~ msgid "Your upload directory is not writable."
+#~ msgstr "Ihr Anhangsverzeichnis ist nicht beschreibbar."
+
+#~ msgid "Your version file is writable."
+#~ msgstr "Ihre Versionsdatei ist beschreibbar."
+
+#~ msgid "Your version file is not writable."
+#~ msgstr "Ihre Versionsdatei ist nicht beschreibbar."
+
+#~ msgid "Send submission notifications to the following administrators"
+#~ msgstr "Notifikationen an folgende Administratoren senden"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid ""
+#~ "\n"
+#~ "ClientEngage is a fully-featured project management platform which helps "
+#~ "you keep your clients in the loop when working with them.<br /><br />\n"
+#~ "The benefits of ClientEngage are greater interaction with and engagement "
+#~ "of your clients during your development lifecycles.        \n"
+#~ msgstr ""
+#~ "\n"
+#~ "ClientEngage ist eine voll-ausgestattete Projektmanagementplatform, "
+#~ "welche Ihnen dabei hilft Ihre Kunden bei der Projektarbeit auf dem "
+#~ "Laufenden zu halten.<br /><br />\n"
+#~ "Die Vorteile von ClientEngage sind höhere Kundeninteraktion und "
+#~ "Kundeneinbeziehung während Ihrer Projektlebenszyklen.        \n"
+
+#~ msgid "Active Forms"
+#~ msgstr "Aktive Formulare"
+
+#~ msgid "The database was already initialised. Please continue."
+#~ msgstr "Die Datenbank wurde bereits initialisiert. Bitte fahren Sie fort."
+
+#~ msgid ""
+#~ "Dear {UserName},\n"
+#~ "\n"
+#~ "You have been invited to join the project {ProjectName} on our online "
+#~ "project management portal.\n"
+#~ "\n"
+#~ "This will enable you to participate in following the project's progress "
+#~ "as well as allow you to comment on any of the project's phases.\n"
+#~ "\n"
+#~ "You can log-on to the project here: {ProjectUrl}\n"
+#~ "\n"
+#~ "Your username is: {UserEmail}\n"
+#~ "{StartIsNewUser}\n"
+#~ "Your temporary password is: {TempPassword}\n"
+#~ "\n"
+#~ "Please make sure you change your temporary password during your first "
+#~ "visit.\n"
+#~ "{EndIsNewUser}\n"
+#~ "\n"
+#~ "\n"
+#~ "Kind regards,\n"
+#~ "{SystemName}\n"
+#~ msgstr ""
+#~ "Guten Tag {UserName},\n"
+#~ "\n"
+#~ "Sie wurden zum Projekt {ProjectName} auf unserem online Projektportal "
+#~ "eingeladen.\n"
+#~ "\n"
+#~ "Dies erlaubt es Ihnen, dem Projekt online zu folgen, sowie auf die "
+#~ "einzelnen Projektphasen zu kommentieren.\n"
+#~ "\n"
+#~ "Sie können sich hier anmelden: {ProjectUrl}\n"
+#~ "\n"
+#~ "Ihr Benutzername ist: {UserEmail}\n"
+#~ "{StartIsNewUser}\n"
+#~ "Ihr temporäres Passwort ist: {TempPassword}\n"
+#~ "\n"
+#~ "Bitte ändern Sie Ihr temporäres Passwort während Ihrer ersten Sitzung.\n"
+#~ "{EndIsNewUser}\n"
+#~ "\n"
+#~ "\n"
+#~ "Mit freundlichen Grüßen,\n"
+#~ "{SystemName}\n"
+
+#~ msgid "System Name"
+#~ msgstr "Systemname"
+
+#~ msgid "Please enter the correct security code."
+#~ msgstr "Bitte geben Sie den korrekten Sicherheitscode ein."
+
+#~ msgid "The task status was updated"
+#~ msgstr "Der Aufgabenstatus wurde aktualisiert"
+
+#~ msgid "No project was passed"
+#~ msgstr "Es wurde kein Projekt mitgereicht"
+
+#~ msgid "The phase has been saved"
+#~ msgstr "Die Projektphase wurde gespeichert"
+
+#~ msgid "The phase could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Die Projektphase konnte nicht gespeichert werden. Bitte versuchen Sie es "
+#~ "erneut."
+
+#~ msgid "Invalid phase"
+#~ msgstr "Ungültige Projektphase"
+
+#~ msgid "Phase deleted"
+#~ msgstr "Die Projektphase wurde gelöscht"
+
+#~ msgid "Phase was not deleted"
+#~ msgstr "Die Projektphase konnte nicht gelöscht werden"
+
+#~ msgid "Progress update succesful"
+#~ msgstr "Die Projektphase wurde erfolgreich aktualisiert"
+
+#~ msgid "Progress update not successful: please try again"
+#~ msgstr ""
+#~ "Die Aktualisierung der Projektphase war nicht erfolgreich: bitte "
+#~ "versuchen Sie es erneut."
+
+#~ msgid "This phase does not exist"
+#~ msgstr "Die Projektphase existiert nicht"
+
+#~ msgid "Phase :phase_num: :phase_title"
+#~ msgstr "Phase :phase_num: :phase_title"
+
+#~ msgid "This project does not exist"
+#~ msgstr "Dieses Projekt existiert nicht"
+
+#~ msgid "Project Overview"
+#~ msgstr "Projektübersicht"
+
+#~ msgid "Invalid project"
+#~ msgstr "Ungültiges Projekt"
+
+#~ msgid "The invitations were successfully sent."
+#~ msgstr "Die Einladungen wurden erfolgreich vversandt."
+
+#~ msgid "The project has been saved"
+#~ msgstr "Das projekt wurde gespeichert"
+
+#~ msgid "The project could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Das Projekt konnte nicht gespeichert werden. Bitte versuchen Sie es "
+#~ "erneut."
+
+#~ msgid "Project was not deleted"
+#~ msgstr "Das Projekt konnte nicht gelöscht werden"
+
+#~ msgid "The user has been created"
+#~ msgstr "Der Benutzer wurde erstellt"
+
+#~ msgid "The administrator has been created"
+#~ msgstr "Der Administrator wurde erstellt"
+
+#~ msgid "The system is in maintenance mode."
+#~ msgstr "Das System ist im Wartungsmodus."
+
+#~ msgid "Personification action not allowed."
+#~ msgstr "Personifizierungsaktion nicht erlaubt."
+
+#~ msgid "Personification of admin not allowed"
+#~ msgstr "Personifizierung von Administratoren ist nicht erlaubt"
+
+#~ msgid "Client"
+#~ msgstr "Kunde"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrator"
+
+#~ msgid "Low"
+#~ msgstr "Niedrig"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "High"
+#~ msgstr "Hoch"
+
+#~ msgid "External link"
+#~ msgstr "Externer Link"
+
+#~ msgid "completed_date"
+#~ msgstr "Fertigstellungsdatum"
+
+#~ msgid "Please enter the invitation template."
+#~ msgstr "Bitte geben Sie eine Einladungsvorlage ein."
+
+#~ msgid ""
+#~ "You need to use the placeholders {StartIsNewUser} and {EndIsNewUser} one "
+#~ "each."
+#~ msgstr ""
+#~ "Sie müssen die Platzhalter {StartIsNewUser} und {EndIsNewUser} jeweils "
+#~ "ein Mal verwenden."
+
+#~ msgid ""
+#~ "You need to use each of the placeholders {StartIsNewUser} and "
+#~ "{EndIsNewUser} only once."
+#~ msgstr ""
+#~ "Sie müssen die Platzhalter {StartIsNewUser} und {EndIsNewUser} jeweils "
+#~ "ein Mal verwenden."
+
+#~ msgid "{EndIsNewUser} has to be inserted after {StartIsNewUser}"
+#~ msgstr "{EndIsNewUser} muss nach {StartIsNewUser} verwendet werden"
+
+#~ msgid "percent_completed"
+#~ msgstr "Prozent-fertiggestellt"
+
+#~ msgid "The end date has to be on or after the start date."
+#~ msgstr "Das Enddatum muss auf, oder nach das Startdatum fallen."
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Projects"
+#~ msgstr "Projekte"
+
+#~ msgid "Create Client"
+#~ msgstr "Kunden ersellen"
+
+#~ msgid "New Client"
+#~ msgstr "Neuer Kunde"
+
+#~ msgid "Client Overview"
+#~ msgstr "Kundenübersicht"
+
+#~ msgid "Currently, no clients exist."
+#~ msgstr "Momentan existieren keine Kunden."
+
+#~ msgid "Delete Client"
+#~ msgstr "Kunden löschen"
+
+#~ msgid "Back to Client Overview"
+#~ msgstr "Zurück zur Kundenübersicht"
+
+#~ msgid "This Client's Users"
+#~ msgstr "Benutzer dieses Kunden"
+
+#~ msgid "none"
+#~ msgstr "keine"
+
+#~ msgid "Associated Projects"
+#~ msgstr "Assoziierte Projekte"
+
+#~ msgid "Phases"
+#~ msgstr "Projektphasen"
+
+#~ msgid "Make this a task?"
+#~ msgstr "Zu einer Aufgabe machen?"
+
+#~ msgid "Priority"
+#~ msgstr "Priorität"
+
+#~ msgid "Completed IP"
+#~ msgstr "Fertiggestellt IP"
+
+#~ msgid "Edit System Configuration"
+#~ msgstr "Systemkonfiguration bearbeiten"
+
+#~ msgid "You can adapt global system settings below:"
+#~ msgstr "Unterhalb können Sie globale Systemeinstellungen vornehmen:"
+
+#~ msgid "General Settings"
+#~ msgstr "Allgemeine Einstellungen"
+
+#~ msgid "System Logo"
+#~ msgstr "Systemlogo"
+
+#~ msgid ""
+#~ "This is the logo that your clients will see in the front-end. For best "
+#~ "results, please select a logo with a height of 23px."
+#~ msgstr ""
+#~ "Dieses Logo wird in der Kundenoberfläche angezeigt. Bitte verwenden Sie "
+#~ "ein Logo mit einer Höhe von 23px, um das beste Ergebnis zu erziehlen."
+
+#~ msgid "Remove current logo?"
+#~ msgstr "Aktuelles Logo entfernen?"
+
+#~ msgid "Maintenance Mode"
+#~ msgstr "Wartungsmodus"
+
+#~ msgid "File Extension Blacklist"
+#~ msgstr "Nicht-erlaubte Dateiendungen"
+
+#~ msgid ""
+#~ "Please enter a comma-separated list of file-extensions that are "
+#~ "disallowed (e.g. \"exe,bat,ext\")"
+#~ msgstr ""
+#~ "Bitte geben Sie eine Komma-separierte Liste von nicht erlaubten "
+#~ "Dateiendungen an  (z.B. \"exe,bat,ext\")"
+
+#~ msgid "Invitation Email Subject"
+#~ msgstr "Einladungsemail-Betreffzeile"
+
+#~ msgid "--  Insert Placeholder  --"
+#~ msgstr "--  Platzhalter einfügen  --"
+
+#~ msgid "Project Name"
+#~ msgstr "Projektname"
+
+#~ msgid "Project Url"
+#~ msgstr "Projektadresse"
+
+#~ msgid "User Email"
+#~ msgstr "Benutzer-Email"
+
+#~ msgid "Start IsNewUser"
+#~ msgstr "Start IsNewUser"
+
+#~ msgid "End IsNewUser"
+#~ msgstr "Ende IsNewUser"
+
+#~ msgid "Temporary Password"
+#~ msgstr "Temporäres Passwort"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "Zu Standardwert zurücksetzen"
+
+#~ msgid "Invitation Email Template"
+#~ msgstr "Einladungsemail Vorlage"
+
+#~ msgid "Layout Settings"
+#~ msgstr "Gestaltungseinstellungen"
+
+#~ msgid "Menu Bar Colour"
+#~ msgstr "Menü-Hintergrundfarbe"
+
+#~ msgid "Menu Bar Text"
+#~ msgstr "Menü-Textfarbe"
+
+#~ msgid "Link Colour"
+#~ msgstr "Hyperlinkfarbe"
+
+#~ msgid "Use Fluid Layout"
+#~ msgstr "Flexibles Layout verwenden"
+
+#~ msgid "Show Powered By"
+#~ msgstr "Powered By zeigen"
+
+#~ msgid ""
+#~ "Dear {UserName},\\n\\nYou have been invited to join the project "
+#~ "{ProjectName} on our online project management portal.\\n\\nThis will "
+#~ "enable you to participate in following the project's progress as well as "
+#~ "allow you to comment on any of the project's phases.\\n\\nYou can log-on "
+#~ "to the project here: {ProjectUrl}\\n\\nYour username is: {UserEmail}\\n"
+#~ "{StartIsNewUser}\\nYour temporary password is: {TempPassword}\\n\\nPlease "
+#~ "make sure you change your temporary password during your first visit.\\n"
+#~ "{EndIsNewUser}\\n\\n\\nKind regards,\\n{SystemName}\\n"
+#~ msgstr ""
+#~ "Guten Tag {UserName},\\n\\nSie wurden zum Projekt {ProjectName} auf "
+#~ "unserem online Projektportal eingeladen.\\n\\nDies erlaubt es Ihnen, dem "
+#~ "Projekt online zu folgen, sowie auf die einzelnen Projektphasen zu "
+#~ "kommentieren.\\n\\nSie können sich hier anmelden: {ProjectUrl}\\n\\nIhr "
+#~ "Benutzername ist: {UserEmail}\\n{StartIsNewUser}\\nIhr temporäres "
+#~ "Passwort ist: {TempPassword}\\n\\nBitte ändern Sie Ihr temporäres "
+#~ "Passwort während Ihrer ersten Sitzung.\\n{EndIsNewUser}\\n\\n\\nMit "
+#~ "freundlichen Grüßen,\\n{SystemName}\\n"
+
+#~ msgid "Reply"
+#~ msgstr "Antworten"
+
+#~ msgid "Show :num_comments hidden comment"
+#~ msgid_plural "Show :num_comments hidden comments"
+#~ msgstr[0] ":num_comments versteckten Kommentar anzeigen"
+#~ msgstr[1] ":num_comments versteckte Kommentare anzeigen"
+#~ msgstr[2] ":num_comments versteckte Kommentare anzeigen"
+
+#~ msgid "Add attachments"
+#~ msgstr "Anhänge anheften"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Attachment"
+#~ msgstr "Anhang"
+
+#~ msgid "Password Change"
+#~ msgstr "Passwort ändern"
+
+#~ msgid ""
+#~ "You are still using the temporary password which was generated for you. "
+#~ "Please change your password:"
+#~ msgstr ""
+#~ "Sie verwenden noch immer das temporäre Passwort, welches für Sie erstellt "
+#~ "wurde. Bitte ändern Sie Ihr Passwort:"
+
+#~ msgid "Your User Profile"
+#~ msgstr "Ihr Benutzerprofil"
+
+#~ msgid "You are here:"
+#~ msgstr "Sie sind hier:"
+
+#~ msgid "Manage Clients"
+#~ msgstr "Kunden administrieren"
+
+#~ msgid "Stop Personification"
+#~ msgstr "personifizierung anhalten"
+
+#~ msgid "End Date"
+#~ msgstr "Enddatum"
+
+#~ msgid "No phases"
+#~ msgstr "Keine Projektphasen"
+
+#~ msgid "End:"
+#~ msgstr "Ende:"
+
+#~ msgid "Duration:"
+#~ msgstr "Dauer:"
+
+#~ msgid "Clients:"
+#~ msgstr "Kunden:"
+
+#~ msgid "Launch Project"
+#~ msgstr "Projekt öffnen"
+
+#~ msgid "Last activity: :created"
+#~ msgstr "Letzte Aktivität: :created"
+
+#~ msgid "Recent Project Activity"
+#~ msgstr "Kürzliche Projektaktivitäten"
+
+#~ msgid "Created: :created | Modified: :modified"
+#~ msgstr "Erstellt: :created | Geändert: :modified"
+
+#~ msgid ":days day"
+#~ msgid_plural ":days days"
+#~ msgstr[0] ":days Tag"
+#~ msgstr[1] ":days Tage"
+#~ msgstr[2] ":days Tage"
+
+#~ msgid ":days day overdue"
+#~ msgid_plural ":days days overdue"
+#~ msgstr[0] ":days Tag überschritten"
+#~ msgstr[1] ":days Tage überschritten"
+#~ msgstr[2] ":days Tage überschritten"
+
+#~ msgid ":days day remaining"
+#~ msgid_plural ":days days remaining"
+#~ msgstr[0] ":days Tag verbleibend"
+#~ msgstr[1] ":days Tage verbleibend"
+#~ msgstr[2] ":days Tage verbleibend"
+
+#~ msgid "The affected record has since been deleted"
+#~ msgstr "Dieses Objekt wurde zwischenzeitlich bereits gelöscht"
+
+#~ msgid "Are you sure you want to delete this notification?"
+#~ msgstr "Sind Sie sich sicher, dass Sie diese Notifikation löschen möchten?"
+
+#~ msgid ""
+#~ "<span class=\"label\" data-rel=\"tooltip\" data-original-title=\":created"
+#~ "\">:date:</span><br />:username<br />:prefixinfo<span class=\"label label-"
+#~ "inverse\">Created</span> a new element of type <code>:elementtype</code>: "
+#~ "<span class=\"muted\">:title</span>"
+#~ msgstr ""
+#~ "<span class=\"label\" data-rel=\"tooltip\" data-original-title=\":created"
+#~ "\">:date:</span><br />:username<br />:prefixinfo<span class=\"label label-"
+#~ "inverse\">Erstellte</span> ein neues Element des Typen <code>:"
+#~ "elementtype</code>: <span class=\"muted\">:title</span>"
+
+#~ msgid ""
+#~ "<span class=\"label\" data-rel=\"tooltip\" data-original-title=\":created"
+#~ "\">:date:</span><br />:username<br />:prefixinfo<span class=\"label label-"
+#~ "inverse\">Updated</span> the field <code>:field</code> of the element "
+#~ "<code>:elementtype</code> from <span class=\"label label-warning\">:"
+#~ "oldvalue</span> to <span class=\"label label-success\">:newvalue</span>: "
+#~ "<span class=\"muted\">:title</span>"
+#~ msgstr ""
+#~ "<span class=\"label\" data-rel=\"tooltip\" data-original-title=\":created"
+#~ "\">:date:</span><br />:username<br />:prefixinfo<span class=\"label label-"
+#~ "inverse\">Aktualisierte</span> das Feld <code>:field</code> des Elementes "
+#~ "<code>:elementtype</code> von <span class=\"label label-warning\">:"
+#~ "oldvalue</span> nach <span class=\"label label-success\">:newvalue</"
+#~ "span>: <span class=\"muted\">:title</span>"
+
+#~ msgid ""
+#~ "Are you sure you want to proceed with the deletion? This will also delete "
+#~ "all associated records and cannot be undone."
+#~ msgstr ""
+#~ "Sind Sie sich sicher, dass Sie mit der Löschung fortfahren möchten? Diese "
+#~ "Aktion kann nicht widerrufen werden und wird eben so alle assoziierten "
+#~ "Objekte löschen."
+
+#~ msgid "Allowed file extensions: "
+#~ msgstr "Erlaubte Dateiendungen:"
+
+#~ msgid "File type: :extension"
+#~ msgstr "Dateityp: :extension"
+
+#~ msgid "Open \":website_url\" in a new window"
+#~ msgstr "\":website_url\" in einem neuen Fenster öffnen"
+
+#~ msgid "Original file name: "
+#~ msgstr "Originaler Dateiname:"
+
+#~ msgid "Picture of :username"
+#~ msgstr "Bild von :username"
+
+#~ msgid "not currently online"
+#~ msgstr "nicht onlkine"
+
+#~ msgid "View Profile"
+#~ msgstr "Profil ansehen"
+
+#~ msgid "Personify User"
+#~ msgstr "Benutzer personifizieren"
+
+#~ msgid "completed"
+#~ msgstr "fertiggestellt"
+
+#~ msgid "overdue"
+#~ msgstr "überschritten"
+
+#~ msgid "waiting"
+#~ msgstr "wartend"
+
+#~ msgid "Sorting Options: "
+#~ msgstr "Sortierung:"
+
+#~ msgid "Reset"
+#~ msgstr "Zurücksetzen"
+
+#~ msgid "Project"
+#~ msgstr "Projekt"
+
+#~ msgid "Phase"
+#~ msgstr "Projektphase"
+
+#~ msgid "Action"
+#~ msgstr "Aktion"
+
+#~ msgid "Old Value"
+#~ msgstr "Vorheriger Wert"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Currently, no notifications exist."
+#~ msgstr "Momentan existieren keine Notifikationen."
+
+#~ msgid "Add Phase to :project_title"
+#~ msgstr "Projektphase zu :project_title hinzufügen"
+
+#~ msgid "The previous phase ends on :date"
+#~ msgstr "Die vorherige Projektphase endet am :date"
+
+#~ msgid "Save & Exit"
+#~ msgstr "Speichern & Schließen"
+
+#~ msgid "Save & Add New"
+#~ msgstr "Speichern & Neu"
+
+#~ msgid "Cancel / Back to Project"
+#~ msgstr "Abbrechen / Zurück zum Projekt"
+
+#~ msgid "Edit Phase"
+#~ msgstr "Projektphase bearbeiten"
+
+#~ msgid "View Phase"
+#~ msgstr "Projektphase ansehen"
+
+#~ msgid "Add Project"
+#~ msgstr "Projekt hinzufügen"
+
+#~ msgid "Project Members"
+#~ msgstr "Projektmitglieder"
+
+#~ msgid "Create Project"
+#~ msgstr "Projekt erstellen"
+
+#~ msgid "Edit Project"
+#~ msgstr "Projekt bearbeiten"
+
+#~ msgid "View Project"
+#~ msgstr "Projekt ansehen"
+
+#~ msgid "List Projects"
+#~ msgstr "Projekte auflisten"
+
+#~ msgid "New Project"
+#~ msgstr "Neues Projekt"
+
+#~ msgid "% Completed"
+#~ msgstr "% fertiggestellt"
+
+#~ msgid "Currently, no projects exist."
+#~ msgstr "Momentan existieren keine Projekte."
+
+#~ msgid "Prepare Project Invitation Email"
+#~ msgstr "Projekteinladungsemail vorbereiten"
+
+#~ msgid "Date Start"
+#~ msgstr "Startdatum"
+
+#~ msgid "Date End"
+#~ msgstr "Enddatum"
+
+#~ msgid "Project Duration"
+#~ msgstr "Projektdauer"
+
+#~ msgid "Back to Overview"
+#~ msgstr "Zurück zur Übersicht"
+
+#~ msgid "Invitation Settings"
+#~ msgstr "Einladungseinstellungen"
+
+#~ msgid "Recipients"
+#~ msgstr "Empfänger"
+
+#~ msgid "Send Invitations"
+#~ msgstr "Einladungen senden"
+
+#~ msgid "Launch"
+#~ msgstr "Starten"
+
+#~ msgid "Prepare Invitation Email"
+#~ msgstr "Einladungsemail vorbereiten"
+
+#~ msgid "Delete Project"
+#~ msgstr "Projekt löschen"
+
+#~ msgid "Back to Project Overview"
+#~ msgstr "Zurück zur Projektübersicht"
+
+#~ msgid "Project Phases"
+#~ msgstr "Projektphasen"
+
+#~ msgid "No."
+#~ msgstr "No."
+
+#~ msgid "Timings"
+#~ msgstr "Zeitplanung"
+
+#~ msgid "Comments"
+#~ msgstr "Kommentare"
+
+#~ msgid "Start Date:"
+#~ msgstr "Startdatum:"
+
+#~ msgid "End Date:"
+#~ msgstr "Enddatum:"
+
+#~ msgid "Add Phase to This Project"
+#~ msgstr "Projektphase hinzufügen"
+
+#~ msgid "Associated Clients"
+#~ msgstr "Assoziierte Kunden"
+
+#~ msgid "Create a New Client"
+#~ msgstr "Neuen Kunden erstellen"
+
+#~ msgid "Manage Associated Clients"
+#~ msgstr "Assoziierte Kunden bearbeiten"
+
+#~ msgid "No clients have been assigned ot this project."
+#~ msgstr "Diesem Projekt wurden keine Kunden zugewiesen."
+
+#~ msgid "No users"
+#~ msgstr "Keine Benutzer"
+
+#~ msgid "Project History"
+#~ msgstr "Projekthistorie"
+
+#~ msgid "Discussion, Tasks & Attachments"
+#~ msgstr "Diskussion, Aufgaben & Anhänge"
+
+#~ msgid "Phase History"
+#~ msgstr "Projektphasenhistorie"
+
+#~ msgid "Projects of :clientname"
+#~ msgstr "Projekte von :clientname"
+
+#~ msgid "Please enter a comment."
+#~ msgstr "Bitte geben Sie einen Kommentar ein."
+
+#~ msgid "Toggle comment threads"
+#~ msgstr "Kommentare ein-/ausblenden"
+
+#~ msgid "New comment"
+#~ msgstr "Neuer Kommentar"
+
+#~ msgid "Add Administrator"
+#~ msgstr "Administrator hinzufügen"
+
+#~ msgid "Create Administrator"
+#~ msgstr "Administrator erstellen"
+
+#~ msgid "Remove current user image?"
+#~ msgstr "Aktuelles Benutzerbild entfernen?"
+
+#~ msgid "View Administrator"
+#~ msgstr "Administrator ansehen"
+
+#~ msgid "Administrator Profile"
+#~ msgstr "Administratorenprofil"
+
+#~ msgid "Currently, no users exist."
+#~ msgstr "Momentan existieren keine Benutzer."
+
+#~ msgid "User Profile"
+#~ msgstr "Benutzerprofil"
+
+#~ msgid "Already reset"
+#~ msgstr "Bereits zurückgesetzt"
+
+#~ msgid "Please select the phase."
+#~ msgstr "Bitte wählen sie die Projektphase."
+
+#~ msgid "You have to select an attachment type."
+#~ msgstr "Sie müssen einen Anhangstypen auswählen."
+
+#~ msgid "Please select a valid attachment type."
+#~ msgstr "Sie müssen einen gültigen anhangstypen auswählen."
+
+#~ msgid "Please enter a comment"
+#~ msgstr "Bitte geben Sie einen Kommentar ein."
+
+#~ msgid "Please indicate whether this comment is a task."
+#~ msgstr "Bitte geben Sie an, ob dieser Kommentar eine Aufgabe sein soll."
+
+#~ msgid "Please select a priority."
+#~ msgstr "Bitte wählen Sie die Priorität."
+
+#~ msgid "Please select a valid priority."
+#~ msgstr "Bitte wählen Sie eine gültige Priorität."
+
+#~ msgid "Please enter the name of the system."
+#~ msgstr "Bitte geben Sie den Namen des Systems an."
+
+#~ msgid "Please upload a valid image."
+#~ msgstr "Bitte laden Sie ein gültiges Bild hoch."
+
+#~ msgid "Please indicate a valid boolean value."
+#~ msgstr "Bitte geben Sie einen bool-Wert an."
+
+#~ msgid "Please enter the extension blacklist"
+#~ msgstr "Bitte geben Sie die Liste der nicht-erlaubten Dateiendungen an."
+
+#~ msgid "Please enter an email invitation template."
+#~ msgstr "Bitte geben Sie die Einladungsvorlage ein."
+
+#~ msgid "Please review the invitation email template."
+#~ msgstr "Bitte überprüfen Sie die EInladungsvorlage."
+
+#~ msgid "Please enter the email invitation subject"
+#~ msgstr "Bitte geben Sie die Einladungs-Betreffzeile ein."
+
+#~ msgid "This is not a valid colour."
+#~ msgstr "Dies ist keine gültige Farbe."
+
+#~ msgid "Please select a project."
+#~ msgstr "Bitte wählen Sie ein Projekt aus."
+
+#~ msgid "Please enter less than 240 characters."
+#~ msgstr "Bitte geben Sie weniger als 240 Buchstaben ein."
+
+#~ msgid "This Url has already been taken."
+#~ msgstr "diese Adresse ist bereits vergeben."
+
+#~ msgid "Please enter a valid date (yyyy-mm-dd)."
+#~ msgstr "Bitte geben Sie ein gültiges Datum an (yyyy-mm-dd)."
+
+#~ msgid "The end date has to be on or after the start date"
+#~ msgstr "Das Enddatum mus auf, oder nach das Startdatum fallen."
+
+#~ msgid "Please enter an alphanumeric password."
+#~ msgstr "Bitte geben Sie ein alphanumerisches Passwort an."
+
+#~ msgid "Please enter a temporary password."
+#~ msgstr "Bitte geben Sie ein temporäres Passwort ein."
+
+#~ msgid "Please select the user type."
+#~ msgstr "Bitte geben Sie den Benutzertypen an."
+
+#~ msgid "Please select a valid role."
+#~ msgstr "Bitte wählen Sie einen gültigen Benutzertypen."
+
+#~ msgid "F jS, Y"
+#~ msgstr "j. F Y"
+
+#~ msgid "Deutsch (Deutschland)"
+#~ msgstr "Deutsch (Deutschland)"

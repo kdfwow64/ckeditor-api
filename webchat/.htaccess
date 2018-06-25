@@ -1,0 +1,16 @@
+#RewriteEngine On
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>
+
+
+#RewriteCond %{HTTP_HOST} ^chat\.translitor\.org [NC]
+#RewriteRule ^(.*)$ https://chat.translitor.org/$1 [L,R=301]
+
+#RewriteEngine On
+
+#RewriteRule ^admin(/(.*))?$ /app/webroot/admin/$2 [S=1]
+
+AddHandler application/x-httpd-php56 .php .php5 .php4 .php3

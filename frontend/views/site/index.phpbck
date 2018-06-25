@@ -1,0 +1,444 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Html;
+
+?>
+
+
+<div class="fp-wrapper">
+    <div class="fp-wrapper-anim">
+
+    <section class="mp-top">
+        <div class="owl-carousel">
+            <?php if (Yii::$app->params['mainslide1']) { ?>
+                <div class="mp-top-item" style="background-image: url('<?= Yii::$app->params['mainslide1'] ?>')">
+                    <div class="mp-top-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2>
+                                        <?= Yii::$app->params['slidetext1'] ?>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <?php if (Yii::$app->params['mainslide2']) { ?>
+                <div class="mp-top-item" style="background-image: url('<?= Yii::$app->params['mainslide2'] ?>')">
+                    <div class="mp-top-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2>
+                                        <?= Yii::$app->params['slidetext2'] ?>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <?php if (Yii::$app->params['mainslide3']) { ?>
+                <div class="mp-top-item" style="background-image: url('<?= Yii::$app->params['mainslide3'] ?>')">
+                    <div class="mp-top-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2>
+                                        <?= Yii::$app->params['slidetext3'] ?>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if (Yii::$app->params['mainslide4']) { ?>
+                <div class="mp-top-item" style="background-image: url('<?= Yii::$app->params['mainslide4'] ?>')">
+                    <div class="mp-top-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2>
+                                        <?= Yii::$app->params['slidetext4'] ?>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if (Yii::$app->params['mainslide5']) { ?>
+                <div class="mp-top-item" style="background-image: url('<?= Yii::$app->params['mainslide5'] ?>')">
+                    <div class="mp-top-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2>
+                                        <?= Yii::$app->params['slidetext5'] ?>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+
+        </div>
+    </section>
+<?php
+// задавати швидкість з адмінки
+$speed = Yii::$app->params['slidetime'];
+
+$script = <<< JS
+        $('.mp-top .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            pagination: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: $speed,
+            autoplayHoverPause: true,
+
+        }); 
+JS;
+$this->registerJs($script);
+?>
+
+        <section class="mp-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="cn-block">
+                            <?php $form = \yii\widgets\ActiveForm::begin(['method' => 'get', 'action' => '/']) ?>
+                        <div class="mp-cont-filter-wrap">
+                            <div class="mp-cont-filter-point">
+                                <h3>Ваш запрос</h3>
+                                <div class="ui-widget" id="searchkeywordblock2">
+                                    <input type="text" class="search" id="searchkeyword2" placeholder="Web Designer"
+                                           name="keyword_name"
+                                           value="<?= Yii::$app->request->get('keyword') ?>">
+                                </div>
+                                <script>
+                                    var searchkeywords = <?=$works_name?>
+                                </script>
+                            </div>
+                            <?php if ($countries) { ?>
+                                <div class="mp-cont-filter-point">
+                                    <h3>Страна</h3>
+                                    <div class="ui-widget" id="searchcountryblock">
+                                        <input type="hidden" name="country"
+                                               value="<?= Yii::$app->request->get('countryget') ?>">
+                                        <input type="text" class="search" placeholder="Введите страну"
+                                               value="<?= isset($countries[Yii::$app->request->get('countryget')]) ? $countries[Yii::$app->request->get('countryget')] : ''; ?>">
+                                    </div>
+                                    <script>
+                                        var countries = <?=json_encode($countries)?>;
+                                        var countries2 = <?=json_encode($countries2)?>;
+                                    </script>
+                                </div>
+                            <?php } ?>
+                            <div class="mp-cont-filter-point">
+                                <h3>Город</h3>
+                                <div class="ui-widget" id="searchcityblock">
+                                    <input type="hidden" name="city" value="<?= Yii::$app->request->get('cityget') ?>">
+                                    <input type="text" class="search" placeholder="Введит город"
+                                           value="<?= isset($cities[Yii::$app->request->get('cityget')]) ? $cities[Yii::$app->request->get('cityget')] : ''; ?>">
+                                </div>
+                            </div>
+                            <?php if ($type) { ?>
+                                <div class="mp-cont-filter-point">
+                                    <h3>Отрасль</h3>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            <?php if (Yii::$app->request->get('typeget')) {
+                                                foreach ($type as $key => $tp) {
+                                                    if (Yii::$app->request->get('typeget') == $key) echo $tp;
+                                                }
+                                            } else {
+                                                echo 'Отрасль';
+                                            } ?>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a data-value="">Без отрасли</a></li>
+                                            <?php foreach ($type as $key => $tp) { ?>
+                                                <li><a data-value="<?= $key ?>"><?= $tp ?></a></li>
+                                            <?php } ?>
+                                        </ul>
+                                        <input class="shadow-elem" name="type"
+                                               value="<?= Yii::$app->request->get('typeget') ?>">
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <?php $form->end() ?>
+                            <div class="mp-cont-wrap">
+                                <div class="cn-block-label">
+                                    <h2>
+                                        Вакансии
+                                    </h2>
+                                    <div class="mp-watch-box __red">
+                                    <?=$vcount?>
+                                    </div>
+                                </div>
+                                <?php
+                                if ($vacancies) {
+                                    foreach ($vacancies as $vacancy) { ?>
+                                        <a href="<?= \yii\helpers\Url::toRoute(['vacancies/view', 'slug' => $vacancy->slug]) ?>">
+                                            <div class="mp-cont-point mp-cont-vacancy">
+                                                <div class="mp-cont-point-maininfo-wrap">
+                                                    <div class="mp-cont-point-maininfo">
+                                                        <div class="mp-cont-point-title">
+                                                            <?= $vacancy->title ?>
+                                                            <?php if($vacancy->price) {?>
+                                                            <span><strong><?= $vacancy->price ?></strong> €</span>
+                                                            <?php } ?>
+                                                        </div>
+
+                                                        <div class="mp-cont-point-text">
+                                                            <?= \yii\helpers\StringHelper::truncateWords($vacancy->desc, 30) ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mp-cont-point-subinfo">
+                                                    <div class="mp-cont-point-location">
+                                                        <div class="icn icn-loc">
+                                                        </div>
+                                                        <?= $vacancy->countryName ?>, <?= $vacancy->cityName ?>
+                                                    </div>
+                                                    <div class="mp-cont-point-date">
+                                                        <i class="fa fa-eye"></i>
+                                                        <?= $vacancy->views; ?>
+                                                        &nbsp;
+                                                        &nbsp;
+                                                        <div class="icn icn-date">
+                                                        </div>
+                                                        <?= date('d.m.Y', $vacancy->updated_at) ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <?php }
+                                } else {
+                                    ?>
+                                    <div class="mp-cont-point mp-cont-vacancy">
+                                        <div class="mp-cont-point-maininfo-wrap">
+                                            <div class="mp-cont-point-maininfo">
+                                                <div class="mp-cont-point-title">
+                                                    Вакансии отсутствуют
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+
+                                <a href="/vacancies">
+                                    <div class="mp-cont-more">
+                                        Посмотреть все
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="cn-block">
+                            <?php $form = \yii\widgets\ActiveForm::begin(['method' => 'get', 'action' => '/']) ?>
+                        <div class="mp-cont-filter-wrap">
+                            <div class="mp-cont-filter-point">
+                                <h3>Ваш запрос</h3>
+                                <div class="ui-widget" id="searchkeywordblock2">
+                                    <input type="text" class="search" id="searchkeyword2" placeholder="Web Designer"
+                                           name="keyword_name"
+                                           value="<?= Yii::$app->request->get('keyword') ?>">
+                                </div>
+                                <script>
+                                    var searchkeywords = <?=$works_name?>
+                                </script>
+                            </div>
+                            <?php if ($countries) { ?>
+                                <div class="mp-cont-filter-point">
+                                    <h3>Страна</h3>
+                                    <div class="ui-widget" id="searchcountryblock">
+                                        <input type="hidden" name="country"
+                                               value="<?= Yii::$app->request->get('countryget') ?>">
+                                        <input type="text" class="search" placeholder="Введите страну"
+                                               value="<?= isset($countries[Yii::$app->request->get('countryget')]) ? $countries[Yii::$app->request->get('countryget')] : ''; ?>">
+                                    </div>
+                                    <script>
+                                        var countries = <?=json_encode($countries)?>;
+                                        var countries2 = <?=json_encode($countries2)?>;
+                                    </script>
+                                </div>
+                            <?php } ?>
+                            <div class="mp-cont-filter-point">
+                                <h3>Город</h3>
+                                <div class="ui-widget" id="searchcityblock">
+                                    <input type="hidden" name="city" value="<?= Yii::$app->request->get('cityget') ?>">
+                                    <input type="text" class="search" placeholder="Введит город"
+                                           value="<?= isset($cities[Yii::$app->request->get('cityget')]) ? $cities[Yii::$app->request->get('cityget')] : ''; ?>">
+                                </div>
+                            </div>
+                            <?php if ($type) { ?>
+                                <div class="mp-cont-filter-point">
+                                    <h3>Отрасль</h3>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            <?php if (Yii::$app->request->get('typeget')) {
+                                                foreach ($type as $key => $tp) {
+                                                    if (Yii::$app->request->get('typeget') == $key) echo $tp;
+                                                }
+                                            } else {
+                                                echo 'Отрасль';
+                                            } ?>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a data-value="">Без отрасли</a></li>
+                                            <?php foreach ($type as $key => $tp) { ?>
+                                                <li><a data-value="<?= $key ?>"><?= $tp ?></a></li>
+                                            <?php } ?>
+                                        </ul>
+                                        <input class="shadow-elem" name="type"
+                                               value="<?= Yii::$app->request->get('typeget') ?>">
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <?php $form->end() ?>
+                            <div class="mp-cont-wrap">
+                                <div class="cn-block-label">
+                                    <h2>
+                                        Соискатели
+                                    </h2>
+                                    <div class="mp-watch-box __red">
+                                        <?= $rcount ?>
+                                    </div>
+                                </div>
+                                <?php
+                                if ($resume) {
+                                    foreach ($resume as $resum) { ?>
+                                        <a href="<?= \yii\helpers\Url::toRoute(['resume/view', 'slug' => $resum->slug]) ?>">
+                                            <div class="mp-cont-point mp-cont-aspirant">
+                                                <div class="mp-cont-point-maininfo-wrap">
+                                                    <div class="mp-cont-point-img"
+                                                         style="background-image: url('<?=$resum->user->avatar?>')">
+                                                    </div>
+                                                    <div class="mp-cont-point-maininfo">
+                                                        <div class="mp-cont-point-title">
+                                                            <?= Html::encode($resum->title) ?>
+                                                        </div>
+                                                        <div class="mp-cont-point-text">
+                                                            <?= Html::encode(\yii\helpers\StringHelper::truncateWords($resum->desc, 30)) ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mp-cont-point-subinfo">
+                                                    <div class="mp-cont-point-location">
+                                                        <div class="icn icn-loc">
+                                                        </div>
+                                                        <?= Html::encode($resum->countryName) ?>, <?= Html::encode($resum->cityName )?>
+                                                    </div>
+                                                    <div class="mp-cont-point-date">
+                                                        <i class="fa fa-eye"></i>
+                                                        <?= $resum->views; ?>
+                                                        &nbsp;
+                                                        &nbsp;
+                                                        <div class="icn icn-date">
+                                                        </div>
+                                                        <?= date('d.m.Y', $resum->updated_at) ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <?php }
+                                } else {
+                                    ?>
+                                    <div class="mp-cont-point mp-cont-vacancy">
+                                        <div class="mp-cont-point-maininfo-wrap">
+                                            <div class="mp-cont-point-maininfo">
+                                                <div class="mp-cont-point-title">
+                                                    Соискатели отсутствуют
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+
+                                <a href="/resume">
+                                    <div class="mp-cont-more">
+                                        Посмотреть все
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <?php if($profiles && Yii::$app->params['mainpageuser']){?>
+        <section class="mp-account-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="cn-block">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="cn-block-label">
+                                        <h2>
+                                            Профили
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <?php foreach ($profiles as $profile) { ?>
+                                <div class="col-xs-12 col-sm-4 col-md-2">
+                                    <a href="<?= \yii\helpers\Url::toRoute(['profiles/view', 'id' => $profile->id]) ?>">
+                                        <div class="mp-acc-list-point">
+                                            <div class="ava-block"
+                                                 style="background-image: url('<?= $profile->avatar ?>')"></div>
+                                            <div class="mp-account-info-wrap">
+                                                <div class="mp-account-info">
+                                                    <h3>
+                                                        <?= Html::encode($profile->firstname) ?> <?= Html::encode($profile->lastname) ?>
+                                                    </h3>
+        										<span>
+        											<?= Html::encode($profile->profession) ?>
+        										</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <?php } ?>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="/profiles">
+                                        <div class="mp-cont-more">
+                                            Посмотреть все
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<?php }?>
+<?php if (!empty(Yii::$app->params['fjsc'])) {
+    echo Yii::$app->params['fjsc'];
+} ?>

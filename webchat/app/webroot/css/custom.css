@@ -1,0 +1,565 @@
+body {
+    padding-top: 60px; 
+}
+
+label .label-description {
+    display:block;
+}
+
+div.input
+{
+    margin-bottom: 5px;
+}
+
+a.asc:after {
+    content: ' ⇣';
+}
+a.desc:after {
+    content: ' ⇡';
+}
+a.asc, a.desc
+{
+    font-weight: bold;
+}
+
+h1 a, h2 a{
+    color: inherit;
+}
+
+hr.tinyhr
+{
+    margin: 5px 0;
+}
+
+.well dl {
+    margin: 0;
+}
+
+div.terms-conditions {
+    height: 175px;
+    width: 400px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 15px 15px 0 15px;
+    margin:0 0 25px 0;
+    background:#f5f5f5;
+    border:none;
+    border-top:1px solid #7d7d7d;
+    border-left:1px solid #7d7d7d;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    color:#666;
+    text-align: justify;
+}
+
+
+.navbar .brand-admin {
+    display: block;
+    float: left;
+    margin-left: -20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 45px;
+    color: #999;
+}
+.navbar .brand-admin img
+{
+    max-height: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .navbar .brand-admin {
+        margin-left: 15px !important;
+    }
+}
+@media (max-width: 768px) {
+    .navbar .brand-admin {
+        margin-left: 15px !important;
+    }
+}   
+
+.toggle-bar
+{
+    display: block;
+    margin: 3px 0;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+footer
+{
+    border-color: #ccc;
+    padding: 5px 0 0 0;
+    margin: 55px 0 0 0;	
+}
+footer *
+{
+    font-size: 10px;
+}
+.footer_left
+{
+    float: left;
+    width: 33.3%;
+}
+.footer_center
+{
+    float: left;
+    text-align: center;
+    width: 33.3%;
+}
+.footer_right
+{
+    float: right;
+    text-align: right;
+    width: 33.3%;
+}
+footer .poweredby, footer .poweredby a
+{
+    color: #bfbfbf;
+}
+footer .poweredby a:hover
+{
+    color: #00438A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** Paging **/
+.paging {
+    background:#fff;
+    color: #ccc;
+    margin-bottom: 18px;
+    clear:both;
+}
+.paging .current,
+.paging .disabled,
+.paging a {
+    text-decoration: none;
+    padding: 5px 8px;
+    display: inline-block
+}
+.paging > span {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+.paging > span:hover {
+    background: #efefef;
+}
+.paging .prev {
+    border-left: 1px solid #ccc;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+.paging .next {
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+.paging .disabled {
+    color: #ddd;
+}
+.paging .disabled:hover {
+    background: transparent;
+}
+.paging .current {
+    background: #efefef;
+    color: #000;
+    font-weight: bold;
+}
+
+select.datetimeinput {
+    width: auto;
+}
+
+
+
+
+
+
+.error-message {
+    color: #B94A48;
+    font-weight: bold;
+}
+
+.inline
+{
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+
+
+
+/** Scaffold View **/
+.view dl {
+    width:100%;
+    overflow:hidden;
+}
+.view dt {
+    float:left;
+    width:180px;
+    clear: left;
+}
+.view dd {
+    float:left;
+    width:500px;
+}
+
+
+
+form .required {
+    font-weight: bold;
+}
+form .required label:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+
+
+.breadcrumb .badge
+{
+    position: relative;
+    top: -1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hero-unit
+{
+    padding: 30px;
+}
+.hero-unit h1
+{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.smallpadding
+{
+    padding: 10px;
+}
+
+
+
+.admin-ico-pull-up
+{
+    margin-top: -3px;
+}
+
+
+
+.smalltext
+{
+    font-size: 80%;
+}
+
+
+.avatar_image
+{
+    border-radius: 3px;
+}
+.visitorname 
+{
+    
+}
+
+
+
+
+.blockUI h1, .blockUI h2
+{
+    color: #fff;
+}
+
+
+.highlight {
+    background-color: #ff8;
+    border: 1px dotted red;
+}
+
+/* F-ICONS */
+[class^="ico-"], [class*=" ico-"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-repeat: no-repeat;
+}
+
+.ico-accept {
+    background-image: url("../img/icons/accept.png");
+}
+.ico-add {
+    background-image: url("../img/icons/add.png");
+}
+.ico-arrow_refresh {
+    background-image: url("../img/icons/arrow_refresh.png");
+}
+.ico-attach {
+    background-image: url("../img/icons/attach.png");
+}
+.ico-bell {
+    background-image: url("../img/icons/bell.png");
+}
+.ico-bin_closed {
+    background-image: url("../img/icons/bin_closed.png");
+}
+.ico-bullet_arrow_down {
+    background-image: url("../img/icons/bullet_arrow_down.png");
+}
+.ico-bullet_arrow_up {
+    background-image: url("../img/icons/bullet_arrow_up.png");
+}
+.ico-bullet_green {
+    background-image: url("../img/icons/bullet_green.png");
+}
+.ico-bullet_red {
+    background-image: url("../img/icons/bullet_red.png");
+}
+.ico-bullet_star {
+    background-image: url("../img/icons/bullet_star.png");
+}
+.ico-bullet_toggle_minus {
+    background-image: url("../img/icons/bullet_toggle_minus.png");
+}
+.ico-bullet_toggle_plus {
+    background-image: url("../img/icons/bullet_toggle_plus.png");
+}
+.ico-cancel {
+    background-image: url("../img/icons/cancel.png");
+}
+.ico-chart_curve {
+    background-image: url("../img/icons/chart_curve.png");
+}
+.ico-clock {
+    background-image: url("../img/icons/clock.png");
+}
+.ico-cog {
+    background-image: url("../img/icons/cog.png");
+}
+.ico-comment {
+    background-image: url("../img/icons/comment.png");
+}
+.ico-comments_add {
+    background-image: url("../img/icons/comments_add.png");
+}
+.ico-comment_add {
+    background-image: url("../img/icons/comment_add.png");
+}
+.ico-control_pause {
+    background-image: url("../img/icons/control_pause.png");
+}
+.ico-database_key {
+    background-image: url("../img/icons/database_key.png");
+}
+.ico-date {
+    background-image: url("../img/icons/date.png");
+}
+.ico-date_next {
+    background-image: url("../img/icons/date_next.png");
+}
+.ico-date_previous {
+    background-image: url("../img/icons/date_previous.png");
+}
+.ico-delete {
+    background-image: url("../img/icons/delete.png");
+}
+.ico-disk {
+    background-image: url("../img/icons/disk.png");
+}
+.ico-door_out {
+    background-image: url("../img/icons/door_out.png");
+}
+.ico-email {
+    background-image: url("../img/icons/email.png");
+}
+.ico-error {
+    background-image: url("../img/icons/error.png");
+}
+.ico-exclamation {
+    background-image: url("../img/icons/exclamation.png");
+}
+.ico-eye {
+    background-image: url("../img/icons/eye.png");
+}
+.ico-film {
+    background-image: url("../img/icons/film.png");
+}
+.ico-folder_go {
+    background-image: url("../img/icons/folder_go.png");
+}
+.ico-folder_user {
+    background-image: url("../img/icons/folder_user.png");
+}
+.ico-folder_wrench {
+    background-image: url("../img/icons/folder_wrench.png");
+}
+.ico-group {
+    background-image: url("../img/icons/group.png");
+}
+.ico-help {
+    background-image: url("../img/icons/help.png");
+}
+.ico-information {
+    background-image: url("../img/icons/information.png");
+}
+.ico-key {
+    background-image: url("../img/icons/key.png");
+}
+.ico-layout {
+    background-image: url("../img/icons/layout.png");
+}
+.ico-layout_content {
+    background-image: url("../img/icons/layout_content.png");
+}
+.ico-layout_link {
+    background-image: url("../img/icons/layout_link.png");
+}
+.ico-lightning {
+    background-image: url("../img/icons/lightning.png");
+}
+.ico-link_go {
+    background-image: url("../img/icons/link_go.png");
+}
+.ico-lock {
+    background-image: url("../img/icons/lock.png");
+}
+.ico-magnifier {
+    background-image: url("../img/icons/magnifier.png");
+}
+.ico-music {
+    background-image: url("../img/icons/music.png");
+}
+.ico-new {
+    background-image: url("../img/icons/new.png");
+}
+.ico-page_white {
+    background-image: url("../img/icons/page_white.png");
+}
+.ico-page_white_acrobat {
+    background-image: url("../img/icons/page_white_acrobat.png");
+}
+.ico-page_white_camera {
+    background-image: url("../img/icons/page_white_camera.png");
+}
+.ico-page_white_compressed {
+    background-image: url("../img/icons/page_white_compressed.png");
+}
+.ico-page_white_excel {
+    background-image: url("../img/icons/page_white_excel.png");
+}
+.ico-page_white_picture {
+    background-image: url("../img/icons/page_white_picture.png");
+}
+.ico-page_white_powerpoint {
+    background-image: url("../img/icons/page_white_powerpoint.png");
+}
+.ico-page_white_text {
+    background-image: url("../img/icons/page_white_text.png");
+}
+.ico-page_white_word {
+    background-image: url("../img/icons/page_white_word.png");
+}
+.ico-pencil {
+    background-image: url("../img/icons/pencil.png");
+}
+.ico-readme {
+    background-image: url("../img/icons/readme.txt");
+}
+.ico-report {
+    background-image: url("../img/icons/report.png");
+}
+.ico-report_add {
+    background-image: url("../img/icons/report_add.png");
+}
+.ico-report_go {
+    background-image: url("../img/icons/report_go.png");
+}
+.ico-script_code {
+    background-image: url("../img/icons/script_code.png");
+}
+.ico-star {
+    background-image: url("../img/icons/star.png");
+}
+.ico-table {
+    background-image: url("../img/icons/table.png");
+}
+.ico-table_go {
+    background-image: url("../img/icons/table_go.png");
+}
+.ico-table_gear {
+    background-image: url("../img/icons/table_gear.png");
+}
+.ico-textfield_delete {
+    background-image: url("../img/icons/textfield_delete.png");
+}
+.ico-tick {
+    background-image: url("../img/icons/tick.png");
+}
+.ico-time {
+    background-image: url("../img/icons/time.png");
+}
+.ico-timeline_marker {
+    background-image: url("../img/icons/timeline_marker.png");
+}
+.ico-vcard {
+    background-image: url("../img/icons/vcard.png");
+}
+.ico-wrench_orange {
+    background-image: url("../img/icons/wrench_orange.png");
+}
+
+/* F-ICONS */
+
+
+
+/* Left-align dropdown menus within .pull-right */
+.pull-right .dropdown-menu
+{
+    right: 0;
+    left: auto;
+}
+/* Left-align dropdown menus within .pull-right */
+
+/* Action-Button Spacing */
+.actions .row-fluid .btn
+{
+    margin-bottom: 3px;
+}
+/* Action-Button Spacing */
+
+
+.topbar_in-progress a
+{
+    padding: 2px 5px !important;
+    margin-top: 13px !important;
+    margin-right: 10px;
+}
+
+.actions .btn-toolbar
+{
+    margin-top: 0;
+}
+
+a.frontend-demo-link:hover
+{
+    background-color: #df2e1b !important;
+}

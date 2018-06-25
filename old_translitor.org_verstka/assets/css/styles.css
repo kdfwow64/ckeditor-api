@@ -1,0 +1,978 @@
+body {
+	line-height: 1.2;
+	margin: 0;
+	background-color: #FFF; 
+	color: #333;
+}
+
+body, table {
+	font-family: arial,helvetica,sans-serif; 
+	font-size: 12px;
+}
+
+p, h1, h2, h3, h4, h5 {
+	margin: 1em 0px;
+}
+
+b, h1, h2, h3, h4, h5 {
+	font-weight: bold;
+}
+
+h3 {
+	font-size: larger;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a {
+	color:#DE4945; 
+	text-decoration: none;
+}
+
+a:visited {
+	color:#DE4945; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+select {
+	background-color: #FFFFFF; 
+	font-family: arial, sans-serif; 
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	font-size: 12px; 
+	font-family: arial, sans-serif;
+}
+
+hr {
+	color: #dddddd;
+}
+
+a, img {
+	border: 0;
+}
+
+img {
+	vertical-align: top;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.tKbd {
+	margin-top: 7px;
+}
+
+.tKbd td {
+	padding: 2px 3px;
+}
+
+.tMainContainer {
+	text-align: center;
+	padding: 17px 17px 0 17px;
+}
+
+.tMainContainerSecondLayer {
+	padding: 0 17px 2px 17px;
+}
+
+.tMenuBox {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 1200;
+	background-color: #fff;
+	boder: none;
+	border: 1px solid #666;
+	border-right: none;
+	padding: 17px;
+	display: none;
+	min-width: 250px;
+	max-width: 319px;
+}
+
+.tMenuBox ul li {
+	list-style: none;
+	margin: 0.4em 0;
+}
+
+.tMenuBox ul li:last-child {
+	margin: 0.4em 0 0 0;
+}
+
+.tLogoContainer {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	height: 30px;
+	background-color: #DE4945;
+	/* border-bottom: 1px solid #fc8505;*/
+	font-size: 13px;
+}
+
+.tLogo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 27px;
+	width: 178px;
+	z-index: 100;
+	background: #fff;
+}
+
+.tMyTranslit {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 27px;
+	line-height: 30px;
+}
+
+.tTxtLogoTranslit {
+	position: absolute;
+	top: 0;
+	left: 17px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.tTxtLogoTranslit a {
+	color: #fff;
+}
+
+.tTableContainer {
+	padding: 0;
+	margin: 0 auto 6px auto;
+	position: relative;
+	z-index: 40;
+	display: inline-block;
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+.tControlContainer {
+	padding: 0;
+	margin: 0 auto 0 auto;
+	z-index: 40;
+	display: block;
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+.tControlInline {
+	display:inline-block; 
+	zoom: 1;
+	*display: inline;
+	margin: 0 0 3px 0;
+}
+
+.tControlInlineSetup {
+	display:inline-block; 
+	zoom: 1;
+	*display: inline;
+	margin: 0 10px 20px 0;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 7px;
+}
+
+.tCiS0 {
+	background-color: #fff;
+}
+
+.tCiS1 {
+	background-color: #eee;
+}
+
+.tControlInlineSetup input {
+	display: block;
+	margin: 5px 0 0 0;
+	font-size: 10px;
+	font-weight: normal;
+	-webkit-appearance: none;
+	background: #fff;
+	border: 1px solid #666666; 
+	font-size: 14px; 
+	font-family: arial,sans-serif; 
+	color: #666666;
+	height: 1.6em;
+	width: 6em;
+}
+
+
+.tSwitcherContainer {
+	padding: 0;
+	margin: 0 0 10px 0;
+	z-index: 40;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+.tMenu {
+	margin: 0 20px 7px 0;
+	width: 100%;
+}
+
+.tAdvContainer {
+	padding: 0;
+	position: relative;
+	text-align: center;
+	z-index: 50;
+}
+
+.tBoxAdvUp {
+	margin: auto;
+	padding: 0;
+	width: 728px;
+	overflow: hidden;
+	position: relative;
+	z-index: 50;
+}
+
+.tBoxAdv {
+	background: none;
+	margin: auto;
+	padding: 0;
+	width: 728px;
+	overflow: hidden;
+	position: relative;
+	z-index: 50;
+}
+
+.tBoxAdvSecond {
+	padding: 15px 0 0 0;
+}
+
+.tBoxWzg,
+.tBoxBannerLeft {
+	display: inline; 
+	width: 100%;
+}
+
+.tWzg, .tWzg * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+.tWzg {
+	color: #333;
+	font-size: 12px;
+	clear: both;
+	z-index: 20;
+}
+
+.tWzg li {
+	float: left;
+	position: relative;
+	background: #fff;
+	white-space: nowrap;
+	*white-space: normal;
+	z-index: 10;
+}
+
+.tWzg input {
+	cursor: pointer;
+	background: #fff;
+	border: none;
+	margin: 0;
+	padding: 0;
+	padding: 5px 5px 3px 5px;
+	font: inherit !important;	
+}
+
+.tWzg input:hover {
+	background: #fff;
+	text-decoration: underline;
+}
+
+.tWzg input[highlight="red"]:hover {
+	background: #DE4945;
+	color: #fff;
+}
+
+.tWzg input[highlight="green"]:hover {
+	background: #9bfda6;
+	color: #333;
+}
+
+.tC0 {
+	font-size: 13px;
+	cursor: pointer;
+	color:#333;
+	background: #FFF;
+}
+.tC1 {
+	font-size: 13px;
+	cursor: pointer;
+	color:#333; 
+	background: #EEE;
+}
+
+.bcharset, .bcharset2 {
+	font-size: 12px; 
+	font-family: arial,sans-serif; 
+	letter-spacing: 0em; 
+	font-weight: normal; 
+	cursor: pointer;
+	margin: 0;
+	padding: 3px 0px;
+	width: 22px;
+}
+
+.shiftb {
+	width: auto;
+	padding: 3px 5px;
+}
+
+.bcharset {
+	background: #FFF; 
+	border: 1px solid #999999; 
+	color: #666666;
+}
+
+.bcharset2 {
+	background: #CCC; 
+	border: 1px solid #666666; 
+	color: #444;
+}
+
+.bcharset:hover {
+	color: #444;
+	background: #EEE;
+}
+
+.bcharset2:hover {
+	background: #BBB;
+	color: #333;
+}
+
+.tC2 {
+	color: #999999;
+}
+
+.tC20 {
+}
+
+.tC21 {
+	background: #ccc;
+}
+
+.tNosymbTrans {
+	text-decoration: line-through; color: #990000;
+}
+
+#letterscounter {
+	text-align: left;
+	margin: 2px 0 0 3px;
+	color: #333;
+}
+
+.txtarea, .txtarea_small { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	outline: none; 
+	background: #f8f8f8; 
+	border: 2px solid #DE4945; 
+	font-size: 14px; 
+	font-family: Verdana,Tahoma, sans-serif; 
+	color: #000000; 
+	z-index: 100;
+}
+
+.txtarea { 
+	padding: 4px 4px;
+	width: 45%;
+	min-width: 300px;
+	height: 300px;
+}
+
+.txtarea_translate {
+	display: inline-block;
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	outline: none; 
+	background: #f8f8f8; 
+	border: 0px;
+	font-size: 14px; 
+	font-family: Verdana,Tahoma, sans-serif; 
+	color: #000000; 
+	z-index: 100;
+	padding: 4px 4px;
+	width: 45%;
+	min-width: 300px;
+	height: 300px;
+}
+
+.toptable1 {
+	background: #DE4945; 
+	color: #FFFFFF; 
+	padding: 5px; 
+	border-bottom: 2px solid #666666;
+}
+
+.toptable1 a {
+	color:#FFFFFF; 
+	text-decoration: none;
+}
+
+.toptable1 a:visited {
+	color:#FFFFFF; 
+	text-decoration: none;
+}
+
+.toptable1 a:hover {
+	color: #FFFFFF; 
+	text-decoration: underline;
+}
+
+.toptable2 {
+	background: #EEEEEE; 
+	color: #666666; 
+	padding: 3px; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+	border-bottom: 1px solid #cccccc; 
+	border-top: 1px solid #cccccc;
+}
+
+.toptable2 a {
+	color:#666666; 
+	text-decoration: none;
+}
+
+.toptable2 a:visited {
+	color:#666666; 
+	text-decoration: none;
+}
+
+.toptable2 a:hover {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+.toptable3 {
+	background: #D4D3D3; 
+	color: #333333; 
+	padding: 2px; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+	border-top:1px solid #FFFFFF;
+}
+
+.toptable3 a {
+	color:#333333; 
+	text-decoration: none;
+}
+
+.toptable3 a:visited {
+	color:#333333; 
+	text-decoration: none;
+}
+
+.toptable3 a:hover {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+.tSearchBlock {
+	background: #fff;
+	padding: 10px 0;
+	border: none;
+}
+
+.tBottomContainer {
+	background: #f3f1ed;
+	background: #fff;
+	padding: 20px 0 10px 0;
+	color: #999;
+}
+
+.tBottomContainer a {
+	color: #999;
+}
+
+.tcbs, .tcbsSetup {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: Verdana,Tahoma, sans-serif;
+	letter-spacing: 0em;
+	font-weight: normal;
+	color: #999999;
+	vertical-align: bottom;
+}
+
+.tcbsSetup {
+
+}
+
+.tSetupPin,
+.tSetupAccount {
+	color: #333;
+	-webkit-appearance: none;	
+	font-size: 18px; 
+	font-family: arial,sans-serif; 
+	letter-spacing: 0em; 
+	font-weight: normal; 
+	cursor: pointer;
+	padding: 0.5em;
+	background-color: #fff;
+	border: 1px solid #aaa;
+
+}
+
+.tcbssup {
+	font-size: 10px; 
+	vertical-align: top;
+}
+
+.tcbul {
+	text-decoration: underline;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.tYouSeeMe {
+	display: block;
+}
+
+.tYouDontSeeMe {
+	display: none;
+}
+
+.tCenter {
+	margin: auto;
+	text-align: center;
+}
+
+.tAdlink {
+	text-align: left;
+	padding-left: 1em; 
+}
+
+.tMenuLink {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.tMenuLink:hover {
+	text-decoration: underline;
+}
+
+.tBackToTextfield {
+	padding: 0;
+	margin: 15px 0;
+	font-size: 18px;
+	font-family: Verdana,Tahoma, sans-serif;
+	letter-spacing: 0em;
+	font-weight: normal;
+	color: #999999;
+	vertical-align: bottom;
+	text-decoration: underline;
+	cursor: pointer;
+	cursor: hand;
+}
+
+@media (max-width: 550px) {
+	.no-xs {
+		display:none;
+	}
+}
+
+@media (max-width: 321px) {
+	.no-xxs {
+		display:none;
+	}
+}
+
+.tLoadButton, .tLoadInput {
+	background: #FFFFFF;
+	border: 1px solid #666666; 
+	line-height: normal !important;
+	color: #333;
+	margin: 0 3px 0 0;
+	padding: 2px;
+	-webkit-appearance: none;
+}
+
+.tLoadButton {
+	cursor: pointer; 
+	background-color: #ededed;
+}
+
+.tLoadButton::-moz-focus-inner { 
+    border: 0;
+}
+
+.tError {
+	color: #DE4945;
+	font-weight: bold;
+}
+
+.tCookiesInfoblock {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	font-size: 11px;
+	z-index: 1000;
+	width: 100%;
+	border-top: 1px solid #333;
+	background: #eee;
+	color: #333; 
+	padding: 10px 22em 10px 10px;
+	min-height: 52px;
+}
+
+.tCookiesInfoblock .tCookiesShowMore {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.tCookiesInfoblock .tCookiesSilentClose {
+	color: #bbb;
+	cursor: pointer;
+}
+
+.tCookiesInfoblock .tCookiesButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: #DE4945;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #DE4945;
+	text-align: center;
+	width: 20em;
+	line-height: 30px;
+	z-index: 1001;
+}
+
+.tCookiesInfoblock .tCookiesButton:hover {
+	background-color: #eee;
+	color: #DE4945;
+}
+
+@media (max-width: 500px) {
+
+	.tCookiesInfoblock {
+		padding: 10px;
+	}
+	
+	.tCookiesInfoblock .tCookiesButton {
+		position: relative;
+		top: 0;
+		right: 0;
+		margin: 0 auto 10px auto;
+		display: block;
+		width: 20em;
+		line-height: 30px;
+	}
+}
+
+.tBannerRight160 {
+	width: 160px;
+	height: 300px; 
+	position: absolute; 
+	right: 0px; 
+	top: 0px; 
+	display: block;
+}
+
+.tTextArea0,
+.tWzgBlock0 {
+	position: relative; 	
+	padding-right: 0;
+	overflow: visible;
+}
+
+.tTextArea160,
+.tWzgBlock160 {
+	position: relative; 	
+	padding-right: 162px;
+	overflow: visible;
+}
+
+.tTextArea0,
+.tTextArea160 {
+	z-index: 50;
+}
+
+
+@media (max-width: 680px) {
+	.tBannerRight160 {
+		display: none;
+		width: 0px;
+	}
+	.onBigScreen {
+		display: none;
+		width: 0px;
+	}
+	.tTextArea160,
+	.tWzgBlock160 {
+		padding-right: 0;
+	}
+}
+
+#hint1 {
+	position: absolute;	
+	top: 0;
+	left: 0;
+	background: url("/pict/hint1.png") no-repeat left bottom;
+	width: 180px;
+	height: 25px;
+	z-index: 999;
+	display: none;
+}
+
+#hint2 {
+	position: absolute;	
+	top: 35px;
+	right: 32px;
+	background: url("/pict/hint2.png") no-repeat left bottom;
+	width: 175px;
+	height: 32px;
+	z-index: 999;
+	display: none;
+}
+
+
+div.table { 
+	display: table; 
+	display: block; 
+}
+
+div.tr { 
+	display:table-row; 
+	display:block; 
+}
+
+div.td { 
+	display:table-cell; 
+	padding: 0 2px; 
+	display:inline; 
+}
+
+.comeon { 
+	text-decoration: none; 
+	font-size: 18px; 
+	font-family: Verdana,Tahoma, sans-serif; 
+	letter-spacing: 0em; 
+	font-weight: normal; 
+	color: #999;
+}
+
+.comeon2 {
+	text-decoration: none; 
+	font-size: 18px; 
+	font-family: Verdana,Tahoma, sans-serif; 
+	letter-spacing: 0em; 
+	font-weight: normal; 
+	color: #999999;
+}
+
+.tSrchCaption {
+	text-align: right;
+}
+
+.tSrchTab {
+	text-align: left; 
+	margin: 0 auto;
+}
+
+.tSrchTab input[type="submit"] {
+	-webkit-appearance: none;
+	background: #FFFFFF;
+	border: 1px solid #666666; 
+	cursor: pointer; 
+	font-size: 12px; 
+	font-family: arial,sans-serif; 
+	color: #666666;
+	height: 1.6em;
+}
+
+.tSrchTab input[type="submit"]:hover {
+	background: #eee;
+}
+
+.tSrchCol td {
+	padding: 4px 2px 4px 0;
+}
+
+.tSrchTabMobile {
+	max-width: 468px;
+	margin: auto;
+	text-align: center;
+}
+ 
+.tSrchTabMobile input[type="submit"] {
+	padding: 10px 10px;
+	width: 100%;
+	background: #ededed;
+	border: 1px solid #666666; 
+	cursor: pointer; 
+	font-size: 18px;
+	font-family: Verdana, Tahoma, sans-serif;
+	color: #666666;
+}
+
+.tSrchTabMobile input[type="submit"]:hover {
+	background: #bbb;
+	border-color: #333;
+}
+
+.tSrchTabMobile .tSrchCol {
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.tButtonOk, .tButtonCancel {
+	font-size: 18px; 
+	font-family: arial,sans-serif; 
+	letter-spacing: 0em; 
+	font-weight: normal; 
+	cursor: pointer;
+	padding: 0.5em;
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+
+.tButtonOk {
+	background-color: #DE4945;
+	color: #fff;
+	border: 1px solid #DE4945;
+}
+
+.tButtonOk:hover {
+	background-color: #fff;
+	color: #DE4945;
+}
+
+.tButtonCancel:hover {
+	background-color: #eee;	
+}
+
+.tErrorMessage {
+	font-size: 14px;
+        font-family: arial,sans-serif;
+        letter-spacing: 0em;
+        font-weight: normal;
+	background: rgba(253, 134, 3, 0.43);
+	color: #000;
+	margin: 1em 1em 2em 1em;
+	padding: 1em 20px;
+}
+
+.tClickLink {
+	color:#DE4945; 
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.tClickLink:hover {
+	color:#333; 
+}
+
+.tLcs {
+	font-family:sans-serif;
+	font-size:0.82em;
+	border:black 1px solid;
+	padding: 15px;
+	width: 100%;
+}
+
+ul#tTabCell .tB {
+	margin-top: 4px;
+}
+
+ul#tTabCell,
+ul#tTabCell li {
+	margin: 0;
+	padding: 0;
+}
+
+ul#tTabCell li {
+	display: inline-block;
+	vertical-align: top;
+	align: center;
+	padding: 3px;	
+	margin-top: 3px;
+	font-size: 13px;
+	cursor: pointer;
+	color: #333;
+	/* For IE 7 */
+	zoom: 1;
+	*display: inline;
+}
+
+ul#tTabCell li:nth-of-type(even) {
+  background-color: #eee;
+}
+
+.tTableContainer .spacer,
+.tTableContainer .spacer a {
+	font-size: 11px;
+	color: #999;
+	text-align: right;
+	min-height: 8px;
+	text-decoration: none;
+}
+
+.tUbratre {
+	text-align: right;
+	line-height: 23px;
+	vertical-align: text-bottom;
+}
+
+.tUbratre .tClickLink {
+	font-size: 11px;
+	color: #afafaf;
+}
+
+.adjustment {
+	margin: 0 auto 10px auto;
+	color: #999;
+	max-width: 90%;
+}

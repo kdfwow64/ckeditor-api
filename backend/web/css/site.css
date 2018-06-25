@@ -1,0 +1,17 @@
+a {
+    cursor: pointer;
+}
+.fl-r{
+    float: right;
+}
+.lang-inputs{
+    margin-bottom: 5px;
+    width: 40%;
+    padding: 0 3px;
+}
+.lang-labels{
+    width: 60%;
+    font-weight: normal;
+    padding: 0 3px 3px 0;
+    border-bottom: 1px solid #ccc;
+}

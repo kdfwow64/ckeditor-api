@@ -1,0 +1,1 @@
+[14-Jan-2018 08:26:08 CST6CDT] PHP Fatal error:  require(): Failed opening required '/home/zarplata/public_html/translitor.org/frontend/config/../../common/config/params.php' (include_path='.:/usr/local/php70/pear') in /home/zarplata/public_html/translitor.org/frontend/config/main.php on line 3

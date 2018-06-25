@@ -1,0 +1,149 @@
+[12-Jan-2018 14:10:10 CST6CDT] PHP Fatal error:  require(): Failed opening required '/home/zarplata/public_html/translitor.org/backend/web/../../vendor/autoload.php' (include_path='.:/usr/local/php71/pear') in /home/zarplata/public_html/translitor.org/backend/web/index.php on line 5
+[14-Jan-2018 12:55:58 CST6CDT] An Error occurred while handling another error:
+ParseError: syntax error, unexpected end of file in /home/zarplata/public_html/translitor.org/backend/views/layouts/common.php:153
+Stack trace:
+#0 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/zarplata/...', Array)
+#1 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/zarplata/...', Array, Object(backend\controllers\SiteController))
+#2 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#3 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#4 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#5 [internal function]: yii\web\ErrorAction->run()
+#6 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#7 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#8 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#9 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#10 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#12 {main}
+Previous exception:
+ParseError: syntax error, unexpected end of file in /home/zarplata/public_html/translitor.org/backend/views/layouts/common.php:153
+Stack trace:
+#0 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/zarplata/...', Array)
+#1 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/widgets/ContentDecorator.php(77): yii\base\View->renderFile('/home/zarplata/...', Array)
+#2 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Widget.php(109): yii\widgets\ContentDecorator->run()
+#3 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(456): yii\base\Widget::end()
+#4 /home/zarplata/public_html/translitor.org/backend/views/layouts/main.php(7): yii\base\View->endContent()
+#5 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(332): require('/home/zarplata/...')
+#6 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/zarplata/...', Array)
+#7 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/zarplata/...', Array, Object(backend\controllers\SettingsController))
+#8 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="par...')
+#9 /home/zarplata/public_html/translitor.org/backend/controllers/SettingsController.php(47): yii\base\Controller->render('update', Array)
+#10 [internal function]: backend\controllers\SettingsController->actionIndex()
+#11 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('settings/index', Array)
+#15 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/zarplata/public_html/translitor.org/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WlunvrXggwYAAKw89pEAAAAZ',
+    'HTTPS' => 'on',
+    'PHPHANDLER' => '/usr/local/php70/bin/php',
+    'HTTP_HOST' => 'www.translitor.org',
+    'HTTP_X_REAL_IP' => '81.24.208.51',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk-UA,uk;q=0.9,ru;q=0.8,en-US;q=0.7,en;q=0.6,az;q=0.5,he;q=0.4',
+    'HTTP_COOKIE' => 'trdirection=ru; _ym_uid=1515790073879046635; consent=1; _identity-user=92126db830fdd4a2e653252452cc1e4d6cee294048960a83a1220a8f728d880fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226mC4s_liCd4LQZKeCCO24aGUO5ORDjSV%22%2C2592000%5D%22%3B%7D; _ga=GA1.2.970223200.1515943394; _gid=GA1.2.1487330554.1515943394; _ym_isad=1; _csrf-backend=1101744b62da79c78f326fd8e17e2bc6cd50d98b596cc810256507b05b1a42daa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FlRXRiZ0GJCXv4CcRt1T7qX37D-YXZyW%22%3B%7D; _ym_visorc_47192898=w; zarplata=1riqpiajurep92mp8rbqbl0tb0; __atuvc=16%7C3; __atuvs=5a5ba480f2f822d2005; _ym_visorc_46864563=w',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'www.translitor.org',
+    'SERVER_ADDR' => '181.224.152.215',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '81.24.208.51',
+    'DOCUMENT_ROOT' => '/home/zarplata/public_html/translitor.org',
+    'SERVER_ADMIN' => 'webmaster@translitor.org.zarplata.eu',
+    'SCRIPT_FILENAME' => '/home/zarplata/public_html/translitor.org/backend/web/index.php',
+    'REMOTE_PORT' => '39900',
+    'REDIRECT_URL' => '/backend/web/settings/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/adminpanel/settings/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1515956158.2009799480438232421875,
+    'REQUEST_TIME' => 1515956158,
+]
+[14-Jan-2018 12:56:01 CST6CDT] An Error occurred while handling another error:
+ParseError: syntax error, unexpected end of file in /home/zarplata/public_html/translitor.org/backend/views/layouts/common.php:153
+Stack trace:
+#0 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/zarplata/...', Array)
+#1 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/zarplata/...', Array, Object(backend\controllers\SiteController))
+#2 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#3 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#4 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#5 [internal function]: yii\web\ErrorAction->run()
+#6 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#7 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#8 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#9 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#10 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(ParseError))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#12 {main}
+Previous exception:
+ParseError: syntax error, unexpected end of file in /home/zarplata/public_html/translitor.org/backend/views/layouts/common.php:153
+Stack trace:
+#0 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/zarplata/...', Array)
+#1 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/widgets/ContentDecorator.php(77): yii\base\View->renderFile('/home/zarplata/...', Array)
+#2 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Widget.php(109): yii\widgets\ContentDecorator->run()
+#3 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(456): yii\base\Widget::end()
+#4 /home/zarplata/public_html/translitor.org/backend/views/layouts/main.php(7): yii\base\View->endContent()
+#5 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(332): require('/home/zarplata/...')
+#6 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/zarplata/...', Array)
+#7 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/zarplata/...', Array, Object(backend\controllers\SettingsController))
+#8 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="par...')
+#9 /home/zarplata/public_html/translitor.org/backend/controllers/SettingsController.php(47): yii\base\Controller->render('update', Array)
+#10 [internal function]: backend\controllers\SettingsController->actionIndex()
+#11 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('settings/index', Array)
+#15 /home/zarplata/public_html/translitor.org/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/zarplata/public_html/translitor.org/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WlunwbXggwYAAJ3CFnQAAAAU',
+    'HTTPS' => 'on',
+    'PHPHANDLER' => '/usr/local/php70/bin/php',
+    'HTTP_HOST' => 'www.translitor.org',
+    'HTTP_X_REAL_IP' => '81.24.208.51',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk-UA,uk;q=0.9,ru;q=0.8,en-US;q=0.7,en;q=0.6,az;q=0.5,he;q=0.4',
+    'HTTP_COOKIE' => 'trdirection=ru; _ym_uid=1515790073879046635; consent=1; _identity-user=92126db830fdd4a2e653252452cc1e4d6cee294048960a83a1220a8f728d880fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_identity-user%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226mC4s_liCd4LQZKeCCO24aGUO5ORDjSV%22%2C2592000%5D%22%3B%7D; _ga=GA1.2.970223200.1515943394; _gid=GA1.2.1487330554.1515943394; _ym_isad=1; _csrf-backend=1101744b62da79c78f326fd8e17e2bc6cd50d98b596cc810256507b05b1a42daa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FlRXRiZ0GJCXv4CcRt1T7qX37D-YXZyW%22%3B%7D; _ym_visorc_47192898=w; zarplata=1riqpiajurep92mp8rbqbl0tb0; __atuvc=16%7C3; __atuvs=5a5ba480f2f822d2005; _ym_visorc_46864563=w',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'www.translitor.org',
+    'SERVER_ADDR' => '181.224.152.215',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '81.24.208.51',
+    'DOCUMENT_ROOT' => '/home/zarplata/public_html/translitor.org',
+    'SERVER_ADMIN' => 'webmaster@translitor.org.zarplata.eu',
+    'SCRIPT_FILENAME' => '/home/zarplata/public_html/translitor.org/backend/web/index.php',
+    'REMOTE_PORT' => '40552',
+    'REDIRECT_URL' => '/backend/web/settings/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/adminpanel/settings/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1515956161.6110990047454833984375,
+    'REQUEST_TIME' => 1515956161,
+]

@@ -1,0 +1,59 @@
+a:28:{s:10:"adminEmail";s:19:"sinsirful@gmail.com";s:13:"facebook_link";s:36:"https://www.facebook.com/zarplata.eu";s:7:"in_link";s:14:"www.RusInfo.eu";s:7:"gp_link";s:0:"";s:7:"vk_link";s:0:"";s:2:"ga";s:360:"<meta name="google-site-verification" content="DFbkbqLOHGKzcFzeMpn_bYUCyTQMpJCgc2kFcU30lvw" />
+<meta name="yandex-verification" content="4c2bed7c4e07e542" />
+<meta name="msvalidate.01" content="EC8B19FEE34568533769A282D476C9E4" />
+
+<link rel="alternate" hreflang="ru" href="http://www.zarplata.eu/" />
+<link rel="canonical" href="http://www.zarplata.eu/">";s:6:"footer";s:1157:"<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91830700-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44495425 = new Ya.Metrika2({ id:44495425, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <!-- /Yandex.Metrika counter -->";s:7:"fb_sc_f";s:366:"<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=131500096958277";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>";s:4:"fjsc";s:919:"<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d4f53aeb2b9a53"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1447048205338357'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1447048205338357&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->";s:3:"fcc";s:236:"<div class="fb-comments" data-href="" data-numposts="5"></div>
+<script>
+window.onload  = function(){
+$('.fb-comments').attr('data-href',window.location.href);
+
+
+
+console.log($('.fb-comments').attr('data-href'));
+}
+
+
+</script>";s:10:"slidetext1";s:234:"<p><span style="font-family:Georgia,serif"><span style="font-size:72px">Сообщество <span style="color:#e74c3c">Русскоязычных</span> <span style="color:#3498db">Специалистов</span></span></span></p>
+";s:10:"slidetext2";s:225:"<p><span style="font-family:Georgia,serif"><span style="font-size:72px"><span style="color:#e74c3c">Бесплатный </span>русскоязычный <span style="color:#3498db">вебсайт </span></span></span></p>
+";s:10:"slidetext3";s:297:"<p><span style="font-family:Georgia,serif"><span style="font-size:72px">Отдельные <span style="color:#e74c3c">доски </span>объявлений для <span style="color:#3498db">вакансий</span> и <span style="color:#3498db">соискателей</span></span></span></p>
+";s:10:"slidetext4";s:241:"<p><span style="font-family:Georgia,serif"><span style="font-size:72px"><span style="color:#e74c3c">Доступ </span>ко всем объявлениям <span style="color:#3498db">без регистрации</span></span></span></p>
+";s:10:"slidetext5";s:258:"<p><span style="font-family:Georgia,serif"><span style="font-size:72px"><span style="color:#e74c3c">Автоматический </span><span style="color:#3498db">вход </span>через социальные сети или почту</span></span></p>
+";s:9:"slidetime";s:4:"5500";s:12:"mainpageuser";s:1:"1";s:11:"vacancytext";s:158:"<p><span style="font-size:60px"><span style="color:#bdc3c7"><span style="font-family:Georgia,serif">Предлагаю работу</span></span></span></p>
+";s:11:"profiletext";s:168:"<p><span style="color:#bdc3c7"><span style="font-size:60px"><span style="font-family:Georgia,serif">Профили пользователей</span></span></span></p>
+";s:10:"resumetext";s:146:"<p><span style="color:#bdc3c7"><span style="font-family:Georgia,serif"><span style="font-size:60px">Ищу работу</span></span></span></p>
+";s:10:"mainslide1";s:35:"/uploads/images/41179587_ml_d27.jpg";s:10:"mainslide2";s:58:"/uploads/images/aligning-learning-to-business(OPT)_002.jpg";s:10:"mainslide3";s:56:"/uploads/images/Business_Incubation_Startup(OPT)_911.jpg";s:10:"mainslide4";s:45:"/uploads/images/small-business-sucess_328.png";s:10:"mainslide5";s:54:"/uploads/images/Dollarphotoclub_73779334 (OPT)_fe3.jpg";s:11:"vacancyfoto";s:68:"/uploads/images/20-Influential-Business-Women-to-Follow-blog_f43.jpg";s:11:"profilefoto";s:68:"/uploads/images/20-Influential-Business-Women-to-Follow-blog_319.jpg";s:10:"resumefoto";s:68:"/uploads/images/20-Influential-Business-Women-to-Follow-blog_779.jpg";}

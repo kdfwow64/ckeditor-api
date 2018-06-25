@@ -1,0 +1,40 @@
+ClientEngage Visitor Chat Version: 1.2.2
+
+Changelog
+01/03/2014: 
+    - Public release of ClientEngage Visitor Chat v1.2.2
+        - NEW: You can now create "Operator" users and give them access to specific
+          areas only:
+            - Past Discussions
+            - Enquiries
+            - Settings
+        - NEW: You can now entirely hide the chat unless an operator is online
+		- NEW: Ability to hide the email field on sign-up (a generic email address will be used instead)
+22/06/2013: 
+    - Public release of ClientEngage Visitor Chat v1.1.9
+        - Now uses visitors' email & name as FROM in enquiry notification emails
+        - Now includes senders' names in enquiry notification email subjects
+        - Now correctly caches HTTPS & HTTP JavaScript codes separately
+        - Framework upgrade
+        - No need to re-install the Windows-client as it is unchanged
+10/06/2013: 
+    - Public release of ClientEngage Visitor Chat v1.1.5
+        - NEW: password-reset function for administrators
+        - Fixed the hyperlink-target to the respective enquiry in the email-notification
+        - Fixed an error that occurred when setting longer timezones such as America/Kentucky/Monticello
+        - Fixed placeholder-attributes in IE7 and IE8
+        - Updated the CakePHP framework
+        - No need to re-install the Windows-client as it is unchanged
+04/05/2013: 
+    - Public release of ClientEngage Visitor Chat v1.1.2
+        - Visitor/operator typing indicator
+        - Added typing indicator in Windows client
+        - Root page now redirects to login
+        - Fixed text/hyperlink colour in Windows client
+        - Fixed display issue when highlighting messages in Windows client
+        - Some minor CSS improvements to override host-site styles
+        - Front-end: added a CSS class to admin-messages (".vc_admin_message")
+        - Implemented an auto-login function in the Windows client
+        - Updated the CakePHP framework
+22/04/2013: 
+    - Public release of ClientEngage Visitor Chat v1.0.1

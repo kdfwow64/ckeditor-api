@@ -1,0 +1,1445 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-03-01 14:29+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AppController.php:151;199
+msgid "You cannot perform any changes in the demonstration system"
+msgstr ""
+
+#: Controller/AppController.php:172
+msgid "Access not allowed."
+msgstr ""
+
+#: Controller/AppController.php:310
+msgid "You do not have access to this area."
+msgstr ""
+
+#: Controller/ContentsController.php:39
+msgid "About ClientEngage Visitor Chat"
+msgstr ""
+
+#: Controller/DashboardController.php:44
+msgid "Admin Dashboard"
+msgstr ""
+
+#: Controller/DiscussionsController.php:92
+msgid "You cannot sign-out since no discussion is in progress."
+msgstr ""
+
+#: Controller/DiscussionsController.php:130
+msgid "It appears that a discussion is already in progress."
+msgstr ""
+
+#: Controller/DiscussionsController.php:169
+#: Controller/EnquiriesController.php:89
+#: Controller/MessagesController.php:121
+msgid "A server error occured."
+msgstr ""
+
+#: Controller/DiscussionsController.php:491;510
+msgid "Invalid discussion"
+msgstr ""
+
+#: Controller/DiscussionsController.php:515
+msgid "Discussion deleted"
+msgstr ""
+
+#: Controller/DiscussionsController.php:518
+msgid "Discussion was not deleted"
+msgstr ""
+
+#: Controller/DiscussionsController.php:540
+#: Controller/EnquiriesController.php:191
+msgid "The delete operation could not be completed"
+msgstr ""
+
+#: Controller/DiscussionsController.php:536
+msgid "You have successfully deleted :count discussion"
+msgid_plural "You have successfully deleted :count discussions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Controller/EnquiriesController.php:119;134;159
+msgid "Invalid enquiry"
+msgstr ""
+
+#: Controller/EnquiriesController.php:142
+msgid "The Read-Status of the enquiry was successfully changed."
+msgstr ""
+
+#: Controller/EnquiriesController.php:165
+msgid "Enquiry deleted"
+msgstr ""
+
+#: Controller/EnquiriesController.php:169
+msgid "Enquiry was not deleted"
+msgstr ""
+
+#: Controller/EnquiriesController.php:187
+msgid "You have successfully deleted :count enquiry"
+msgid_plural "You have successfully deleted :count enquiries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Controller/MessagesController.php:291
+msgid "Invalid message"
+msgstr ""
+
+#: Controller/MessagesController.php:296
+msgid "Message deleted"
+msgstr ""
+
+#: Controller/MessagesController.php:299
+msgid "Message was not deleted"
+msgstr ""
+
+#: Controller/SettingsController.php:47
+msgid "Settings"
+msgstr ""
+
+#: Controller/SettingsController.php:58
+msgid "Please provide an email address to send the test-email to."
+msgstr ""
+
+#: Controller/SettingsController.php:68
+msgid "Invalid configuration"
+msgstr ""
+
+#: Controller/SettingsController.php:78
+msgid "The configuration has been saved"
+msgstr ""
+
+#: Controller/SettingsController.php:83
+msgid "The configuration could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SettingsController.php:100
+msgid "Please enter a translation"
+msgstr ""
+
+#: Controller/SettingsController.php:124
+msgid "ClientEngage Email Delivery Test"
+msgstr ""
+
+#: Controller/SettingsController.php:130
+msgid "The SMTP connection could not be established. Please check your details or select the mail() function and click \"Save Configuration\"."
+msgstr ""
+
+#: Controller/SettingsController.php:134
+msgid "The test message was sent via SMTP. Please check if you received the message. <strong> If you do not receive the test email, it is important that you review the SMTP details or use the mail() function instead and then click \"Save Configuration\".</strong>"
+msgstr ""
+
+#: Controller/StylesController.php:68;95
+msgid "The style has been saved"
+msgstr ""
+
+#: Controller/StylesController.php:73;100
+msgid "The style could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/StylesController.php:89;123
+msgid "Invalid style"
+msgstr ""
+
+#: Controller/StylesController.php:129
+msgid "Style deleted"
+msgstr ""
+
+#: Controller/StylesController.php:132
+msgid "Style was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:42
+#: View/Users/admin_index.ctp:30
+msgid "Users"
+msgstr ""
+
+#: Controller/UsersController.php:57
+msgid "View User"
+msgstr ""
+
+#: Controller/UsersController.php:62;105;142;329
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:74
+#: View/Users/admin_add.ctp:33
+msgid "Add User"
+msgstr ""
+
+#: Controller/UsersController.php:81;111
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:86;116
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:100
+#: View/Users/admin_edit.ctp:37
+#: View/Users/admin_view.ctp:32
+msgid "Edit User"
+msgstr ""
+
+#: Controller/UsersController.php:147
+msgid "You cannot delete the only administrator"
+msgstr ""
+
+#: Controller/UsersController.php:153
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:156
+msgid "User was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:162;214
+#: View/Users/login.ctp:53;59
+msgid "Login"
+msgstr ""
+
+#: Controller/UsersController.php:198
+msgid "You successfully logged in."
+msgstr ""
+
+#: Controller/UsersController.php:211
+msgid "The username/password you provided were incorrect."
+msgstr ""
+
+#: Controller/UsersController.php:234
+msgid "No user matching the email address could be found"
+msgstr ""
+
+#: Controller/UsersController.php:250
+msgid "Visitor Chat: Password Reset"
+msgstr ""
+
+#: Controller/UsersController.php:251
+msgid "Dear :username, \n\nYour temporary password is: :temp_password"
+msgstr ""
+
+#: Controller/UsersController.php:253
+msgid "You have been sent an email with a temporary password. Please check your inbox."
+msgstr ""
+
+#: Controller/UsersController.php:258
+msgid "An error occurred whilst re-setting your password. Please try again."
+msgstr ""
+
+#: Controller/UsersController.php:284
+msgid "You cannot change the operator-status to \"offline\" in the demonstration system."
+msgstr ""
+
+#: Controller/UsersController.php:297
+msgid "You are now online. You will not be notified of any messages until you navigate to the dashboard. Click here to navigate to the dashboard: :dashboard_link"
+msgstr ""
+
+#: Controller/UsersController.php:297
+msgid "Dashboard"
+msgstr ""
+
+#: Controller/UsersController.php:303
+msgid "You are now offline."
+msgstr ""
+
+#: Controller/UsersController.php:312
+msgid "You have successfully logged out."
+msgstr ""
+
+#: Controller/UsersController.php:324;350
+msgid "Your Profile"
+msgstr ""
+
+#: Controller/UsersController.php:337
+msgid "The changes to your profile were saved"
+msgstr ""
+
+#: Controller/UsersController.php:343
+msgid "Your profile could not be saved. Please, try again."
+msgstr ""
+
+#: Lib/GlobalClasses.php:70
+msgid "English (British)"
+msgstr ""
+
+#: Lib/GlobalClasses.php:71
+msgid "English (United States)"
+msgstr ""
+
+#: Lib/GlobalClasses.php:72
+msgid "German (Germany)"
+msgstr ""
+
+#: Model/Enquiry.php:112
+msgid "You just received a new enquiry through Visitor Chat. \nView the enquiry: :enquiry_url \n\n\nSender: :sender_name \nEmail: :sender_email \n\nMessage: \n:enquiry"
+msgstr ""
+
+#: Model/Enquiry.php:122
+msgid "Visitor Chat: You Received a New Enquiry from :username"
+msgstr ""
+
+#: Model/Setting.php:91
+msgid "Please enter the sender name."
+msgstr ""
+
+#: Model/Setting.php:101
+msgid "Please enter an email address."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/environment_panel.ctp:51
+msgid "Hidef Environment"
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:112;321
+msgid "You have successfully installed ClientEngage. You may now log-in with your administrator profile."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:118
+msgid "Installation cannot continue, please accept the EULA"
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:142
+msgid "You have already configured the database connection. Please proceed with the installation."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:165
+msgid "Could not connect to the database. Please review the configuration."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:172
+msgid "Could not write the database configuration."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:176
+msgid "Your database configuration was successfull."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:186;214
+msgid "Could not connect to the database. Please review your configuration."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:203;246
+msgid "The database was not properly initialised. Please re-start the installation."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:209
+msgid "Configuration already exists. Please continue."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:219
+msgid "Not all tables were initialised successfully. Please drop all initialised tables and re-start the installation."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:231
+msgid "The system configuration was saved successfully."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:236
+msgid "Could not save the system configuration. Please review your inputs."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:252
+msgid "Administrator already exists. Please continue."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:262
+msgid "The administrator has been created."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:267
+msgid "The administrator could not be saved. Please, try again."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:283
+msgid "You have successfully installed ClientEngage Visitor Chat. You may now log-in with your administrator profile."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:311
+msgid "<h4>Could not write to the security configuration. Please make sure the file is writable.</h4><code>:security_core</code>"
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:326
+msgid "Could not create the administrative user. Please try again."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:424
+msgid "You must enter the database host."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:425
+msgid "You must enter the database name."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:426
+msgid "You must enter the database username."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:442
+msgid "Please enter valid database settings."
+msgstr ""
+
+#: Plugin/Installer/Controller/InstallationController.php:524
+msgid "<h4>The table \":table_name\" could not be created. Please clear any existing ClientEngage tables before continuing the installation.</h4>:error_message"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:49
+msgid "Administrator Settings"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:50
+#: View/Contents/admin_chat_javascript.ctp:307
+#: View/Discussions/admin_index.ctp:54
+#: View/Discussions/admin_view.ctp:43
+#: View/Enquiries/admin_index.ctp:55
+#: View/Enquiries/admin_view.ctp:43
+#: View/Settings/admin_index.ctp:106
+#: View/Users/admin_add.ctp:40
+#: View/Users/admin_edit.ctp:45
+#: View/Users/admin_index.ctp:34
+#: View/Users/admin_profile.ctp:29
+#: View/Users/admin_view.ctp:39
+msgid "Username"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:51
+#: View/Discussions/admin_index.ctp:55
+#: View/Discussions/admin_view.ctp:48
+#: View/Enquiries/admin_index.ctp:56
+#: View/Enquiries/admin_view.ctp:48
+#: View/Users/admin_add.ctp:41
+#: View/Users/admin_edit.ctp:46
+#: View/Users/admin_index.ctp:35
+#: View/Users/admin_profile.ctp:30
+#: View/Users/admin_view.ctp:44
+#: View/Users/forgotten_password.ctp:55
+#: View/Users/login.ctp:57
+msgid "Email"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:52
+#: Plugin/Installer/View/Installation/database_setup.ctp:52
+#: View/Settings/admin_index.ctp:107
+#: View/Users/admin_add.ctp:42
+#: View/Users/login.ctp:58
+msgid "Password"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:52
+#: View/Users/admin_edit.ctp:47
+#: View/Users/admin_profile.ctp:31
+msgid "Enter new password"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:53
+#: View/Users/admin_add.ctp:43
+#: View/Users/admin_edit.ctp:48
+#: View/Users/admin_profile.ctp:32
+msgid "Confirm Password"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:53
+#: View/Users/admin_add.ctp:43
+#: View/Users/admin_edit.ctp:48
+#: View/Users/admin_profile.ctp:32
+msgid "Repeat new password"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/administrator.ctp:57
+msgid "Finalise Installation"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:49
+msgid "Database Host"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:50
+msgid "TCP Port / UNIX Socket"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:50
+msgid "Optional"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:51
+msgid "Database Username"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:53
+msgid "Database Name"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:54
+msgid "Table Prefix"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/database_setup.ctp:55
+#: Plugin/Installer/View/Installation/settings.ctp:54
+msgid "Continue"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/finalisation.ctp:51
+msgid "Perform Final Configurations"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:51
+#: Plugin/Updater/View/Update/index.ctp:47
+msgid "Your temporary directory is writable."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:56
+#: Plugin/Updater/View/Update/index.ctp:52
+msgid "Your temporary directory is not writable."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:57;68;79
+#: Plugin/Updater/View/Update/index.ctp:53;64;75
+msgid "Please make the following path writable: "
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:62
+#: Plugin/Updater/View/Update/index.ctp:58
+msgid "Your configuration directory is writable."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:67
+#: Plugin/Updater/View/Update/index.ctp:63
+msgid "Your configuration directory is not writable."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:73
+#: Plugin/Updater/View/Update/index.ctp:69
+msgid "Your security configuration is writable."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:78
+#: Plugin/Updater/View/Update/index.ctp:74
+msgid "Your security configuration is not writable."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:84
+#: Plugin/Updater/View/Update/index.ctp:80
+msgid "The PHP version running on your server (%s) fulfills the minimum requirement (5.2.8)."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:89
+#: Plugin/Updater/View/Update/index.ctp:85
+msgid "The PHP version running on your server (%s) does not fulfill the minimum requirement (5.2.8)."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:90;247
+#: Plugin/Updater/View/Update/index.ctp:86;244
+msgid ""
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:95
+#: Plugin/Updater/View/Update/index.ctp:91
+msgid "The PDO extensions are loaded."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:100
+#: Plugin/Updater/View/Update/index.ctp:96
+msgid "The necessary PDO extensions are not loaded."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:101
+#: Plugin/Updater/View/Update/index.ctp:97
+msgid "Please enable the PHP PDO extension as well as the MySQL PDO extension. You may have to ask your hosting-provider to enable these."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:240
+#: Plugin/Updater/View/Update/index.ctp:237
+msgid "I agree to the above terms."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:241
+msgid "Begin Installation"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/index.ctp:246
+#: Plugin/Updater/View/Update/index.ctp:243
+msgid "Unfortunately, the installation cannot proceed due to the minimum requirements not being met."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/initialisation.ctp:45
+msgid "You have successfully configured the database connection. Please click \":btn_name\" to create all necessary database tables."
+msgstr ""
+
+#: Plugin/Installer/View/Installation/initialisation.ctp:45;48
+msgid "Initialise Database"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/settings.ctp:49
+#: View/Elements/layout/topbar.ctp:53
+msgid "System Settings"
+msgstr ""
+
+#: Plugin/Installer/View/Installation/settings.ctp:50
+#: View/Settings/admin_index.ctp:62
+msgid "System Language"
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:111
+msgid "Plugin name to be used"
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:115
+msgid "Force 'generate' to compare all tables."
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:119
+msgid "Set db config <config>. Uses 'default' if none is specified."
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:124
+msgid "Disables automatic creation of migrations table and running any internal plugin migrations"
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:126
+msgid "Displays a status of all plugin and app migrations."
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:128
+msgid "Bake a complete MVC. optional <name> of a Model"
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:130
+msgid "Run a migration to given direction or version."
+msgstr ""
+
+#: Plugin/Migrations/Console/Command/MigrationShell.php:132;134
+msgid "Generates a migration file."
+msgstr ""
+
+#: Plugin/Updater/Controller/UpdateController.php:66
+msgid "No update necessary."
+msgstr ""
+
+#: Plugin/Updater/Controller/UpdateController.php:72
+msgid "Update cannot continue, please accept the EULA"
+msgstr ""
+
+#: Plugin/Updater/Controller/UpdateController.php:106
+msgid "An error has occured whilst running the update: "
+msgstr ""
+
+#: Plugin/Updater/Controller/UpdateController.php:124
+msgid "Part of the update could not be performed. The new version information could not be applied. Please open the following file and replace the version number with \":version\": "
+msgstr ""
+
+#: Plugin/Updater/Controller/UpdateController.php:131
+msgid "Part of the update could not be performed. Please delete the following file: "
+msgstr ""
+
+#: Plugin/Updater/Controller/UpdateController.php:135
+msgid "You have successfully updated ClientEngage Visitor Chat to version :version"
+msgstr ""
+
+#: Plugin/Updater/View/Update/index.ctp:238
+msgid "Perform Update"
+msgstr ""
+
+#: Plugin/Updater/View/Update/update.ctp:42
+msgid "Important: after running the update, please navigate to \"Administration -> Settings\", check any new settings and then click SAVE. Even if you do not change any settings, it is important to re-save the configuration."
+msgstr ""
+
+#: View/Contents/admin_about.ctp:26
+msgid "The ClientEngage Visitor Chat is a fully-featured real-time chat for your websites. And best of all: Visitor Chat comes with a Windows-based client out-of-the-box. Without having to visit the Visitor Chat’s admin-interface you will be notified from your Windows tray and can start chatting straight away!<br /><br />\nBy including one single snippet of JavaScript, this interactive and engaging Chat can be used on any website – whether you are using Wordpress, Joomla! or plain HTML."
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:25
+#: View/Helper/LayoutHelper.php:51
+msgid "Yes"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:26
+#: View/Helper/LayoutHelper.php:53
+msgid "No"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:27
+msgid "It appears that your operator has gone offline."
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:306
+msgid "Visitor Data"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:308
+msgid "E-Mail"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:309
+msgid "Started"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:310
+msgid "Last Activity"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:311
+#: View/Discussions/admin_view.ctp:78
+msgid "Visitor Exited"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:312
+#: View/Discussions/admin_view.ctp:53
+#: View/Enquiries/admin_view.ctp:63
+msgid "Referer"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:313
+msgid "Languages"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:314
+#: View/Discussions/admin_view.ctp:58
+msgid "Visitor Time"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:315
+#: View/Helper/LayoutHelper.php:132
+msgid "Browser"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:316
+msgid "OS"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:317
+#: View/Discussions/admin_view.ctp:107
+#: View/Enquiries/admin_view.ctp:58
+msgid "Current Page"
+msgstr ""
+
+#: View/Contents/admin_chat_javascript.ctp:363
+msgid "{visitorname} is typing..."
+msgstr ""
+
+#: View/Dashboard/admin_index.ctp:26
+msgid "Operator Status: Offline"
+msgstr ""
+
+#: View/Dashboard/admin_index.ctp:27
+msgid "You need to go online if you wish to use the chat interface."
+msgstr ""
+
+#: View/Dashboard/admin_index.ctp:169
+msgid "Default"
+msgstr ""
+
+#: View/Dashboard/admin_index.ctp:173
+msgid "You can select any active discussions from the tabs above."
+msgstr ""
+
+#: View/Discussions/admin_index.ctp:42
+#: View/Elements/layout/topbar.ctp:41
+#: View/Users/admin_add.ctp:38
+#: View/Users/admin_edit.ctp:43
+msgid "Past Discussions"
+msgstr ""
+
+#: View/Discussions/admin_index.ctp:50
+#: View/Enquiries/admin_index.ctp:50
+#: View/Styles/admin_index.ctp:45
+#: View/Users/admin_edit.ctp:31
+#: View/Users/admin_index.ctp:55
+msgid "Delete"
+msgstr ""
+
+#: View/Discussions/admin_index.ctp:50
+msgid "Are you sure you wish to delete all selected discussions?"
+msgstr ""
+
+#: View/Discussions/admin_index.ctp:56
+#: View/Discussions/admin_view.ctp:83
+#: View/Styles/admin_index.ctp:37
+#: View/Users/admin_index.ctp:38
+#: View/Users/admin_view.ctp:59
+msgid "Modified"
+msgstr ""
+
+#: View/Discussions/admin_index.ctp:57
+#: View/Discussions/admin_view.ctp:88;108
+#: View/Enquiries/admin_index.ctp:58
+#: View/Enquiries/admin_view.ctp:83
+#: View/Styles/admin_index.ctp:36
+#: View/Users/admin_index.ctp:37
+#: View/Users/admin_view.ctp:54
+msgid "Created"
+msgstr ""
+
+#: View/Discussions/admin_index.ctp:65
+#: View/Enquiries/admin_index.ctp:66
+#: View/Users/admin_index.ctp:53
+msgid "View"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:26
+#: View/Enquiries/admin_view.ctp:26
+#: View/Styles/admin_add.ctp:26
+#: View/Styles/admin_edit.ctp:26
+#: View/Styles/admin_index.ctp:33
+#: View/Users/admin_add.ctp:26
+#: View/Users/admin_edit.ctp:26
+#: View/Users/admin_index.ctp:39
+#: View/Users/admin_view.ctp:26
+msgid "Actions"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:27
+msgid "List Discussions"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:31
+msgid "Delete Discussion"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:31
+msgid "Are you sure you want to delete this discussion with \"%s\"?"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:36
+msgid "Discussion"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:38
+#: View/Enquiries/admin_view.ctp:38
+msgid "Avatar"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:63
+#: View/Enquiries/admin_view.ctp:68
+msgid "Visitor Languages"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:68
+#: View/Enquiries/admin_view.ctp:73
+msgid "User Agent"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:73
+#: View/Enquiries/admin_view.ctp:78
+msgid "Remote Address"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:100
+msgid "Messages"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:105
+#: View/Users/admin_view.ctp:37
+msgid "User"
+msgstr ""
+
+#: View/Discussions/admin_view.ctp:106
+#: View/Enquiries/admin_index.ctp:57
+msgid "Message"
+msgstr ""
+
+#: View/Elements/common/defaultpagination.ctp:32
+msgid "previous"
+msgstr ""
+
+#: View/Elements/common/defaultpagination.ctp:34
+msgid "next"
+msgstr ""
+
+#: View/Elements/common/defaultpagination.ctp:38
+msgid "<small class=\"smalltext\">Page {:page} of {:pages} (showing {:current} records out of a total of {:count})</small>"
+msgstr ""
+
+#: View/Elements/layout/footer.ctp:28
+#: View/Elements/layout/topbar.ctp:56;57
+msgid "About"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:32
+msgid "ClientEngage Visitor Chat v:app_version"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:38
+msgid "Discussions"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:45
+#: View/Enquiries/admin_index.ctp:42
+#: View/Users/admin_add.ctp:38
+#: View/Users/admin_edit.ctp:43
+msgid "Enquiries"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:50
+#: View/Users/admin_add.ctp:38
+#: View/Users/admin_edit.ctp:43
+msgid "Administration"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:52
+msgid "Chat Styles"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:54
+msgid "Administrators"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:55
+msgid "Configuration"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:69
+msgid "Online"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:73
+msgid "Offline"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:79
+msgid "Your profile"
+msgstr ""
+
+#: View/Elements/layout/topbar.ctp:81
+msgid "Log-out"
+msgstr ""
+
+#: View/Enquiries/admin_index.ctp:50
+msgid "Are you sure you wish to delete all selected enquiries?"
+msgstr ""
+
+#: View/Enquiries/admin_index.ctp:54
+#: View/Enquiries/admin_view.ctp:53
+msgid "Read"
+msgstr ""
+
+#: View/Enquiries/admin_view.ctp:27
+msgid "List Enquiries"
+msgstr ""
+
+#: View/Enquiries/admin_view.ctp:31
+msgid "Delete Enquiry"
+msgstr ""
+
+#: View/Enquiries/admin_view.ctp:31
+msgid "Are you sure you want to delete this enquiry from \"%s\"?"
+msgstr ""
+
+#: View/Enquiries/admin_view.ctp:36
+msgid "Enquiry"
+msgstr ""
+
+#: View/Enquiries/admin_view.ctp:91
+msgid "Message Text"
+msgstr ""
+
+#: View/Helper/AppTimeHelper.php:35
+msgid "never"
+msgstr ""
+
+#: View/Helper/LayoutHelper.php:49
+msgid "N/A"
+msgstr ""
+
+#: View/Helper/LayoutHelper.php:84
+msgid "and"
+msgstr ""
+
+#: View/Helper/LayoutHelper.php:133
+msgid "Operating System"
+msgstr ""
+
+#: View/Layouts/system.ctp:38;54
+msgid "Please wait"
+msgstr ""
+
+#: View/Layouts/system.ctp:38;54
+msgid "Processing your request"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:26
+msgid "Edit Settings"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:48
+msgid "JavaScript Code"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:54
+msgid "Chat API Url"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:61
+msgid "Chat API URL"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:63
+msgid "System Timezone"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:64
+msgid "Chat Style"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:65
+msgid "Hover Animation"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:65
+msgid "If you activate this option, the chat will be shown with half/transparency. The transparency is removed when you hover the chat, or when it is open."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:66
+msgid "Hide Chat for Mobile Devices"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:66
+msgid "If you activate this option, the chat will not be shown for mobile devices."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:67
+msgid "Hide Email Field on Signup"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:67
+msgid "If you activate this option, the email field will not be shown in the signup form. Instead, every visitor will be assigned the generic email address \"not.provided@example.com\"."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:68
+msgid "Hide Chat When Offline"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:68
+msgid "If you activate this option, the chat will be entirely hidden until an operator comes online."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:70
+msgid "Send Email Notifications"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:70
+msgid "Check this box and configure the email transport if you wish to be notified when a visitor submits an enquiry. Please note that the settings below are the sender AND receiver of the email notifications."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:97
+msgid "Email Settings"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:98
+msgid "Sender Email"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:99
+msgid "Sender Name"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:100
+msgid "Transport Method"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:100
+msgid "PHP mail() function"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:100
+msgid "SMTP account"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:102
+msgid "SMTP Settings"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:103
+msgid "Please enter your SMTP details below. For example, for GMail you need to use the following data: ssl://smtp.gmail.com (host), 465 (port), your.name@gmail.com (username) and your password. After sending the test-email it is <strong>important</strong> that you save your changes by clicking \"Save Configuration\" below."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:104
+msgid "Host"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:105
+msgid "Port"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:108
+msgid "Test-Email"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:108
+msgid "Send Test-Email"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:113
+msgid "Text Translations"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:116
+msgid "Header (currently chatting)"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:117
+msgid "Header (online)"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:118
+msgid "Header (offline)"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:119
+msgid "Notification: operator offline"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:120
+msgid "Text: offline"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:121
+msgid "Text: online"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:123
+msgid "Placeholder: username"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:124
+msgid "Placeholder: email"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:125
+msgid "Placeholder: enquiry message"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:126
+msgid "Button: enquiry button"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:127
+msgid "Message: enquiry submitted"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:128
+msgid "Button: start chat"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:129
+msgid "Text: operator composing"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:129
+msgid "Use {username} as placeholder for the admin's name: {username} is typing..."
+msgstr ""
+
+#: View/Settings/admin_index.ctp:132
+msgid "Text: first message"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:133
+msgid "Button: exit chat"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:134
+msgid "Text: exit chat question"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:135
+msgid "Button: exit chat confirm"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:136
+msgid "Button: exit chat cancel"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:137
+msgid "Placeholder: message"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:138
+msgid "Button: send message"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:142
+msgid "Validation Translations"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:145
+msgid "Validation: email required"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:146
+msgid "Validation: email invalid"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:147
+msgid "Validation: email maxlength"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:149
+msgid "Validation: username required"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:150
+msgid "Validation: username maxlength"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:151
+msgid "Validation: enquiry required"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:152
+msgid "Validation: enquiry maxlength"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:154
+msgid "Validation: message required"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:155
+msgid "Validation: message maxlength"
+msgstr ""
+
+#: View/Settings/admin_index.ctp:159
+#: View/Styles/admin_add.ctp:39
+#: View/Styles/admin_edit.ctp:44
+#: View/Users/admin_add.ctp:49
+#: View/Users/admin_edit.ctp:54
+msgid "Submit"
+msgstr ""
+
+#: View/Styles/admin_add.ctp:27
+#: View/Styles/admin_edit.ctp:27
+msgid "List Styles"
+msgstr ""
+
+#: View/Styles/admin_add.ctp:33
+msgid "Add Style"
+msgstr ""
+
+#: View/Styles/admin_add.ctp:35
+#: View/Styles/admin_edit.ctp:40
+#: View/Styles/admin_index.ctp:34
+msgid "Title"
+msgstr ""
+
+#: View/Styles/admin_add.ctp:36
+#: View/Styles/admin_edit.ctp:41
+#: View/Styles/admin_index.ctp:35
+msgid "Style CSS"
+msgstr ""
+
+#: View/Styles/admin_add.ctp:40
+#: View/Styles/admin_edit.ctp:45
+#: View/Users/admin_add.ctp:50
+#: View/Users/admin_edit.ctp:55
+msgid "Cancel"
+msgstr ""
+
+#: View/Styles/admin_edit.ctp:31
+msgid "Delete Style"
+msgstr ""
+
+#: View/Styles/admin_edit.ctp:31
+#: View/Styles/admin_index.ctp:45
+#: View/Users/admin_edit.ctp:31
+#: View/Users/admin_view.ctp:33
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr ""
+
+#: View/Styles/admin_edit.ctp:37
+msgid "Edit Style"
+msgstr ""
+
+#: View/Styles/admin_index.ctp:27
+msgid "New Style"
+msgstr ""
+
+#: View/Styles/admin_index.ctp:30
+msgid "Styles"
+msgstr ""
+
+#: View/Styles/admin_index.ctp:44
+#: View/Users/admin_index.ctp:54
+msgid "Edit"
+msgstr ""
+
+#: View/Users/admin_add.ctp:27
+#: View/Users/admin_edit.ctp:27
+#: View/Users/admin_view.ctp:27
+msgid "List Users"
+msgstr ""
+
+#: View/Users/admin_add.ctp:37
+#: View/Users/admin_edit.ctp:42
+msgid "Type"
+msgstr ""
+
+#: View/Users/admin_add.ctp:37
+#: View/Users/admin_edit.ctp:42
+msgid "Administrator"
+msgstr ""
+
+#: View/Users/admin_add.ctp:37
+#: View/Users/admin_edit.ctp:42
+msgid "Operator"
+msgstr ""
+
+#: View/Users/admin_add.ctp:38
+#: View/Users/admin_edit.ctp:43
+msgid "Permissions"
+msgstr ""
+
+#: View/Users/admin_add.ctp:44
+#: View/Users/admin_edit.ctp:49
+#: View/Users/admin_index.ctp:36
+#: View/Users/admin_view.ctp:49
+msgid "Active"
+msgstr ""
+
+#: View/Users/admin_add.ctp:46
+msgid "Receive notifications from following forms"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:47
+#: View/Users/admin_profile.ctp:31
+msgid "Password "
+msgstr ""
+
+#: View/Users/admin_edit.ctp:47
+#: View/Users/admin_profile.ctp:31
+msgid "Please leave empty if you do not wish you change your password."
+msgstr ""
+
+#: View/Users/admin_edit.ctp:51
+msgid "Submission Notifications"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:51
+msgid "Receive submission notifications from the following forms."
+msgstr ""
+
+#: View/Users/admin_index.ctp:27
+msgid "Create User"
+msgstr ""
+
+#: View/Users/admin_index.ctp:55
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Users/admin_profile.ctp:26
+msgid "Edit Your Profile"
+msgstr ""
+
+#: View/Users/admin_profile.ctp:36
+msgid "Save Profile"
+msgstr ""
+
+#: View/Users/admin_view.ctp:33
+msgid "Delete User"
+msgstr ""
+
+#: View/Users/admin_view.ctp:66
+msgid "Receives Notifications for the Following Visitorforms:"
+msgstr ""
+
+#: View/Users/forgotten_password.ctp:51;56
+msgid "Reset Password"
+msgstr ""
+
+#: View/Users/login.ctp:61
+msgid "Forgot your password?"
+msgstr ""
+
+#: Model/Discussion.php:validation for field uid
+msgid "uuid"
+msgstr ""
+
+#: Model/Discussion.php:validation for field username;validation for field email
+#: Model/Enquiry.php:validation for field username;validation for field email;validation for field message
+#: Model/Message.php:validation for field message
+msgid "notempty"
+msgstr ""
+
+#: Model/Discussion.php:validation for field username;validation for field email
+#: Model/Enquiry.php:validation for field username;validation for field email;validation for field message
+#: Model/Message.php:validation for field message
+msgid "maxlength"
+msgstr ""
+
+#: Model/Discussion.php:validation for field email
+#: Model/Enquiry.php:validation for field email
+msgid "email"
+msgstr ""
+
+#: Model/Discussion.php:validation for field remote_address
+msgid "The IP address is invalid"
+msgstr ""
+
+#: Model/Setting.php:validation for field System-language
+msgid "Please select the system language."
+msgstr ""
+
+#: Model/Setting.php:validation for field System-timezone
+msgid "Please select the system timezone."
+msgstr ""
+
+#: Model/Setting.php:validation for field Chat-session_duration
+msgid "Please indicate the session duration."
+msgstr ""
+
+#: Model/Setting.php:validation for field Email-email;validation for field Email-sender
+msgid "notEmptyIfRequired"
+msgstr ""
+
+#: Model/Style.php:validation for field title
+msgid "Please enter a title"
+msgstr ""
+
+#: Model/Style.php:validation for field title
+msgid "The title may not exceed 255 characters"
+msgstr ""
+
+#: Model/Style.php:validation for field css
+msgid "Please enter your custom CSS styles"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Please enter a username."
+msgstr ""
+
+#: Model/User.php:validation for field email
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: Model/User.php:validation for field email
+msgid "This email address has already been taken."
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "Please enter your password."
+msgstr ""
+
+#: Model/User.php:validation for field password;validation for field password_confirm
+msgid "Passwords do not match."
+msgstr ""
+
+#: Model/User.php:validation for field password;validation for field password_confirm
+msgid "Must be at least 4 characters long."
+msgstr ""
+
+#: Model/User.php:validation for field active
+msgid "Please enter a valid boolean value."
+msgstr ""
+
+#: Model/User.php:validation for field role
+msgid "Please select a valid role."
+msgstr ""
+

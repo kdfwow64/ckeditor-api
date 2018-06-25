@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://translitor.org/ -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Транслит по-русски</title>
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" lang="ru"
+          content="Бесплатный русский транслит translitor.org - конвертер и переводчик текста из латиницы в кириллицу и наоборот. Идеальное решение для транслитерации. Выручает при отсутствии русской раскладки клавиатуры. Множество функций, декодер почты, конвертер кириллицы.  Helps to convert latin characters in to cyrillic characters and vice versa having no keyboard with russian or ukrainian character set.">
+    <meta name="keywords" lang="ru"
+          content="транслит, транслитерация, translit, online, phonetic, transliteration, transliteracija, russification, rusification, kirillica, cirilica, kirilica, alfavit, ABC, alphabet, transliteration, perevod, bukva, bukvy, Russia, russian, typing, russkij, convertor, konverter, kirillicy, translate, translator, latinica, latinitsa, russkij, alfavit, russian, keyboard, транслитерация, транслитерировать, русский язык, перевод, конвертер, конвертировать, алфавит, по-русски, печатать, клавиатура, раскладка, кодировка, кириллица, кирилица, конвертер - транслитератор, латиница, руссификация, фонетическая, клавиатура, эмулятор русской клавиатуры, транслита на русский, транслит и кириллица on-line, транслитерация и online перекодирование ЛПОЧЕТФЕТ - ФТБОУМЙФЕТБФПТ, ФТБОУМЙФЕТБГЙС Й online РЕТЕЛПДЙТПЧБОЙЕ">
+    <meta name="page-topic"
+          content="Бесплатный транслит, конвертер текста из латиницы и в латиницу. Если у вас нет русской клавиатуры.">
+    <meta name="copyright" content="translitor.org">
+    <meta name="revisit-after" content="7 days">
+    <meta name="robots" content="index, follow">
+    <meta name="content-language" content="de">
+    <link rel="canonical" href="http://translitor.org/">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="Бесплатный транслит, конвертер текста из латиницы и в латиницу. Если у вас нет русской клавиатуры.">
+    <meta property="og:url" content="http://translitor.org/">
+    <meta property="og:site_name" content="Транслитератор translitor.org">
+    <link rel="shortcut icon" href="http://translitor.org/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="yandex-verification" content="b79ff2058f5cad62" />
+</head>
+
+
+<body onkeydown="AkeyIsDown(event);" onkeypress="switcher(event);"
+      onbeforeunload="if(document.searchform.subject.value.length>250) return('Ваш текст будет потерян.');">
+<div class="tCookiesInfoblock" id="cookiesquestion">
+    <div class="tCookiesButton" onclick="okcookies();">
+        Согласиться и закрыть
+    </div>
+    <span class="tCookiesSilentClose" onclick="removecookiesinfo()">x</span> <strong>Мы используем cookies</strong> для
+    подсчета статистики посещений, персонализации рекламных объявлений, а также для сохранения пользовательских настроек
+    функциональности сайта. <span id="tCookiesShowMore">Вы соглашаетесь с этим, используя сайт далее. <span
+        class="tCookiesShowMore" onclick="showmorecookiesinfo();">Читать больше...</span></span><span
+        id="tCookiesMoreText" style="display: none;">На основе информации, хранящейся в cookies, наши партнеры Google и Criteo также подсчитывают для нас статистику посещений, анализируют и персонализируют рекламные объявления. Продолжая использование этого сайта без изменения настроек cookies в своем браузере, либо кликнув по кнопке «Согласиться и закрыть», Вы выражаете свое согласие на применение cookies на этом сайте. Узнать больше в <a
+        href="http://translitor.org/info/privacy/">Политике конфиденциальности</a>.</span>
+</div>
+
+
+<div class="tLogoContainer">
+    <div class="tTxtLogoTranslit"><a href="http://translitor.org/">Транслит</a>, <a href="http://translitor.org/keyboard">Русская
+        клавиатура</a></div>
+    <div class="tMyTranslit">
+        <span class="tMenuLink" id="tMenuSwitch">Настройка</span>
+
+        <div id="hint2" style="display: block;"></div>
+
+    </div>
+    <div class="tMenuBox" id="menubox">
+        <div>
+            <form name="accountform" method="post" action="https://translitor.org/" onsubmit="maybelogin();">
+                <input type="text" size="15" value="" onmouseover="this.focus();" title="Номер ваших настроек"
+                       class="tLoadInput" id="tLoadInput" placeholder="Номер настроек..."><input type="submit"
+                                                                                                 value="Войти"
+                                                                                                 class="tLoadButton">
+                <div class="clearfix"></div>
+            </form>
+        </div>
+        <p><a href="http://translitor.org/setup/?account=ru">Настроить транслит</a></p>
+
+
+        <h1>Сервисы:</h1>
+        <ul>
+            <li><a href="http://translitor.org/keyboard/">Русская клавиатура</a></li>
+            <li><a href="http://translitor.org/classic/">Мобильный транслит</a></li>
+            <li class="tClickLink" onclick="keepText('/ru/?a18c2d')">Меньше рекламы</li>
+
+        </ul>
+
+        <h1>Транслиты:</h1>
+        <ul>
+            <li class="tClickLink" onclick="keepText('/ru/')">русский</li>
+            <li class="tClickLink" onclick="keepText('/rude/')">руссконемецкий</li>
+            <li class="tClickLink" onclick="keepText('/il/')">иврит</li>
+            <li class="tClickLink" onclick="keepText('/am/')">армянский</li>
+            <li class="tClickLink" onclick="keepText('/ua/')">украинский</li>
+            <li class="tClickLink" onclick="keepText('/rusi/')">русинский</li>
+            <li class="tClickLink" onclick="keepText('/be/')">белорусский</li>
+            <li class="tClickLink" onclick="keepText('/gr/')">греческий</li>
+            <li class="tClickLink" onclick="keepText('/ge/')">грузинский</li>
+            <li class="tClickLink" onclick="keepText('/li/')">литовский</li>
+            <li class="tClickLink" onclick="keepText('/tj/')">таджикский</li>
+            <li class="tClickLink" onclick="keepText('/kz/')">транслит+kz</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="tMainContainer" id="tMainContainer">
+    <noscript>
+        <p><strong>В вашем броузере отключен JavaScript, который необходим для работы сайта.</strong></p>
+        <p>Вы можете <a href="http://www.enable-javascript.com/ru/" target=_blank>включить</a>
+        JavaScript или воспользоваться <A href="http://translitor.org/classic/">классическим транслитом</A>.</p>
+    </noscript>
+
+    <div class="tTableContainer">
+        <div class="spacer">
+        </div>
+        <ul id="tTabCell">
+            <li>&nbsp;<br>&nbsp;<br>
+                <div class="tB bcharset shiftb" onclick="shift=!shift;showtable(shift,chartabledirection);">shift</div>
+            </li>
+            <li><span onclick="addchar('А',event);" class="tC2">A</span><br><span
+                    onclick="addchar('а',event);">a</span><br><input type="button" id="charbutton0"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="а"></li>
+            <li><span onclick="addchar('Б',event);" class="tC2">B</span><br><span
+                    onclick="addchar('б',event);">b</span><br><input type="button" id="charbutton1"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="б"></li>
+            <li><span onclick="addchar('В',event);" class="tC2">V</span><br><span
+                    onclick="addchar('в',event);">v</span><br><input type="button" id="charbutton2"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="в"></li>
+            <li><span onclick="addchar('Г',event);" class="tC2">G</span><br><span
+                    onclick="addchar('г',event);">g</span><br><input type="button" id="charbutton3"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="г"></li>
+            <li><span onclick="addchar('Д',event);" class="tC2">D</span><br><span
+                    onclick="addchar('д',event);">d</span><br><input type="button" id="charbutton4"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="д"></li>
+            <li><span onclick="addchar('Е',event);" class="tC2">E</span><br><span
+                    onclick="addchar('е',event);">e</span><br><input type="button" id="charbutton5"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="е"></li>
+            <li><span onclick="addchar('Ё',event);" class="tC2">Jo</span><br><span
+                    onclick="addchar('ё',event);">jo,yo,ö</span><br><input type="button" id="charbutton6"
+                                                                                   class="tB bcharset2"
+                                                                                   onclick="addchar(this.value,event);"
+                                                                                   value="ё"></li>
+            <li><span onclick="addchar('Ж',event);" class="tC2">Zh</span><br><span
+                    onclick="addchar('ж',event);">zh</span><br><input type="button" id="charbutton7"
+                                                                              class="tB bcharset2"
+                                                                              onclick="addchar(this.value,event);"
+                                                                              value="ж"></li>
+            <li><span onclick="addchar('З',event);" class="tC2">Z</span><br><span
+                    onclick="addchar('з',event);">z</span><br><input type="button" id="charbutton8"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="з"></li>
+            <li><span onclick="addchar('И',event);" class="tC2">I</span><br><span
+                    onclick="addchar('и',event);">i</span><br><input type="button" id="charbutton9"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="и"></li>
+            <li><span onclick="addchar('Й',event);" class="tC2">J</span><br><span
+                    onclick="addchar('й',event);">j</span><br><input type="button" id="charbutton10"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="й"></li>
+            <li><span onclick="addchar('К',event);" class="tC2">K</span><br><span
+                    onclick="addchar('к',event);">k</span><br><input type="button" id="charbutton11"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="к"></li>
+            <li><span onclick="addchar('Л',event);" class="tC2">L</span><br><span
+                    onclick="addchar('л',event);">l</span><br><input type="button" id="charbutton12"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="л"></li>
+            <li><span onclick="addchar('М',event);" class="tC2">M</span><br><span
+                    onclick="addchar('м',event);">m</span><br><input type="button" id="charbutton13"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="м"></li>
+            <li><span onclick="addchar('Н',event);" class="tC2">N</span><br><span
+                    onclick="addchar('н',event);">n</span><br><input type="button" id="charbutton14"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="н"></li>
+            <li><span onclick="addchar('О',event);" class="tC2">O</span><br><span
+                    onclick="addchar('о',event);">o</span><br><input type="button" id="charbutton15"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="о"></li>
+            <li><span onclick="addchar('П',event);" class="tC2">P</span><br><span
+                    onclick="addchar('п',event);">p</span><br><input type="button" id="charbutton16"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="п"></li>
+            <li><span onclick="addchar('Р',event);" class="tC2">R</span><br><span
+                    onclick="addchar('р',event);">r</span><br><input type="button" id="charbutton17"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="р"></li>
+            <li><span onclick="addchar('С',event);" class="tC2">S</span><br><span
+                    onclick="addchar('с',event);">s</span><br><input type="button" id="charbutton18"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="с"></li>
+            <li><span onclick="addchar('Т',event);" class="tC2">T</span><br><span
+                    onclick="addchar('т',event);">t</span><br><input type="button" id="charbutton19"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="т"></li>
+            <li><span onclick="addchar('У',event);" class="tC2">U</span><br><span
+                    onclick="addchar('у',event);">u</span><br><input type="button" id="charbutton20"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="у"></li>
+            <li><span onclick="addchar('Ф',event);" class="tC2">F</span><br><span
+                    onclick="addchar('ф',event);">f</span><br><input type="button" id="charbutton21"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="ф"></li>
+            <li><span onclick="addchar('Х',event);" class="tC2">H</span><br><span
+                    onclick="addchar('х',event);">h,x</span><br><input type="button" id="charbutton22"
+                                                                               class="tB bcharset2"
+                                                                               onclick="addchar(this.value,event);"
+                                                                               value="х"></li>
+            <li><span onclick="addchar('Ц',event);" class="tC2">C</span><br><span
+                    onclick="addchar('ц',event);">c</span><br><input type="button" id="charbutton23"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="ц"></li>
+            <li><span onclick="addchar('Ч',event);" class="tC2">Ch</span><br><span
+                    onclick="addchar('ч',event);">ch</span><br><input type="button" id="charbutton24"
+                                                                              class="tB bcharset2"
+                                                                              onclick="addchar(this.value,event);"
+                                                                              value="ч"></li>
+            <li><span onclick="addchar('Ш',event);" class="tC2">Sh</span><br><span
+                    onclick="addchar('ш',event);">sh</span><br><input type="button" id="charbutton25"
+                                                                              class="tB bcharset2"
+                                                                              onclick="addchar(this.value,event);"
+                                                                              value="ш"></li>
+            <li><span onclick="addchar('Щ',event);" class="tC2">Shh</span><br><span
+                    onclick="addchar('щ',event);">shh,w</span><br><input type="button" id="charbutton26"
+                                                                                 class="tB bcharset2"
+                                                                                 onclick="addchar(this.value,event);"
+                                                                                 value="щ"></li>
+            <li><span onclick="addchar('Ъ',event);" class="tC2">##</span><br><span
+                    onclick="addchar('ъ',event);">#</span><br><input type="button" id="charbutton27"
+                                                                             class="tB bcharset2"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="ъ"></li>
+            <li><span onclick="addchar('Ы',event);" class="tC2">Y</span><br><span
+                    onclick="addchar('ы',event);">y</span><br><input type="button" id="charbutton28"
+                                                                             class="tB bcharset"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="ы"></li>
+            <li><span onclick="addchar('Ь',event);" class="tC2">''</span><br><span
+                    onclick="addchar('ь',event);">'</span><br><input type="button" id="charbutton29"
+                                                                             class="tB bcharset2"
+                                                                             onclick="addchar(this.value,event);"
+                                                                             value="ь"></li>
+            <li><span onclick="addchar('Э',event);" class="tC2">Je</span><br><span
+                    onclick="addchar('э',event);">je,ä</span><br><input type="button" id="charbutton30"
+                                                                                class="tB bcharset2"
+                                                                                onclick="addchar(this.value,event);"
+                                                                                value="э"></li>
+            <li><span onclick="addchar('Ю',event);" class="tC2">Ju</span><br><span
+                    onclick="addchar('ю',event);">ju,yu,ü</span><br><input type="button" id="charbutton31"
+                                                                                   class="tB bcharset2"
+                                                                                   onclick="addchar(this.value,event);"
+                                                                                   value="ю"></li>
+            <li><span onclick="addchar('Я',event);" class="tC2">Ja</span><br><span
+                    onclick="addchar('я',event);">ja,ya,q</span><br><input type="button" id="charbutton32"
+                                                                                   class="tB bcharset2"
+                                                                                   onclick="addchar(this.value,event);"
+                                                                                   value="я"></li>
+        </ul>
+
+        <script language="JavaScript" type="text/javascript">
+            <!--
+            var shift = 0;
+            var chartabledirection = 0;
+            var chartable = new Array(new Array("а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я"), new Array("А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я"), new Array("a", "b", "v", "g", "d", "e", "jo", "zh", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "f", "h", "c", "ch", "sh", "shh", "#", "y", "\'", "je", "ju", "ja"), new Array("A", "B", "V", "G", "D", "E", "Jo", "Zh", "Z", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "F", "H", "C", "Ch", "Sh", "Shh", "##", "Y", "\'\'", "Je", "Ju", "Ja"));
+
+            function showtable(shift, chartabledirection) {
+                row = 2 * (chartabledirection ? 1 : 0) + (shift ? 1 : 0);
+                for (var i = 0; i < chartable[row].length; i++) {
+                    if ($("#charbutton" + i).length) {
+                        if (chartable[row][i].length > 0) {
+                            $("#charbutton" + i).val(chartable[row][i]);
+                        }
+                        else {
+                            $("#charbutton" + i).val(" ");
+                        }
+                    }
+                }
+                setfoc();
+            }
+
+            //-->
+        </script>
+
+    </div>
+    <div class="tSwitcherContainer">
+				<span class="tcbs" id="tcb_switch">
+									<span class="nowrap">Я хочу писать по-русски.</span> <span
+                        onclick="changelanguage();setfoc();" class="tcbul nowrap">Включить латиницу</span> <span
+                        class="tcbssup">esc</span>
+								</span>
+    </div>
+
+
+    <form name="searchform">
+        <div class="tBoxWzg">
+            <div class="tWzgBlock0 clearfix">
+                <ul class="tWzg">
+                    <li class="no-xxs"><input type="button" onclick="recovertext();setfoc();"
+                                              title="Вернуть текст, отменяет до 10 последних действий" value="Вернуть">
+                    </li>
+                    <li class="no-xs"><input type="button" onclick="highlightall();setfoc();" title="Выделить текст"
+                                             value="Выделить"></li>
+                    <li class="no-xxs"><input type="button" highlight="red" onclick="cleartrans();setfoc();"
+                                              title="Удалить текст" value="Очистить"></li>
+                    <li class="no-xs"><input type="button"
+                                             onclick="getselectedtext(); setfoc(); document.secondaryform.action='/tools/print/'; document.secondaryform.setAttribute('target', '_blank'); document.secondaryform.submit();"
+                                             title="Распечатать текст" value="Печать"></li>
+                    <li class="no-xs"><input type="button" highlight="green" onclick="SpellCheck();"
+                                             title="Проверить орфографию" value="Орфография"></li>
+                    <li><input type="button" onclick="translatealltocharset2();setfoc();"
+                               title="Перевести весь текст сразу" value="В русский"></li>
+                    <li><input type="button" onclick="translatealltocharset1();setfoc();"
+                               title="Перевести весь текст сразу в латиницу" value="В транслит"></li>
+                    <li id="forhint1"><input type="button" highlight="green"
+                                             onclick="$('body,html').animate({scrollTop: $('#searchblock').offset().top}, 1000);"
+                                             title="Искать" value="Поиск!"></li>
+                    <li class="highlight_tr"><input style="background-color: #DE4945; color: #ffffff;" type="button" onclick="translate_to_english();setfoc();"
+                               title="Перевести" value="Перевести"></li>
+
+                </ul>
+                <div id="hint1" onclick="$('#hint1').css('display','none');setfoc();"
+                     style="display: none; top: 32px; left: 319.438px;"></div>
+            </div>
+
+        </div>
+
+        <div class="tBoxBannerLeft">
+            <div class="tTextArea0">
+                <textarea dir="ltr" name="subject" rows="18" wrap="virtual" class="txtarea"
+                          onkeypress="translate_letter(event);"
+                          onkeyup="lettcount(); savechanges(); key_up_process();"></textarea>
+                <div class="txtarea_translate">
+                    <select id="language_select" class="selectized">
+                        <option value="">Выберите язык...</option>
+                        <option value="az">Азербайджанский</option>
+                        <option value="sq">Албанский</option>
+                        <option value="en">Английский</option>
+                        <option value="ar">Арабский</option>
+                        <option value="hy">Армянский</option>
+                        <option value="af">Африкаанс</option>
+                        <option value="eu">Баскский</option>
+                        <option value="be">Белорусский</option>
+                        <option value="bn">Бенгальский</option>
+                        <option value="bg">Болгарский</option>
+                        <option value="bs">Боснийский</option>
+                        <option value="cy">Валлийский</option>
+                        <option value="hu">Венгерский</option>
+                        <option value="vi">Вьетнамский</option>
+                        <option value="ht">Гаитянский</option>
+                        <option value="gl">Галисийский</option>
+                        <option value="nl">Голландский</option>
+                        <option value="el">Греческий</option>
+                        <option value="ka">Грузинский</option>
+                        <option value="gu">Гуджарати</option>
+                        <option value="da">Датский</option>
+                        <option value="he">Иврит</option>
+                        <option value="yi">Идиш</option>
+                        <option value="id">Индонезийский</option>
+                        <option value="ga">Ирландский</option>
+                        <option value="is">Исландский</option>
+                        <option value="es">Испанский</option>
+                        <option value="it">Итальянский</option>
+                        <option value="kk">Казахский</option>
+                        <option value="kn">Каннада</option>
+                        <option value="ca">Каталанский</option>
+                        <option value="zh">Китайский</option>
+                        <option value="ko">Корейский</option>
+                        <option value="km">Кхмерский</option>
+                        <option value="la">Латынь</option>
+                        <option value="lv">Латышский</option>
+                        <option value="lt">Литовский</option>
+                        <option value="lb">Люксембургский</option>
+                        <option value="mk">Македонский</option>
+                        <option value="mg">Малагасийский</option>
+                        <option value="ms">Малайский</option>
+                        <option value="mt">Мальтийский</option>
+                        <option value="mi">Маори</option>
+                        <option value="mr">Маратхи</option>
+                        <option value="de">Немецкий</option>
+                        <option value="ne">Непальский</option>
+                        <option value="no">Норвежский</option>
+                        <option value="pa">Панджаби</option>
+                        <option value="fa">Персидский</option>
+                        <option value="pl">Польский</option>
+                        <option value="pt">Португальский</option>
+                        <option value="ro">Румынский</option>
+                        <option value="ru">Русский</option>
+                        <option value="ceb">Себуанский</option>
+                        <option value="sr">Сербский</option>
+                        <option value="si">Сингальский</option>
+                        <option value="sk">Словацкий</option>
+                        <option value="sl">Словенский</option>
+                        <option value="sw">Суахили</option>
+                        <option value="su">Сунданский</option>
+                        <option value="tl">Тагальский</option>
+                        <option value="th">Тайский</option>
+                        <option value="tt">Татарский</option>
+                        <option value="tr">Турецкий</option>
+                        <option value="uz">Узбекский</option>
+                        <option value="uk">Украинский</option>
+                        <option value="ur">Урду</option>
+                        <option value="fi">Финский</option>
+                        <option value="fr">Французский</option>
+                        <option value="hi">Хинди</option>
+                        <option value="hr">Хорватский</option>
+                        <option value="cs">Чешский</option>
+                        <option value="sv">Шведский</option>
+                        <option value="gd">Шотландский (гэльский)</option>
+                        <option value="eo">Эсперанто</option>
+                        <option value="et">Эстонский</option>
+                        <option value="jv">Яванский</option>
+                    </select>
+                    <br>
+                    <span id="translate_span"></span>
+                </div>
+            </div>
+        </div>
+        <div class="tBoxBannerLeft">
+            <div id="letterscounter" title="Счетчик количества символов в тексте">0</div>
+        </div>
+    </form>
+
+
+    <form name="secondaryform" method="POST">
+        <input type="hidden" name="subject" value="">
+        <input type="hidden" name="extendedsubject" value="">
+        <input type="hidden" name="direction" value="ru">
+        <input type="hidden" name="cp" value="">
+    </form>
+
+    <script type="text/javascript">
+        <!--
+        Array.prototype.inArray = function (value) {
+            var i;
+            for (var i = 0; i < this.length; i++) {
+                if (this[i] == value) {
+                    return true;
+                }
+            }
+            return false;
+        };
+        var config = new Array();
+        var setup = new Array();
+        var presets = new Array();
+        var ookno_hints_n = new Array();
+        var ookno_hints = new Array();
+
+        ookno_hints[0] = '';
+
+        var tool_name = new Array();
+        var tool_index = new Array();
+        tool_name["1 1"] = ["Америка", "Германия"];
+        tool_index["1 1"] = [7, 8];
+        tool_name["2 1"] = ["youtube.com"];
+        tool_index["2 1"] = [35];
+        tool_name["3 1"] = ["ljseek.com", "google.com", "blogs.yandex.ru"];
+        tool_index["3 1"] = [18, 10, 1];
+        tool_name["4 35"] = ["conv.rbc.ru"];
+        tool_index["4 35"] = [3];
+        tool_name["4 36"] = ["conv.rbc.ru"];
+        tool_index["4 36"] = [3];
+        tool_name["4 37"] = ["conv.rbc.ru"];
+        tool_index["4 37"] = [3];
+        tool_name["4 38"] = ["conv.rbc.ru"];
+        tool_index["4 38"] = [3];
+        tool_name["4 39"] = ["conv.rbc.ru"];
+        tool_index["4 39"] = [3];
+        tool_name["4 40"] = ["conv.rbc.ru"];
+        tool_index["4 40"] = [3];
+        tool_name["4 41"] = ["conv.rbc.ru"];
+        tool_index["4 41"] = [3];
+        tool_name["4 42"] = ["conv.rbc.ru"];
+        tool_index["4 42"] = [3];
+        tool_name["5 2"] = ["infoplease.com"];
+        tool_index["5 2"] = [16];
+        tool_name["5 58"] = ["canoo.net"];
+        tool_index["5 58"] = [2];
+        tool_name["5 89"] = ["gramota.ru"];
+        tool_index["5 89"] = [12];
+        tool_name["6 1"] = ["nic.ru"];
+        tool_index["6 1"] = [21];
+        tool_name["7 1"] = ["maps.google.com"];
+        tool_index["7 1"] = [19];
+        tool_name["8 10"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 10"] = [30, 29];
+        tool_name["8 13"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 13"] = [30, 29];
+        tool_name["8 18"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 18"] = [30, 29];
+        tool_name["8 45"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 45"] = [30, 29];
+        tool_name["8 49"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 49"] = [30, 29];
+        tool_name["8 53"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 53"] = [30, 29];
+        tool_name["8 59"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 59"] = [30, 29];
+        tool_name["8 73"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 73"] = [30, 29];
+        tool_name["8 90"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 90"] = [30, 29];
+        tool_name["8 92"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 92"] = [30, 29];
+        tool_name["8 95"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 95"] = [30, 29];
+        tool_name["8 97"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 97"] = [30, 29];
+        tool_name["8 106"] = ["translate.ru", "translate.google.com"];
+        tool_index["8 106"] = [30, 29];
+        tool_name["9 1"] = ["gismeteo.ru", "yandex.ru"];
+        tool_index["9 1"] = [9, 31];
+        tool_name["10 54"] = ["yandex.ru", "google.com"];
+        tool_index["10 54"] = [15, 14];
+        tool_name["10 99"] = ["yandex.ru", "google.com", "yahoo.com"];
+        tool_index["10 99"] = [34, 11, 33];
+        tool_name["11 3"] = ["shabdkosh.com"];
+        tool_index["11 3"] = [24];
+        tool_name["11 4"] = ["dict.cc"];
+        tool_index["11 4"] = [5];
+        tool_name["11 5"] = ["dict.cc"];
+        tool_index["11 5"] = [5];
+        tool_name["11 6"] = ["dict.cc"];
+        tool_index["11 6"] = [5];
+        tool_name["11 7"] = ["dict.cc"];
+        tool_index["11 7"] = [5];
+        tool_name["11 8"] = ["dict.cc"];
+        tool_index["11 8"] = [5];
+        tool_name["11 9"] = ["dict.cc"];
+        tool_index["11 9"] = [5];
+        tool_name["11 10"] = ["dict.cc"];
+        tool_index["11 10"] = [5];
+        tool_name["11 11"] = ["dict.cc"];
+        tool_index["11 11"] = [5];
+        tool_name["11 12"] = ["dict.cc"];
+        tool_index["11 12"] = [5];
+        tool_name["11 13"] = ["dict.leo.org", "dict.cc"];
+        tool_index["11 13"] = [6, 5];
+        tool_name["11 14"] = ["dict.cc"];
+        tool_index["11 14"] = [5];
+        tool_name["11 15"] = ["dict.cc"];
+        tool_index["11 15"] = [5];
+        tool_name["11 16"] = ["dict.cc"];
+        tool_index["11 16"] = [5];
+        tool_name["11 17"] = ["dict.cc"];
+        tool_index["11 17"] = [5];
+        tool_name["11 18"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru", "dict.cc"];
+        tool_index["11 18"] = [20, 25, 17, 5];
+        tool_name["11 19"] = ["dict.cc"];
+        tool_index["11 19"] = [5];
+        tool_name["11 20"] = ["dict.cc"];
+        tool_index["11 20"] = [5];
+        tool_name["11 21"] = ["dict.cc"];
+        tool_index["11 21"] = [5];
+        tool_name["11 22"] = ["dict.cc"];
+        tool_index["11 22"] = [5];
+        tool_name["11 23"] = ["dict.cc"];
+        tool_index["11 23"] = [5];
+        tool_name["11 24"] = ["dict.cc"];
+        tool_index["11 24"] = [5];
+        tool_name["11 25"] = ["dict.cc"];
+        tool_index["11 25"] = [5];
+        tool_name["11 26"] = ["dict.cc"];
+        tool_index["11 26"] = [5];
+        tool_name["11 27"] = ["dict.cc"];
+        tool_index["11 27"] = [5];
+        tool_name["11 28"] = ["dict.cc"];
+        tool_index["11 28"] = [5];
+        tool_name["11 29"] = ["dict.cc"];
+        tool_index["11 29"] = [5];
+        tool_name["11 30"] = ["multitran.ru"];
+        tool_index["11 30"] = [20];
+        tool_name["11 31"] = ["dict.cc"];
+        tool_index["11 31"] = [5];
+        tool_name["11 32"] = ["dict.cc"];
+        tool_index["11 32"] = [5];
+        tool_name["11 33"] = ["dict.cc"];
+        tool_index["11 33"] = [5];
+        tool_name["11 34"] = ["dict.cc"];
+        tool_index["11 34"] = [5];
+        tool_name["11 43"] = ["dict.cc"];
+        tool_index["11 43"] = [5];
+        tool_name["11 44"] = ["dict.cc"];
+        tool_index["11 44"] = [5];
+        tool_name["11 47"] = ["dict.cc"];
+        tool_index["11 47"] = [5];
+        tool_name["11 48"] = ["dict.cc"];
+        tool_index["11 48"] = [5];
+        tool_name["11 49"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru"];
+        tool_index["11 49"] = [20, 25, 17];
+        tool_name["11 51"] = ["dict.cc"];
+        tool_index["11 51"] = [5];
+        tool_name["11 52"] = ["dict.cc"];
+        tool_index["11 52"] = [5];
+        tool_name["11 53"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru"];
+        tool_index["11 53"] = [20, 25, 17];
+        tool_name["11 55"] = ["dict.cc"];
+        tool_index["11 55"] = [5];
+        tool_name["11 56"] = ["dict.cc"];
+        tool_index["11 56"] = [5];
+        tool_name["11 57"] = ["multitran.ru"];
+        tool_index["11 57"] = [20];
+        tool_name["11 59"] = ["dict.leo.org", "dict.cc"];
+        tool_index["11 59"] = [6, 5];
+        tool_name["11 60"] = ["dict.cc"];
+        tool_index["11 60"] = [5];
+        tool_name["11 61"] = ["dict.cc"];
+        tool_index["11 61"] = [5];
+        tool_name["11 62"] = ["dict.cc"];
+        tool_index["11 62"] = [5];
+        tool_name["11 63"] = ["dict.cc"];
+        tool_index["11 63"] = [5];
+        tool_name["11 64"] = ["dict.cc"];
+        tool_index["11 64"] = [5];
+        tool_name["11 65"] = ["dict.cc"];
+        tool_index["11 65"] = [5];
+        tool_name["11 66"] = ["dict.cc"];
+        tool_index["11 66"] = [5];
+        tool_name["11 67"] = ["dict.cc"];
+        tool_index["11 67"] = [5];
+        tool_name["11 68"] = ["dict.cc"];
+        tool_index["11 68"] = [5];
+        tool_name["11 69"] = ["dict.cc"];
+        tool_index["11 69"] = [5];
+        tool_name["11 70"] = ["dict.cc"];
+        tool_index["11 70"] = [5];
+        tool_name["11 71"] = ["dict.cc"];
+        tool_index["11 71"] = [5];
+        tool_name["11 72"] = ["dict.cc"];
+        tool_index["11 72"] = [5];
+        tool_name["11 73"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru", "dict.leo.org", "dict.cc"];
+        tool_index["11 73"] = [20, 25, 17, 6, 5];
+        tool_name["11 74"] = ["dict.cc"];
+        tool_index["11 74"] = [5];
+        tool_name["11 75"] = ["dict.cc"];
+        tool_index["11 75"] = [5];
+        tool_name["11 76"] = ["dict.cc"];
+        tool_index["11 76"] = [5];
+        tool_name["11 77"] = ["dict.cc"];
+        tool_index["11 77"] = [5];
+        tool_name["11 78"] = ["dict.cc"];
+        tool_index["11 78"] = [5];
+        tool_name["11 79"] = ["dict.cc"];
+        tool_index["11 79"] = [5];
+        tool_name["11 80"] = ["dict.cc"];
+        tool_index["11 80"] = [5];
+        tool_name["11 83"] = ["dict.cc"];
+        tool_index["11 83"] = [5];
+        tool_name["11 84"] = ["dict.cc"];
+        tool_index["11 84"] = [5];
+        tool_name["11 85"] = ["dict.cc"];
+        tool_index["11 85"] = [5];
+        tool_name["11 86"] = ["dict.cc"];
+        tool_index["11 86"] = [5];
+        tool_name["11 87"] = ["dict.cc"];
+        tool_index["11 87"] = [5];
+        tool_name["11 88"] = ["dict.cc"];
+        tool_index["11 88"] = [5];
+        tool_name["11 90"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru", "dict.cc"];
+        tool_index["11 90"] = [20, 25, 17, 5];
+        tool_name["11 91"] = ["multitran.ru"];
+        tool_index["11 91"] = [20];
+        tool_name["11 92"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru"];
+        tool_index["11 92"] = [20, 25, 17];
+        tool_name["11 93"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru"];
+        tool_index["11 93"] = [20, 25, 17];
+        tool_name["11 94"] = ["multitran.ru"];
+        tool_index["11 94"] = [20];
+        tool_name["11 95"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru", "dict.leo.org", "dict.cc"];
+        tool_index["11 95"] = [20, 25, 17, 6, 5];
+        tool_name["11 96"] = ["sanakniigu.onego.ru"];
+        tool_index["11 96"] = [23];
+        tool_name["11 97"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru"];
+        tool_index["11 97"] = [20, 25, 17];
+        tool_name["11 98"] = ["multitran.ru"];
+        tool_index["11 98"] = [20];
+        tool_name["11 100"] = ["dict.cc"];
+        tool_index["11 100"] = [5];
+        tool_name["11 101"] = ["dict.cc"];
+        tool_index["11 101"] = [5];
+        tool_name["11 102"] = ["sanakniigu.onego.ru"];
+        tool_index["11 102"] = [22];
+        tool_name["11 104"] = ["dict.cc"];
+        tool_index["11 104"] = [5];
+        tool_name["11 105"] = ["dict.cc"];
+        tool_index["11 105"] = [5];
+        tool_name["11 106"] = ["multitran.ru", "slovari.yandex.ru", "lingvo.ru"];
+        tool_index["11 106"] = [20, 25, 17];
+        tool_name["11 107"] = ["dict.cc"];
+        tool_index["11 107"] = [5];
+        tool_name["11 108"] = ["dict.cc"];
+        tool_index["11 108"] = [5];
+        tool_name["11 109"] = ["dict.cc"];
+        tool_index["11 109"] = [5];
+        tool_name["11 110"] = ["dict.cc"];
+        tool_index["11 110"] = [5];
+        tool_name["11 111"] = ["dict.cc"];
+        tool_index["11 111"] = [5];
+        tool_name["11 112"] = ["dict.cc"];
+        tool_index["11 112"] = [5];
+        tool_name["11 113"] = ["multitran.ru"];
+        tool_index["11 113"] = [20];
+        tool_name["12 1"] = ["sokr.ru"];
+        tool_index["12 1"] = [27];
+        tool_name["13 81"] = ["telcode.ru"];
+        tool_index["13 81"] = [28];
+        tool_name["13 82"] = ["telcode.ru"];
+        tool_index["13 82"] = [28];
+        tool_name["14 1"] = ["slovari.yandex.ru", "gramota.ru"];
+        tool_index["14 1"] = [26, 13];
+        tool_name["15 2"] = ["wikipedia.org"];
+        tool_index["15 2"] = [32];
+        tool_name["15 46"] = ["wikipedia.org"];
+        tool_index["15 46"] = [32];
+        tool_name["15 50"] = ["wikipedia.org"];
+        tool_index["15 50"] = [32];
+        tool_name["15 58"] = ["wikipedia.org"];
+        tool_index["15 58"] = [32];
+        tool_name["15 89"] = ["wikipedia.org", "dic.academic.ru"];
+        tool_index["15 89"] = [32, 4];
+        tool_name["15 103"] = ["wikipedia.org"];
+        tool_index["15 103"] = [32];
+        ookno_hints_n["10 99 34"] = 1;
+        ookno_hints[1] = 'напечатайте в окне: поисковый запрос, например <b>карьерный рост</b>';
+        ookno_hints_n["10 99 11"] = 2;
+        ookno_hints[2] = 'напечатайте в окне: поисковый запрос, например <b>карьерный рост</b>';
+        ookno_hints_n["10 99 33"] = 3;
+        ookno_hints[3] = 'напечатайте в окне: поисковый запрос, например <b>карьерный рост</b>';
+        ookno_hints_n["10 54 15"] = 4;
+        ookno_hints[4] = 'напечатайте в окне: какие картинки искать, например <b>мебельный гарнитур</b>';
+        ookno_hints_n["10 54 14"] = 5;
+        ookno_hints[5] = 'напечатайте в окне: какие картинки искать, например <b>мебельный гарнитур</b>';
+        ookno_hints_n["11 18 20"] = 6;
+        ookno_hints[6] = 'напечатайте в окне: слово для перевода, например <b>building</b>';
+        ookno_hints_n["11 90 20"] = 7;
+        ookno_hints[7] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 73 20"] = 8;
+        ookno_hints[8] = 'напечатайте в окне: слово для перевода, например <b>Land</b>';
+        ookno_hints_n["11 95 20"] = 9;
+        ookno_hints[9] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 106 20"] = 10;
+        ookno_hints[10] = 'напечатайте в окне: слово для перевода на французском';
+        ookno_hints_n["11 97 20"] = 11;
+        ookno_hints[11] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 49 20"] = 12;
+        ookno_hints[12] = 'напечатайте в окне: слово для перевода на испанском';
+        ookno_hints_n["11 92 20"] = 13;
+        ookno_hints[13] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 53 20"] = 14;
+        ookno_hints[14] = 'напечатайте в окне: слово для перевода на итальянском';
+        ookno_hints_n["11 93 20"] = 15;
+        ookno_hints[15] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 30 20"] = 16;
+        ookno_hints[16] = 'напечатайте в окне: слово для перевода на голландском';
+        ookno_hints_n["11 91 20"] = 17;
+        ookno_hints[17] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 113 20"] = 18;
+        ookno_hints[18] = 'напечатайте в окне: слово для перевода на эстонском';
+        ookno_hints_n["11 98 20"] = 19;
+        ookno_hints[19] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 57 20"] = 20;
+        ookno_hints[20] = 'напечатайте в окне: слово для перевода на латышском';
+        ookno_hints_n["11 94 20"] = 21;
+        ookno_hints[21] = 'напечатайте в окне: слово для перевода, например <b>страна</b>';
+        ookno_hints_n["11 18 25"] = 22;
+        ookno_hints[22] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 90 25"] = 23;
+        ookno_hints[23] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 73 25"] = 24;
+        ookno_hints[24] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 95 25"] = 25;
+        ookno_hints[25] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 106 25"] = 26;
+        ookno_hints[26] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 97 25"] = 27;
+        ookno_hints[27] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 49 25"] = 28;
+        ookno_hints[28] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 92 25"] = 29;
+        ookno_hints[29] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 53 25"] = 30;
+        ookno_hints[30] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 93 25"] = 31;
+        ookno_hints[31] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 90 17"] = 32;
+        ookno_hints[32] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 18 17"] = 33;
+        ookno_hints[33] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 95 17"] = 34;
+        ookno_hints[34] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 73 17"] = 35;
+        ookno_hints[35] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 97 17"] = 36;
+        ookno_hints[36] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 106 17"] = 37;
+        ookno_hints[37] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 93 17"] = 38;
+        ookno_hints[38] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 53 17"] = 39;
+        ookno_hints[39] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 92 17"] = 40;
+        ookno_hints[40] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 49 17"] = 41;
+        ookno_hints[41] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 95 6"] = 42;
+        ookno_hints[42] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 73 6"] = 43;
+        ookno_hints[43] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 13 6"] = 44;
+        ookno_hints[44] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 59 6"] = 45;
+        ookno_hints[45] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 102 22"] = 46;
+        ookno_hints[46] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 96 23"] = 47;
+        ookno_hints[47] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 3 24"] = 48;
+        ookno_hints[48] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 13 5"] = 49;
+        ookno_hints[49] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 59 5"] = 50;
+        ookno_hints[50] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 73 5"] = 51;
+        ookno_hints[51] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 60 5"] = 52;
+        ookno_hints[52] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 76 5"] = 53;
+        ookno_hints[53] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 64 5"] = 54;
+        ookno_hints[54] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 63 5"] = 55;
+        ookno_hints[55] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 78 5"] = 56;
+        ookno_hints[56] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 66 5"] = 57;
+        ookno_hints[57] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 75 5"] = 58;
+        ookno_hints[58] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 61 5"] = 59;
+        ookno_hints[59] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 65 5"] = 60;
+        ookno_hints[60] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 67 5"] = 61;
+        ookno_hints[61] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 68 5"] = 62;
+        ookno_hints[62] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 62 5"] = 63;
+        ookno_hints[63] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 69 5"] = 64;
+        ookno_hints[64] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 70 5"] = 65;
+        ookno_hints[65] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 71 5"] = 66;
+        ookno_hints[66] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 72 5"] = 67;
+        ookno_hints[67] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 77 5"] = 68;
+        ookno_hints[68] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 74 5"] = 69;
+        ookno_hints[69] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 95 5"] = 70;
+        ookno_hints[70] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 25 5"] = 71;
+        ookno_hints[71] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 108 5"] = 72;
+        ookno_hints[72] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 34 5"] = 73;
+        ookno_hints[73] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 32 5"] = 74;
+        ookno_hints[74] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 112 5"] = 75;
+        ookno_hints[75] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 48 5"] = 76;
+        ookno_hints[76] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 105 5"] = 77;
+        ookno_hints[77] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 27 5"] = 78;
+        ookno_hints[78] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 44 5"] = 79;
+        ookno_hints[79] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 52 5"] = 80;
+        ookno_hints[80] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 56 5"] = 81;
+        ookno_hints[81] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 29 5"] = 82;
+        ookno_hints[82] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 80 5"] = 83;
+        ookno_hints[83] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 84 5"] = 84;
+        ookno_hints[84] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 86 5"] = 85;
+        ookno_hints[85] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 88 5"] = 86;
+        ookno_hints[86] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 110 5"] = 87;
+        ookno_hints[87] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 101 5"] = 88;
+        ookno_hints[88] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 18 5"] = 89;
+        ookno_hints[89] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 4 5"] = 90;
+        ookno_hints[90] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 21 5"] = 91;
+        ookno_hints[91] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 8 5"] = 92;
+        ookno_hints[92] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 7 5"] = 93;
+        ookno_hints[93] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 23 5"] = 94;
+        ookno_hints[94] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 10 5"] = 95;
+        ookno_hints[95] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 20 5"] = 96;
+        ookno_hints[96] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 5 5"] = 97;
+        ookno_hints[97] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 9 5"] = 98;
+        ookno_hints[98] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 11 5"] = 99;
+        ookno_hints[99] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 12 5"] = 100;
+        ookno_hints[100] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 6 5"] = 101;
+        ookno_hints[101] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 14 5"] = 102;
+        ookno_hints[102] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 15 5"] = 103;
+        ookno_hints[103] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 16 5"] = 104;
+        ookno_hints[104] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 17 5"] = 105;
+        ookno_hints[105] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 22 5"] = 106;
+        ookno_hints[106] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 19 5"] = 107;
+        ookno_hints[107] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 90 5"] = 108;
+        ookno_hints[108] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 24 5"] = 109;
+        ookno_hints[109] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 107 5"] = 110;
+        ookno_hints[110] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 33 5"] = 111;
+        ookno_hints[111] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 31 5"] = 112;
+        ookno_hints[112] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 111 5"] = 113;
+        ookno_hints[113] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 47 5"] = 114;
+        ookno_hints[114] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 104 5"] = 115;
+        ookno_hints[115] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 26 5"] = 116;
+        ookno_hints[116] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 43 5"] = 117;
+        ookno_hints[117] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 51 5"] = 118;
+        ookno_hints[118] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 55 5"] = 119;
+        ookno_hints[119] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 28 5"] = 120;
+        ookno_hints[120] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 79 5"] = 121;
+        ookno_hints[121] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 83 5"] = 122;
+        ookno_hints[122] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 85 5"] = 123;
+        ookno_hints[123] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 87 5"] = 124;
+        ookno_hints[124] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 109 5"] = 125;
+        ookno_hints[125] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["11 100 5"] = 126;
+        ookno_hints[126] = 'напечатайте в окне: слово для перевода';
+        ookno_hints_n["8 18 30"] = 127;
+        ookno_hints[127] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 90 30"] = 128;
+        ookno_hints[128] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 73 30"] = 129;
+        ookno_hints[129] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 95 30"] = 130;
+        ookno_hints[130] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 106 30"] = 131;
+        ookno_hints[131] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 97 30"] = 132;
+        ookno_hints[132] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 49 30"] = 133;
+        ookno_hints[133] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 92 30"] = 134;
+        ookno_hints[134] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 53 30"] = 135;
+        ookno_hints[135] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 13 30"] = 136;
+        ookno_hints[136] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 59 30"] = 137;
+        ookno_hints[137] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 10 30"] = 138;
+        ookno_hints[138] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 45 30"] = 139;
+        ookno_hints[139] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 18 29"] = 140;
+        ookno_hints[140] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 90 29"] = 141;
+        ookno_hints[141] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 73 29"] = 142;
+        ookno_hints[142] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 95 29"] = 143;
+        ookno_hints[143] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 106 29"] = 144;
+        ookno_hints[144] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 97 29"] = 145;
+        ookno_hints[145] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 49 29"] = 146;
+        ookno_hints[146] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 92 29"] = 147;
+        ookno_hints[147] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 53 29"] = 148;
+        ookno_hints[148] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 13 29"] = 149;
+        ookno_hints[149] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 59 29"] = 150;
+        ookno_hints[150] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 10 29"] = 151;
+        ookno_hints[151] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["8 45 29"] = 152;
+        ookno_hints[152] = 'напечатайте в окне: текст для перевода';
+        ookno_hints_n["2 1 35"] = 153;
+        ookno_hints[153] = 'напечатайте в окне: поисковое слово';
+        ookno_hints_n["5 89 12"] = 154;
+        ookno_hints[154] = 'напечатайте в окне: слово для проверки';
+        ookno_hints_n["5 2 16"] = 155;
+        ookno_hints[155] = 'напечатайте в окне: слово для проверки на английском';
+        ookno_hints_n["5 58 2"] = 156;
+        ookno_hints[156] = 'напечатайте в окне: слово для проверки на немецком';
+        ookno_hints_n["15 89 32"] = 157;
+        ookno_hints[157] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["15 2 32"] = 158;
+        ookno_hints[158] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["15 58 32"] = 159;
+        ookno_hints[159] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["15 46 32"] = 160;
+        ookno_hints[160] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["15 103 32"] = 161;
+        ookno_hints[161] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["15 50 32"] = 162;
+        ookno_hints[162] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["15 89 4"] = 163;
+        ookno_hints[163] = 'напечатайте в окне: что искать в энциклопедии';
+        ookno_hints_n["14 1 26"] = 164;
+        ookno_hints[164] = 'напечатайте в окне: слово, значение которого вы хотите узнать';
+        ookno_hints_n["14 1 13"] = 165;
+        ookno_hints[165] = 'напечатайте в окне: слово, значение которого вы хотите узнать';
+        ookno_hints_n["1 1 7"] = 166;
+        ookno_hints[166] = 'напечатайте в окне: название товара';
+        ookno_hints_n["1 1 8"] = 167;
+        ookno_hints[167] = 'напечатайте в окне: название товара';
+        ookno_hints_n["7 1 19"] = 168;
+        ookno_hints[168] = 'напечатайте в окне: улица, город, страна - например, <b>Haymarket, London, United Kingdom</b>';
+        ookno_hints_n["3 1 18"] = 169;
+        ookno_hints[169] = 'напечатайте в окне: что искать в блогах';
+        ookno_hints_n["3 1 10"] = 170;
+        ookno_hints[170] = 'напечатайте в окне: что искать в блогах';
+        ookno_hints_n["3 1 1"] = 171;
+        ookno_hints[171] = 'напечатайте в окне: что искать в блогах';
+        ookno_hints_n["12 1 27"] = 172;
+        ookno_hints[172] = 'напечатайте в окне: сокращение, например <b>КПСС</b>';
+        ookno_hints_n["4 37 3"] = 173;
+        ookno_hints[173] = 'напечатайте в окне: сумма в долларах США, например </b>150</b>';
+        ookno_hints_n["4 41 3"] = 174;
+        ookno_hints[174] = 'напечатайте в окне: сумма в рублях, например </b>2500</b>';
+        ookno_hints_n["4 39 3"] = 175;
+        ookno_hints[175] = 'напечатайте в окне: сумма в евро, например </b>1500</b>';
+        ookno_hints_n["4 42 3"] = 176;
+        ookno_hints[176] = 'напечатайте в окне: сумма в рублях, например </b>2500</b>';
+        ookno_hints_n["4 35 3"] = 177;
+        ookno_hints[177] = 'напечатайте в окне: сумма в фунтах, например </b>2500</b>';
+        ookno_hints_n["4 40 3"] = 178;
+        ookno_hints[178] = 'напечатайте в окне: сумма в рублях, например </b>2500</b>';
+        ookno_hints_n["4 36 3"] = 179;
+        ookno_hints[179] = 'напечатайте в окне: сумма в долларах США, например </b>150</b>';
+        ookno_hints_n["4 38 3"] = 180;
+        ookno_hints[180] = 'напечатайте в окне: сумма в евро, например </b>1500</b>';
+        ookno_hints_n["6 1 21"] = 181;
+        ookno_hints[181] = 'напечатайте в окне: название домена без .com, .ru или др.';
+        ookno_hints_n["13 82 28"] = 182;
+        ookno_hints[182] = 'напечатайте в окне: код города или название, напрмер <b>86361</b> или <b>Гуково</b>';
+        ookno_hints_n["13 81 28"] = 183;
+        ookno_hints[183] = 'напечатайте в окне: код страны-код города,<br>напрмер <b>44-181</b>, где 44 код Великбоитании, а 181 код Лондона,<br>либо или название города, например <b>Лондон</b>';
+        ookno_hints_n["9 1 9"] = 184;
+        ookno_hints[184] = 'напечатайте в окне: город, например <b>Астрахань</b>';
+        ookno_hints_n["9 1 31"] = 185;
+        ookno_hints[185] = 'напечатайте в окне: город, например <b>Астрахань</b>';
+
+
+        function PopupTools(category, service) {
+            var sel = document.getElementById('t' + category);
+            var t_name = new Array();
+            var t_index = new Array();
+            t_name = tool_name[category + ' ' + service];
+            t_index = tool_index[category + ' ' + service];
+            if (sel && sel.options) {
+                while (sel.options.length) sel.options[0] = null;
+                for (var i = 0; i < t_name.length; i++) {
+                    if (document.createElement) {
+                        var newListOption = document.createElement("OPTION");
+                        newListOption.text = t_name[i];
+                        newListOption.value = t_index[i];
+                        if (presets[category + ' ' + service] != 0 && t_index[i] == presets[category + ' ' + service]) {
+                            newListOption.selected = "true";
+                        }
+                        (sel.options.add) ? sel.options.add(newListOption) : sel.add(newListOption, null);
+                    }
+                    else {
+                        sel.options[i] = new Option(t_index[i], t_name[i], false, false);
+                    }
+                }
+            }
+            return false;
+        }
+
+        function update_presets(category, service, obj) {
+            presets[category + ' ' + service] = obj.value;
+            kukish('cf-' + category + '-' + service, obj.value);
+            kukish('cfs-' + category, service);
+            return false;
+        }
+
+        //-->
+    </script>
+
+    <script type="text/javascript">
+        <!--
+
+        for (var i = 0; i < config.length; i++) {
+            if (tool_index[config[i][0] + ' ' + config[i][1]] && tool_index[config[i][0] + ' ' + config[i][1]].inArray(config[i][2])) {
+                presets[config[i][0] + ' ' + config[i][1]] = config[i][2];
+            }
+        }
+
+        for (var i = 0; i < setup.length; i++) {
+            if (tool_index[setup[i][0] + ' ' + setup[i][1]]) {
+                document.getElementById('s' + setup[i][0]).value = setup[i][1];
+                PopupTools(setup[i][0], setup[i][1]);
+            }
+        }
+        //-->
+    </script>
+</div>
+
+    <div class="tBottomContainer">
+        <div class="tCenter">
+
+            <p style="text-align: left; margin: 0 1em 1em 1em;">С помощью транслитератора <a href="http://translitor.org/">translitor.org</a>
+                из букв латинского алфавита получаются буквы кириллицы, иврита, белорусского, украинского и других
+                алфавитов. Этот транслитератор задумывался как сервис для жителей стран бывшего СССР, находящихся за
+                границей и желающих переписываться на своем компьютере на родном языке. Если кто-нибудь говорит "Я пользуюсь
+                транслитом", то всем понятно - речь идет о translitor.org. Еще его называют просто «транслит» или «translit»,
+                «транслитератор» или «конвертер кириллицы».</p>
+
+            <p>
+                <a href="http://translitor.org/faq/" title="Часто задаваемые вопросы"
+                   caption="Часто задаваемые о транслитераторе вопросы">Часто задаваемые вопросы</a>, <a
+                    href="http://translitor.org/info/disclaimer/">Пользовательское соглашение и ограничения
+                ответственности</a>, <a href="http://translitor.org/info/privacy/">Политика конфиденциальности</a>
+            </p>
+            <p>
+                <a href="mailto:info@translitor.org">info@translitor.org</a>
+            </p>
+        </div>
+    </div>
+    <!--<div id="placeholder" style="height: 340px;">-->
+    <!--</div>-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/google_analytics.js"></script>
+    <script async="" src="./assets/js/analytics.js"></script>
+    <script async="" src="./assets/js/publishertag.js"></script>
+    <script async="" src="./assets/js/main.js"></script>
+    <script>
+    $(function() {
+        $('#language_select').selectize();
+    });
+    </script>
+</body>
+</html>

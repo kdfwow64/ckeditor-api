@@ -1,0 +1,23 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^translitor\.org [NC]
+RewriteRule ^(.*)$ https://www.translitor.org/$1 [L,R=301]
+
+RewriteEngine On
+
+# End the processing, if a rewrite already occurred
+RewriteRule ^(frontend|backend)/web/ - [L]
+
+# Handle the case of backend, skip ([S=1]) the following rule, if current matched
+RewriteRule ^adminpanel(/(.*))?$ backend/web/$2 [S=1]
+
+# handle the case of frontend
+RewriteRule .* frontend/web/$0
+
+#Uncomment the following, if you want speaking URL
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^/.*$ $1/index.html
+
+
+AddHandler application/x-httpd-php70 .php .php5 .php4 .php3

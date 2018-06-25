@@ -1,0 +1,18 @@
+<?php
+
+class DATABASE_CONFIG
+{
+
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => '{Host}',
+        'port' => '{Port}',
+        'login' => '{User}',
+        'password' => '{Password}',
+        'database' => '{DatabaseName}',
+        'prefix' => '{Prefix}',
+        'encoding' => 'utf8',
+    );
+
+}

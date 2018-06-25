@@ -1,0 +1,108 @@
+2018-02-06 09:22:00 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /admin/index.php
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:23:07 Error: [MissingControllerException] Controller class Index.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /index.html
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:26:07 Error: [MissingControllerException] Controller class Index.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /index.html
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:31:07 Error: [MissingControllerException] Controller class InstallerController could not be found.
+Exception Attributes: array (
+  'class' => 'InstallerController',
+  'plugin' => NULL,
+)
+Request URL: /installer/installation
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:35:07 Error: [MissingControllerException] Controller class InstallerController could not be found.
+Exception Attributes: array (
+  'class' => 'InstallerController',
+  'plugin' => NULL,
+)
+Request URL: /installer/installation/database_setup
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:36:07 Error: [MissingControllerException] Controller class InstallerController could not be found.
+Exception Attributes: array (
+  'class' => 'InstallerController',
+  'plugin' => NULL,
+)
+Request URL: /installer/installation/initialisation
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:56:32 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 09:56:33 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 10:01:50 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 10:01:50 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 10:03:06 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 10:03:06 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zarplata/public_html/translitor.org/webchat/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

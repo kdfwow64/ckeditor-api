@@ -1,0 +1,167 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+/* @var $this yii\web\View */
+/* @var $model common\models\Partners */
+/* @var $form yii\widgets\ActiveForm */
+?>
+
+<div class="partners-form">
+
+    <?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'adminEmail') ?>
+    <?= $form->field($model, 'seotitle') ?>
+    <?= $form->field($model, 'seodescription')->textarea() ?>
+    <?= $form->field($model, 'seoimgfile')->fileInput() ?>
+    <?= $form->field($model, 'topblocktitle') ?>
+    <?= $form->field($model, 'topblocktext') ?> 
+    <?php
+    if ($model->seoimg)
+        echo Html::img($model->seoimg, ['style' => 'width:100px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'facebook_link') ?>
+    <?= $form->field($model, 'in_link') ?>
+    <?= $form->field($model, 'gp_link') ?>
+    <?= $form->field($model, 'vk_link') ?>
+
+    <?= $form->field($model, 'ga')->textarea(); ?>
+    <?= $form->field($model, 'footer')->textarea(); ?>
+    <?= $form->field($model, 'fb_sc_f')->textarea(); ?>
+    <?= $form->field($model, 'fjsc')->textarea(); ?>
+    <?php //echo $form->field($model, 'fcc')->textarea(); ?>
+
+    <?= $form->field($model, 'mainpageuser')->checkbox() ?>
+
+
+    <!--    -->
+    <?= $form->field($model, 'mainslide1File')->fileInput() ?>
+    <?php
+    if ($model->mainslide1)
+        echo Html::img($model->mainslide1, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'slidetext1')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+    <!--    -->
+    <?= $form->field($model, 'mainslide2File')->fileInput() ?>
+    <?php
+    if ($model->mainslide2)
+        echo Html::img($model->mainslide2, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'slidetext2')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+    <!--    -->
+    <?= $form->field($model, 'mainslide3File')->fileInput() ?>
+    <?php
+    if ($model->mainslide3)
+        echo Html::img($model->mainslide3, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'slidetext3')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+    <!--    -->
+    <?= $form->field($model, 'mainslide4File')->fileInput() ?>
+    <?php
+    if ($model->mainslide4)
+        echo Html::img($model->mainslide4, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'slidetext4')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+
+    <!--    -->
+    <?= $form->field($model, 'mainslide5File')->fileInput() ?>
+    <?php
+    if ($model->mainslide5)
+        echo Html::img($model->mainslide5, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'slidetext5')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+    <?= $form->field($model, 'slidetime'); ?>
+    <!--    -->
+
+    <?= $form->field($model, 'vacancyfotoFile')->fileInput() ?>
+    <?php
+    if ($model->vacancyfoto)
+        echo Html::img($model->vacancyfoto, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'vacancytext')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+    <?= $form->field($model, 'profilefotoFile')->fileInput() ?>
+    <?php
+    if ($model->profilefoto)
+        echo Html::img($model->profilefoto, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'profiletext')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+    <?= $form->field($model, 'resumefotoFile')->fileInput() ?>
+    <?php
+    if ($model->resumefoto)
+        echo Html::img($model->resumefoto, ['style' => 'width:200px;']);
+    echo '<br>';
+    ?>
+    <?= $form->field($model, 'resumetext')->widget(\dosamigos\ckeditor\CKEditor::className(), [
+        'options' => ['rows' => 2],
+        'preset' => 'full',
+        'clientOptions' => [
+            'extraPlugins' => 'colordialog,embed,font,colorbutton',
+        ]
+    ]) ?>
+
+
+    <div class="form-group">
+        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+
+</div>

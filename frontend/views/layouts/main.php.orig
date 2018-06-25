@@ -1,0 +1,116 @@
+<?php
+/* @var $this \yii\web\View */
+/* @var $content string */
+
+use frontend\assets\AppAsset;
+use yii\helpers\Html;
+
+AppAsset::register($this);
+
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://translitor.org/ -->
+<html lang="ru">
+<head>
+<<<<<<< working copy
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title><?= Html::encode($this->title) ?></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="page-topic"
+          content="Бесплатный транслит, конвертер текста из латиницы и в латиницу. Если у вас нет русской клавиатуры.">
+    <meta name="copyright" content="<?=$_SERVER['HTTP_HOST']?>">
+    <meta name="revisit-after" content="7 days">
+    <meta name="robots" content="index, follow">
+    <meta name="content-language" content="de">
+    <link rel="canonical" href="https://<?=$_SERVER['HTTP_HOST']?>">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="<?=Yii::$app->name ?>">
+    <link rel="shortcut icon" href="https://translitor.org/favicon.ico">
+    <meta property="og:url" content="https://<?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>"/>
+    <?php $this->head() ?>
+    <?php if (!empty(Yii::$app->params['ga'])) {
+        echo Yii::$app->params['ga'];
+    } ?>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--    <meta name="yandex-verification" content="b79ff2058f5cad62" />-->
+</head>
+
+<body onkeydown="AkeyIsDown(event);" onkeypress="switcher(event);"
+      onbeforeunload="if(document.searchform.subject.value.length>250) return('Ваш текст будет потерян.');">
+<?php $this->beginBody() ?>
+<div class="tCookiesInfoblock" id="cookiesquestion">
+    <div class="tCookiesButton" onclick="okcookies();">
+        Согласиться и закрыть
+    </div>
+    <span class="tCookiesSilentClose" onclick="removecookiesinfo()">x</span><strong>  Мы используем cookies</strong> для
+    подсчета статистики посещений, персонализации рекламных объявлений, а также для сохранения пользовательских настроек
+    функциональности сайта. <span id="tCookiesShowMore">Вы соглашаетесь с этим, используя сайт далее.</span><span
+        class="tCookiesShowMore" onclick="showmorecookiesinfo();">Читать больше...</span><span
+        id="tCookiesMoreText" style="display: none;">На основе информации, хранящейся в cookies, наши партнеры Google и Criteo также подсчитывают для нас статистику посещений, анализируют и персонализируют рекламные объявления. Продолжая использование этого сайта без изменения настроек cookies в своем браузере, либо кликнув по кнопке «Согласиться и закрыть», Вы выражаете свое согласие на применение cookies на этом сайте. Узнать больше в <a
+        href="http://translitor.org/info/privacy/">Политике конфиденциальности</a>.</span>
+=======
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><?= Html::encode($this->title) ?></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="page-topic"
+          content="Бесплатный транслит, конвертер текста из латиницы и в латиницу. Если у вас нет русской клавиатуры.">
+    <meta name="copyright" content="<?=$_SERVER['HTTP_HOST']?>">
+    <meta name="revisit-after" content="7 days">
+    <meta name="robots" content="index, follow">
+    <meta name="content-language" content="de">
+    <link rel="canonical" href="https://<?=$_SERVER['HTTP_HOST']?>">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="<?=Yii::$app->name ?>">
+    <link rel="shortcut icon" href="https://translitor.org/favicon.ico">
+    <meta property="og:url" content="https://<?= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>"/>
+    <?php $this->head() ?>
+    <?php if (!empty(Yii::$app->params['ga'])) {
+        echo Yii::$app->params['ga'];
+    } ?>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--    <meta name="yandex-verification" content="b79ff2058f5cad62" />-->
+</head>
+
+<body onkeydown="AkeyIsDown(event);" onkeypress="switcher(event);"
+      onbeforeunload="if(document.searchform.subject.value.length>250) return('Ваш текст будет потерян.');">
+<?php $this->beginBody() ?>
+<div class="tCookiesInfoblock" id="cookiesquestion">
+    <div class="tCookiesButton" onclick="okcookies();">
+        Согласиться и закрыть
+    </div>
+    <span class="tCookiesSilentClose" onclick="removecookiesinfo()">x</span> <strong>Мы используем cookies</strong> для
+    подсчета статистики посещений, персонализации рекламных объявлений, а также для сохранения пользовательских настроек
+    функциональности сайта. <span id="tCookiesShowMore">Вы соглашаетесь с этим, используя сайт далее. <span
+            class="tCookiesShowMore" onclick="showmorecookiesinfo();">Читать больше...</span></span><span
+        id="tCookiesMoreText" style="display: none;">На основе информации, хранящейся в cookies, наши партнеры Google и Criteo также подсчитывают для нас статистику посещений, анализируют и персонализируют рекламные объявления. Продолжая использование этого сайта без изменения настроек cookies в своем браузере, либо кликнув по кнопке «Согласиться и закрыть», Вы выражаете свое согласие на применение cookies на этом сайте. Узнать больше в <a
+            href="https://translitor.org/info/privacy/">Политике конфиденциальности</a>.</span>
+>>>>>>> merge rev
+</div>
+<?= $content ?>
+
+<?php $this->endBody() ?>
+<script>
+    $(function() {
+        $('#language_select').selectize();
+    });
+    var input_language = $('#your_language').selectize();
+</script>
+<?php if (!empty(Yii::$app->params['fb_sc_f']) && Yii::$app->controller->id != 'cabinet') {
+    echo Yii::$app->params['fb_sc_f'];
+} ?>
+<?php if (!empty(Yii::$app->params['footer']) && Yii::$app->controller->id != 'cabinet') {
+    echo Yii::$app->params['footer'];
+} ?>
+<?php if (!empty(Yii::$app->params['fjsc'])) {
+    echo Yii::$app->params['fjsc'];
+} ?>
+</body>
+</html>
+<?php $this->endPage() ?>

